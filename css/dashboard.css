@@ -6189,6 +6189,7 @@ button {
 
 
 @media (max-width: 1199px) {
+
     .ppd-oh-page-intro,
     .ppd-rp-page-intro,
     .ppd-pm-page-intro,
@@ -6304,6 +6305,7 @@ button {
 }
 
 @media (max-width: 991px) {
+
     .ppd-oh-summary-card,
     .ppd-rp-overview-card,
     .ppd-pm-overview-card,
@@ -6401,6 +6403,7 @@ button {
 }
 
 @media (max-width: 767px) {
+
     .ppd-oh-summary-card,
     .ppd-rp-overview-card,
     .ppd-pm-overview-card,
@@ -6553,6 +6556,7 @@ button {
 }
 
 @media (max-width: 575px) {
+
     .ppd-oh-page-title,
     .ppd-rp-page-title,
     .ppd-pm-page-title,
@@ -6671,6 +6675,7 @@ button {
 }
 
 @media (max-width: 400px) {
+
     .ppd-oh-page-title,
     .ppd-rp-page-title,
     .ppd-pm-page-title,
@@ -6720,6 +6725,7 @@ button {
 }
 
 @media (max-width: 360px) {
+
     .ppd-oh-page-title,
     .ppd-rp-page-title,
     .ppd-pm-page-title,
@@ -8401,4 +8407,4631 @@ body.dark-mode .ppd-sidebar-footer .ppd-logout-link {
 body.dark-mode .ppd-sidebar-footer .ppd-logout-link:hover {
     background: #162334 !important;
     transform: none !important;
+}
+
+/* ===== ORDER HISTORY - REMOVE TOP DARK BOX ===== */
+
+body.dark-mode details.ppd-oh-details-accordion {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+}
+
+body.dark-mode details.ppd-oh-details-accordion[open] {
+    background: transparent !important;
+}
+
+body.dark-mode details.ppd-oh-details-accordion>summary {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+body.dark-mode details.ppd-oh-details-accordion>summary::before,
+body.dark-mode details.ppd-oh-details-accordion>summary::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* ORDER HISTORY - REMOVE ALL EXTRA BOX BACKGROUND */
+
+body.dark-mode .ppd-oh-details-accordion,
+body.dark-mode .ppd-oh-details-grid,
+body.dark-mode .ppd-oh-details-grid div,
+body.dark-mode .ppd-oh-details-accordion summary {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    backdrop-filter: none !important;
+}
+
+/* Cards only */
+
+body.dark-mode .ppd-oh-details-grid div {
+    background: #1b263b !important;
+    border: 1px solid rgba(255, 255, 255, .08) !important;
+}
+
+/* Remove the horizontal divider line */
+
+body.dark-mode .ppd-oh-details-accordion,
+body.dark-mode .ppd-oh-details-grid,
+body.dark-mode .ppd-oh-preview-card,
+body.dark-mode .ppd-oh-section-head,
+body.dark-mode .ppd-oh-details-grid::before,
+body.dark-mode .ppd-oh-details-grid::after {
+    border-top: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+}
+
+/* If any child has the line */
+
+body.dark-mode .ppd-oh-details-grid>* {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+/* Remove left & right vertical lines */
+
+body.dark-mode .ppd-oh-details-grid {
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+}
+
+body.dark-mode .ppd-oh-details-grid::before,
+body.dark-mode .ppd-oh-details-grid::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: transparent !important;
+}
+
+/* ================================
+   Remove Activity Card Background
+================================ */
+
+body.dark-mode .ppd-oh-activity-item {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    filter: none !important;
+}
+
+body.dark-mode .ppd-oh-activity-item::before,
+body.dark-mode .ppd-oh-activity-item::after {
+    display: none !important;
+    content: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .ppd-oh-activity-copy {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .ppd-oh-activity-copy::before,
+body.dark-mode .ppd-oh-activity-copy::after {
+    display: none !important;
+}
+
+/* ===== Payments History - Remove inner box background ===== */
+
+body.dark-mode .ppd-pm-history-meta {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+body.dark-mode .ppd-pm-history-meta>div {
+    background: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+/* Remove Print Specifications & Storage Status box */
+
+body.dark-mode .ppd-sf-file-specs,
+body.dark-mode .ppd-sf-file-storage {
+    background: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+
+/* If any pseudo shadow exists */
+body.dark-mode .ppd-sf-file-specs::before,
+body.dark-mode .ppd-sf-file-specs::after,
+body.dark-mode .ppd-sf-file-storage::before,
+body.dark-mode .ppd-sf-file-storage::after {
+    content: none !important;
+    display: none !important;
+}
+
+/*==================================================
+DASHBOARD HOME RESPONSIVE OVERRIDES
+(Add at the END of dashboard.css)
+Desktop Layout Will NOT Change
+==================================================*/
+
+
+/*=============================
+1400px
+=============================*/
+
+@media (max-width:1400px) {
+
+    .ppd-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-orders-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-files-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*=============================
+1200px
+=============================*/
+
+@media (max-width:1200px) {
+
+    .ppd-dashboard-main {
+        padding: 24px;
+    }
+
+    .ppd-hero-panel {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ppd-hero-copy {
+        text-align: center;
+    }
+
+    .ppd-section-pill {
+        margin: auto;
+    }
+
+    .ppd-hero-copy h2 {
+        max-width: 100%;
+    }
+
+    .ppd-hero-copy p {
+        max-width: 100%;
+    }
+
+    .ppd-hero-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ppd-hero-visual {
+        min-height: auto;
+    }
+
+    .ppd-timeline {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 35px;
+    }
+
+    .ppd-timeline::before {
+        display: none;
+    }
+
+}
+
+
+/*=============================
+1024px
+=============================*/
+
+@media (max-width:1024px) {
+
+    .ppd-header-title {
+        font-size: 2rem;
+    }
+
+    .ppd-section-title {
+        font-size: 1.5rem;
+    }
+
+    .ppd-section-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ppd-order-details {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-order-actions {
+        flex-direction: column;
+    }
+
+}
+
+
+/*=============================
+992px
+=============================*/
+
+@media (max-width:992px) {
+
+    .ppd-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-orders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-files-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-actions-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ppd-order-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-timeline {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*=============================
+768px
+=============================*/
+
+@media (max-width:768px) {
+
+    .ppd-dashboard-main {
+        padding: 18px;
+    }
+
+    .ppd-dashboard-header {
+        padding: 18px;
+        gap: 18px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ppd-header-tools {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .ppd-header-title {
+        font-size: 1.8rem;
+    }
+
+    .ppd-hero-panel {
+        padding: 24px;
+    }
+
+    .ppd-hero-copy h2 {
+        font-size: 2rem;
+    }
+
+    .ppd-hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ppd-primary-action,
+    .ppd-secondary-action {
+        width: 100%;
+    }
+
+    .ppd-hero-stat {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .ppd-hero-image {
+        width: 100%;
+    }
+
+    .ppd-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-timeline {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/*=============================
+576px
+=============================*/
+
+@media (max-width:576px) {
+
+    .ppd-dashboard-main {
+        padding: 15px;
+    }
+
+    .ppd-section-card {
+        padding: 20px;
+    }
+
+    .ppd-hero-panel {
+        padding: 20px;
+    }
+
+    .ppd-header-title {
+        font-size: 1.6rem;
+    }
+
+    .ppd-hero-copy h2 {
+        font-size: 1.7rem;
+    }
+
+    .ppd-section-title {
+        font-size: 1.35rem;
+    }
+
+    .ppd-profile-card {
+        width: 100%;
+    }
+
+    .ppd-profile-copy {
+        overflow: hidden;
+    }
+
+    .ppd-profile-copy strong,
+    .ppd-profile-copy span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+
+/*=============================
+480px
+=============================*/
+
+@media (max-width:480px) {
+
+    .ppd-dashboard-header {
+        border-radius: 18px;
+    }
+
+    .ppd-hero-panel {
+        border-radius: 20px;
+    }
+
+    .ppd-section-card {
+        border-radius: 20px;
+    }
+
+    .ppd-metric-card,
+    .ppd-order-card,
+    .ppd-file-card,
+    .ppd-quick-card {
+        padding: 18px;
+    }
+
+    .ppd-header-tools {
+        gap: 10px;
+    }
+
+    .ppd-header-icon-btn,
+    .ppd-header-mode-btn {
+        width: 42px;
+        height: 42px;
+    }
+
+}
+
+
+/*=============================
+375px
+=============================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px;
+    }
+
+    .ppd-header-title {
+        font-size: 1.45rem;
+    }
+
+    .ppd-hero-copy h2 {
+        font-size: 1.5rem;
+    }
+
+    .ppd-primary-action,
+    .ppd-secondary-action {
+        font-size: .9rem;
+    }
+
+}
+
+
+/*=============================
+320px
+=============================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px;
+    }
+
+    .ppd-hero-panel,
+    .ppd-section-card {
+        padding: 16px;
+    }
+
+    .ppd-header-title {
+        font-size: 1.3rem;
+    }
+
+    .ppd-section-title {
+        font-size: 1.15rem;
+    }
+
+    .ppd-primary-action,
+    .ppd-secondary-action,
+    .ppd-mini-action {
+        min-height: 48px;
+        font-size: .82rem;
+        padding: 0 12px;
+    }
+
+}
+
+/* ==========================================
+   Dashboard Timeline Responsive Override
+========================================== */
+
+@media (max-width:768px) {
+
+    .ppd-timeline {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 22px !important;
+    }
+
+    .ppd-timeline::before {
+        left: 21px !important;
+        right: auto !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        width: 2px !important;
+        height: 100% !important;
+    }
+
+    .ppd-timeline-step {
+        display: flex !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+        padding: 0 0 0 60px !important;
+        min-height: 60px !important;
+    }
+
+    .ppd-timeline-dot {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+        margin: 0 !important;
+
+        width: 42px !important;
+        height: 42px !important;
+
+        border-radius: 12px !important;
+
+        flex-shrink: 0 !important;
+    }
+
+    .ppd-timeline-step strong {
+        display: block !important;
+        width: 100% !important;
+
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+
+        margin-bottom: 8px !important;
+    }
+
+    .ppd-timeline-step p {
+
+        display: block !important;
+        width: 100% !important;
+
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+
+        margin: 0 !important;
+    }
+
+}
+
+/*==================================================
+UPLOAD PAGE RESPONSIVE OVERRIDE
+(Desktop design will not change)
+==================================================*/
+
+/*----------------------------
+Large Laptop
+-----------------------------*/
+@media (max-width: 1400px) {
+
+    .ppd-upload-hero-card {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .ppd-upload-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-upload-summary-card {
+        max-width: 650px;
+        width: 100%;
+    }
+
+}
+
+/*----------------------------
+Laptop
+-----------------------------*/
+@media (max-width:1200px) {
+
+    .ppd-upload-files-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-upload-hero-notes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-upload-spec-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-upload-page-title,
+    .ppd-upload-hero-title {
+        font-size: 2rem;
+    }
+
+}
+
+/*----------------------------
+Tablet
+-----------------------------*/
+@media (max-width:992px) {
+
+    .ppd-upload-page-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .ppd-upload-hero-card {
+        padding: 24px;
+    }
+
+    .ppd-upload-dropzone-panel {
+        padding: 20px;
+    }
+
+    .ppd-upload-dropzone-visual {
+        min-height: 220px;
+    }
+
+    .ppd-upload-dropzone-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 2rem;
+    }
+
+    .ppd-upload-files-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-upload-spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-upload-field--full {
+        grid-column: auto;
+    }
+
+    .ppd-upload-summary-card {
+        max-width: 100%;
+    }
+
+}
+
+/*----------------------------
+Mobile Large
+-----------------------------*/
+@media (max-width:768px) {
+
+    .ppd-dashboard-main {
+        padding: 20px 16px 30px;
+    }
+
+    .ppd-upload-page-title,
+    .ppd-upload-hero-title {
+        font-size: 1.7rem;
+        line-height: 1.3;
+    }
+
+    .ppd-upload-page-copy,
+    .ppd-upload-hero-text {
+        font-size: .95rem;
+    }
+
+    .ppd-upload-hero-card,
+    .ppd-upload-spec-card,
+    .ppd-upload-summary-card {
+        padding: 20px;
+    }
+
+    .ppd-upload-hero-notes {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-upload-dropzone-box h3 {
+        font-size: 1.15rem;
+    }
+
+    .ppd-upload-support-row {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
+    .ppd-upload-file-meta {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ppd-upload-progress-copy {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .ppd-upload-file-actions {
+        flex-direction: column;
+    }
+
+    .ppd-upload-file-btn {
+        width: 100%;
+    }
+
+    .ppd-upload-summary-row {
+        grid-template-columns: 1fr;
+        text-align: left;
+        gap: 8px;
+    }
+
+    .ppd-upload-summary-row strong {
+        text-align: left;
+    }
+
+}
+
+/*----------------------------
+Mobile
+-----------------------------*/
+@media (max-width:576px) {
+
+    .ppd-upload-page-title,
+    .ppd-upload-hero-title {
+        font-size: 1.45rem;
+    }
+
+    .ppd-upload-hero-badge,
+    .ppd-upload-section-kicker,
+    .ppd-upload-summary-kicker {
+        font-size: .68rem;
+        letter-spacing: .12em;
+    }
+
+    .ppd-upload-chip {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ppd-upload-dropzone-visual {
+        min-height: 180px;
+    }
+
+    .ppd-upload-dropzone-icon {
+        width: 82px;
+        height: 82px;
+        font-size: 1.7rem;
+        border-radius: 24px;
+    }
+
+    .ppd-upload-browse-btn,
+    .ppd-upload-continue-btn {
+        width: 100%;
+    }
+
+    .ppd-upload-summary-head h3,
+    .ppd-upload-section-title {
+        font-size: 1.3rem;
+    }
+
+}
+
+/*----------------------------
+Small Mobile
+-----------------------------*/
+@media (max-width:400px) {
+
+    .ppd-dashboard-main {
+        padding: 16px 12px 24px;
+    }
+
+    .ppd-upload-hero-card,
+    .ppd-upload-spec-card,
+    .ppd-upload-summary-card,
+    .ppd-upload-file-card {
+        padding: 16px;
+    }
+
+    .ppd-upload-page-title,
+    .ppd-upload-hero-title {
+        font-size: 1.28rem;
+    }
+
+    .ppd-upload-dropzone-box h3 {
+        font-size: 1rem;
+    }
+
+    .ppd-upload-dropzone-box p {
+        font-size: .85rem;
+    }
+
+    .ppd-upload-summary-row {
+        padding: 14px;
+    }
+
+}
+
+/*==================================================
+PRINT ORDERS RESPONSIVE
+Part 1 (1400px / 1200px / 1024px)
+==================================================*/
+
+/*=========================
+1400px
+=========================*/
+
+@media (max-width:1400px) {
+
+    .ppd-po-order-summary-panel {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ppd-po-preview-card {
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ppd-po-workspace {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .ppd-po-summary-card {
+        position: static;
+        width: 100%;
+    }
+
+    .ppd-po-payment-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/*=========================
+1200px
+=========================*/
+
+@media (max-width:1200px) {
+
+    .ppd-dashboard-main {
+        padding: 28px;
+    }
+
+    .ppd-po-order-spec-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-po-form-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-po-field--full {
+        grid-column: 1/-1;
+    }
+
+    .ppd-po-payment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-po-confirm-grid {
+        gap: 24px;
+    }
+
+}
+
+
+/*=========================
+1024px
+=========================*/
+
+@media (max-width:1024px) {
+
+    .ppd-dashboard-main {
+        padding: 24px;
+    }
+
+    .ppd-po-order-summary-panel {
+        padding: 28px;
+    }
+
+    .ppd-po-order-summary-copy h3,
+    .ppd-po-section-title {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 300px;
+    }
+
+    .ppd-po-order-badges {
+        gap: 12px;
+    }
+
+    .ppd-po-order-badges span {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
+
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 28px;
+    }
+
+    .ppd-po-payment-grid {
+        gap: 20px;
+    }
+
+    .ppd-po-payment-card {
+        padding: 24px;
+    }
+
+    .ppd-po-confirm-actions {
+        flex-wrap: wrap;
+    }
+
+    .ppd-po-confirm-btn {
+        flex: 1 1 260px;
+        justify-content: center;
+    }
+
+}
+
+/*==================================================
+PRINT ORDERS RESPONSIVE
+Part 2 (992px / 768px)
+==================================================*/
+
+
+/*=========================
+992px
+=========================*/
+
+@media (max-width:992px) {
+
+    .ppd-po-order-summary-panel {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+        padding: 24px !important;
+    }
+
+    .ppd-po-preview-card {
+        order: -1;
+        max-width: 460px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 260px;
+    }
+
+    .ppd-po-order-summary-copy {
+        text-align: center;
+    }
+
+    .ppd-po-order-badges {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ppd-po-order-spec-list {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ppd-po-edit-btn {
+        margin: 20px auto 0;
+    }
+
+    .ppd-po-workspace {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .ppd-po-form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ppd-po-field--full {
+        grid-column: 1/-1;
+    }
+
+    .ppd-po-summary-card {
+        position: static;
+        width: 100%;
+    }
+
+    .ppd-po-payment-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ppd-po-confirm-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .ppd-po-confirm-actions {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+}
+
+
+/*=========================
+768px
+=========================*/
+
+@media (max-width:768px) {
+
+    .ppd-dashboard-main {
+        padding: 20px 16px !important;
+    }
+
+    .ppd-po-order-summary-panel,
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 22px !important;
+        border-radius: 20px;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 26px !important;
+        line-height: 1.35;
+    }
+
+    .ppd-po-section-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .ppd-po-preview-card {
+        max-width: 100%;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 220px;
+    }
+
+    .ppd-po-preview-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+
+    .ppd-po-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-po-field--full {
+        grid-column: auto;
+    }
+
+    .ppd-po-field input,
+    .ppd-po-field select,
+    .ppd-po-field textarea {
+        width: 100%;
+    }
+
+    .ppd-po-payment-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ppd-po-payment-card {
+        padding: 22px;
+    }
+
+    .ppd-po-summary-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .ppd-po-summary-row strong {
+        text-align: left;
+    }
+
+    .ppd-po-confirm-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .ppd-po-confirm-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ppd-po-terms-check {
+        align-items: flex-start;
+    }
+
+    .ppd-po-terms-check span {
+        line-height: 1.7;
+    }
+
+}
+
+/*==================================================
+PRINT ORDERS RESPONSIVE
+Part 3 (576px / 480px)
+==================================================*/
+
+
+/*=========================
+576px
+=========================*/
+
+@media (max-width:576px) {
+
+    .ppd-dashboard-main {
+        padding: 18px 14px !important;
+    }
+
+    .ppd-po-order-summary-panel,
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 18px !important;
+        border-radius: 18px !important;
+    }
+
+    .ppd-po-section-badge {
+        font-size: 11px !important;
+        letter-spacing: .12em;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 22px !important;
+        line-height: 1.35 !important;
+    }
+
+    .ppd-po-section-text {
+        font-size: 14px !important;
+        line-height: 1.75 !important;
+    }
+
+    .ppd-po-order-badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: flex-start;
+    }
+
+    .ppd-po-order-badges span {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 12px 16px;
+        font-size: 13px;
+    }
+
+    .ppd-po-order-spec-list {
+        gap: 14px;
+    }
+
+    .ppd-po-order-spec-list div {
+        padding: 16px;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 200px;
+        border-radius: 18px;
+    }
+
+    .ppd-po-preview-icon {
+        width: 72px;
+        height: 72px;
+        font-size: 28px;
+    }
+
+    .ppd-po-preview-meta strong {
+        font-size: 20px;
+    }
+
+    .ppd-po-form-grid {
+        gap: 18px;
+    }
+
+    .ppd-po-field label {
+        font-size: 14px;
+    }
+
+    .ppd-po-field input,
+    .ppd-po-field select,
+    .ppd-po-field textarea {
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
+    .ppd-po-payment-grid {
+        gap: 16px;
+    }
+
+    .ppd-po-payment-card {
+        padding: 18px;
+    }
+
+    .ppd-po-payment-icon {
+        width: 56px;
+        height: 56px;
+        font-size: 22px;
+    }
+
+    .ppd-po-summary-list {
+        gap: 14px;
+    }
+
+    .ppd-po-summary-row {
+        padding-bottom: 14px;
+    }
+
+    .ppd-po-confirm-actions {
+        gap: 14px;
+    }
+
+    .ppd-po-confirm-btn {
+        width: 100%;
+        min-height: 52px;
+    }
+
+}
+
+
+/*=========================
+480px
+=========================*/
+
+@media (max-width:480px) {
+
+    .ppd-dashboard-main {
+        padding: 16px 12px !important;
+    }
+
+    .ppd-po-order-summary-panel,
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 16px !important;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 20px !important;
+    }
+
+    .ppd-po-section-text {
+        font-size: 13px !important;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 180px;
+    }
+
+    .ppd-po-preview-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 24px;
+    }
+
+    .ppd-po-preview-meta strong {
+        font-size: 18px;
+    }
+
+    .ppd-po-preview-meta span {
+        font-size: 13px;
+    }
+
+    .ppd-po-order-badges span {
+        font-size: 12px;
+        padding: 10px 14px;
+    }
+
+    .ppd-po-order-spec-list div strong {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .ppd-po-field input,
+    .ppd-po-field select,
+    .ppd-po-field textarea {
+        padding: 13px 14px;
+        font-size: 14px;
+    }
+
+    .ppd-po-payment-card strong {
+        font-size: 17px;
+    }
+
+    .ppd-po-payment-card p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .ppd-po-summary-row span,
+    .ppd-po-summary-row strong {
+        font-size: 14px;
+    }
+
+    .ppd-po-confirm-btn {
+        font-size: 14px;
+        min-height: 50px;
+    }
+
+}
+
+/*==================================================
+PRINT ORDERS RESPONSIVE
+Part 4 (425px / 375px / 320px + Final Overrides)
+==================================================*/
+
+
+/*=========================
+425px
+=========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+        padding: 14px 10px !important;
+    }
+
+    .ppd-po-order-summary-panel,
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 14px !important;
+        border-radius: 16px !important;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-po-section-text {
+        font-size: 13px !important;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 170px;
+    }
+
+    .ppd-po-preview-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 22px;
+    }
+
+    .ppd-po-preview-meta strong {
+        font-size: 16px;
+    }
+
+    .ppd-po-payment-card {
+        padding: 16px;
+    }
+
+    .ppd-po-payment-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .ppd-po-confirm-btn {
+        min-height: 48px;
+    }
+
+}
+
+
+/*=========================
+375px
+=========================*/
+
+@media (max-width:375px) {
+
+    .ppd-po-section-badge {
+        font-size: 10px;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 17px !important;
+    }
+
+    .ppd-po-order-badges span {
+        font-size: 11px;
+        padding: 9px 12px;
+    }
+
+    .ppd-po-order-spec-list div {
+        padding: 14px;
+    }
+
+    .ppd-po-order-spec-list strong {
+        font-size: 14px;
+    }
+
+    .ppd-po-field label {
+        font-size: 13px;
+    }
+
+    .ppd-po-field input,
+    .ppd-po-field select,
+    .ppd-po-field textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .ppd-po-payment-card strong {
+        font-size: 16px;
+    }
+
+    .ppd-po-payment-card p {
+        font-size: 12px;
+    }
+
+}
+
+
+/*=========================
+320px
+=========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-po-order-summary-panel,
+    .ppd-po-form-card,
+    .ppd-po-summary-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card {
+        padding: 12px !important;
+    }
+
+    .ppd-po-section-title,
+    .ppd-po-order-summary-copy h3 {
+        font-size: 16px !important;
+    }
+
+    .ppd-po-preview-frame {
+        min-height: 150px;
+    }
+
+    .ppd-po-preview-icon {
+        width: 52px;
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .ppd-po-preview-meta strong {
+        font-size: 15px;
+    }
+
+    .ppd-po-order-badges span {
+        font-size: 10px;
+        padding: 8px 10px;
+    }
+
+    .ppd-po-payment-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+    }
+
+    .ppd-po-confirm-btn {
+        font-size: 13px;
+    }
+
+}
+
+
+/*==================================================
+FINAL STRONG RESPONSIVE OVERRIDES
+==================================================*/
+
+@media (max-width:992px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .ppd-po-workspace,
+    .ppd-po-order-summary-panel,
+    .ppd-po-payment-grid,
+    .ppd-po-form-grid,
+    .ppd-po-confirm-grid {
+        width: 100%;
+    }
+
+    .ppd-po-summary-card,
+    .ppd-po-form-card,
+    .ppd-po-payment-section,
+    .ppd-po-confirm-card,
+    .ppd-po-order-summary-panel {
+        overflow: hidden;
+    }
+
+    .ppd-po-field input,
+    .ppd-po-field select,
+    .ppd-po-field textarea {
+        max-width: 100%;
+    }
+
+    .ppd-po-payment-card,
+    .ppd-po-summary-row,
+    .ppd-po-order-spec-list div {
+        word-break: break-word;
+    }
+
+    .ppd-po-confirm-actions>* {
+        flex: 1 1 100%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .ppd-dashboard-main {
+        overflow-x: hidden;
+    }
+
+}
+
+/*=========================================================
+TRACK ORDERS RESPONSIVE
+PART 1 (1400px & 1200px)
+Add only in dashboard.css
+=========================================================*/
+
+/*==========================
+1400px
+==========================*/
+@media (max-width:1400px) {
+
+    .ppd-to-overview-panel {
+        grid-template-columns: 1.1fr .9fr;
+        gap: 30px;
+    }
+
+    .ppd-to-overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ppd-to-overview-totalfill {
+        grid-column: 1/-1;
+    }
+
+    .ppd-to-timeline-track {
+        gap: 18px;
+    }
+
+    .ppd-to-details-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .ppd-to-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*==========================
+1200px
+==========================*/
+@media (max-width:1200px) {
+
+    .ppd-to-overview-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-overview-side {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ppd-to-overview-focus {
+        grid-column: 1/-1;
+    }
+
+    .ppd-to-overview-minirow {
+        grid-column: 1/-1;
+    }
+
+    .ppd-to-timeline-track {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 10px;
+        display: flex;
+        gap: 20px;
+        scroll-behavior: smooth;
+    }
+
+    .ppd-to-stage {
+        min-width: 180px;
+        flex: 0 0 auto;
+    }
+
+    .ppd-to-info-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-to-delivery-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-to-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*=========================================================
+TRACK ORDERS RESPONSIVE
+PART 2 (1024px & 992px)
+=========================================================*/
+
+
+/*==========================
+1024px
+==========================*/
+
+@media (max-width:1024px) {
+
+    .ppd-dashboard-main {
+        padding: 28px 24px;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 28px;
+    }
+
+    .ppd-to-section-title {
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .ppd-to-overview-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .ppd-to-info-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .ppd-to-delivery-meta {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    .ppd-to-actions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ppd-to-search-form {
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+    }
+
+    .ppd-to-search-form input {
+        width: 100%;
+    }
+
+}
+
+
+
+/*==========================
+992px
+==========================*/
+
+@media (max-width:992px) {
+
+    .ppd-dashboard-main {
+        padding: 24px 20px;
+    }
+
+    .ppd-to-overview-panel {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .ppd-to-overview-side {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-search-form .brand-solid-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ppd-to-info-list {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-delivery-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-actions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-to-timeline-track {
+        display: flex;
+        overflow-x: auto;
+        gap: 18px;
+        padding-bottom: 12px;
+        scroll-snap-type: x proximity;
+    }
+
+    .ppd-to-stage {
+        min-width: 200px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .ppd-to-stage-content {
+        text-align: center;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 18px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+
+/*=========================================================
+TRACK ORDERS RESPONSIVE
+PART 3 (768px)
+=========================================================*/
+
+@media (max-width:768px) {
+
+    /* Main Container */
+
+    .ppd-dashboard-main {
+        padding: 20px 16px !important;
+    }
+
+    /* Cards */
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 22px !important;
+        border-radius: 20px;
+    }
+
+    /* Headings */
+
+    .ppd-to-section-title {
+        font-size: 26px !important;
+        line-height: 1.35;
+    }
+
+    .ppd-to-section-text {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* Search */
+
+    .ppd-to-search-form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        width: 100%;
+    }
+
+    .ppd-to-search-form .brand-solid-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Overview */
+
+    .ppd-to-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .ppd-to-overview-card {
+        padding: 18px;
+    }
+
+    .ppd-to-overview-card h3 {
+        font-size: 18px;
+    }
+
+    /* Timeline */
+
+    .ppd-to-timeline-track {
+        display: flex;
+        overflow-x: auto;
+        overflow-y: hidden;
+        gap: 16px;
+        padding-bottom: 10px;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .ppd-to-stage {
+        min-width: 180px;
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .ppd-to-stage-icon {
+        width: 64px;
+        height: 64px;
+        font-size: 22px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 17px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Details */
+
+    .ppd-to-details-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ppd-to-info-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ppd-to-info-item {
+        padding: 16px;
+    }
+
+    /* Delivery */
+
+    .ppd-to-delivery-meta {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ppd-to-delivery-box {
+        padding: 16px;
+    }
+
+    /* Action Cards */
+
+    .ppd-to-actions-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ppd-to-action-card {
+        padding: 20px;
+    }
+
+    .ppd-to-action-card .brand-solid-button,
+    .ppd-to-action-card .brand-outline-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Images */
+
+    .ppd-to-overview-card img,
+    .ppd-to-delivery-box img {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+/*=========================================================
+TRACK ORDERS RESPONSIVE
+PART 4 (576px & 480px)
+=========================================================*/
+
+
+/*==========================
+576px
+==========================*/
+
+@media (max-width:576px) {
+
+    .ppd-dashboard-main {
+        padding: 18px 14px !important;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 18px !important;
+        border-radius: 18px;
+    }
+
+    .ppd-to-section-badge {
+        font-size: 11px;
+        letter-spacing: .12em;
+    }
+
+    .ppd-to-section-title {
+        font-size: 22px !important;
+        line-height: 1.35;
+    }
+
+    .ppd-to-section-text {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .ppd-to-search-form {
+        gap: 14px;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        height: 50px;
+        font-size: 14px;
+    }
+
+    .ppd-to-search-form .brand-solid-button {
+        width: 100%;
+        min-height: 50px;
+        justify-content: center;
+    }
+
+    .ppd-to-overview-grid {
+        gap: 14px;
+    }
+
+    .ppd-to-overview-card {
+        padding: 16px;
+    }
+
+    .ppd-to-overview-card h3 {
+        font-size: 17px;
+    }
+
+    .ppd-to-overview-card p {
+        font-size: 13px;
+    }
+
+    .ppd-to-timeline-track {
+        gap: 14px;
+        padding-bottom: 8px;
+    }
+
+    .ppd-to-stage {
+        min-width: 165px;
+    }
+
+    .ppd-to-stage-icon {
+        width: 58px;
+        height: 58px;
+        font-size: 20px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 16px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 13px;
+    }
+
+    .ppd-to-details-grid {
+        gap: 14px;
+    }
+
+    .ppd-to-info-item {
+        padding: 14px;
+    }
+
+    .ppd-to-delivery-box {
+        padding: 14px;
+    }
+
+    .ppd-to-actions-grid {
+        gap: 16px;
+    }
+
+    .ppd-to-action-card {
+        padding: 18px;
+    }
+
+    .ppd-to-action-card .brand-solid-button,
+    .ppd-to-action-card .brand-outline-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+
+/*==========================
+480px
+==========================*/
+
+@media (max-width:480px) {
+
+    .ppd-dashboard-main {
+        padding: 16px 12px !important;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 16px !important;
+    }
+
+    .ppd-to-section-title {
+        font-size: 20px !important;
+    }
+
+    .ppd-to-section-text {
+        font-size: 13px;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        height: 48px;
+        padding: 0 14px;
+        font-size: 14px;
+    }
+
+    .ppd-to-overview-card {
+        padding: 14px;
+    }
+
+    .ppd-to-overview-card h3 {
+        font-size: 16px;
+    }
+
+    .ppd-to-overview-card p {
+        font-size: 12px;
+    }
+
+    .ppd-to-stage {
+        min-width: 150px;
+    }
+
+    .ppd-to-stage-icon {
+        width: 54px;
+        height: 54px;
+        font-size: 18px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 15px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 12px;
+    }
+
+    .ppd-to-info-item,
+    .ppd-to-delivery-box,
+    .ppd-to-action-card {
+        padding: 14px;
+    }
+
+    .ppd-to-action-card .brand-solid-button,
+    .ppd-to-action-card .brand-outline-button {
+        min-height: 48px;
+        font-size: 14px;
+    }
+
+}
+
+/*=========================================================
+TRACK ORDERS RESPONSIVE
+PART 5 (425px / 375px / 320px + FINAL OVERRIDES)
+=========================================================*/
+
+
+/*==========================
+425px
+==========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+        padding: 14px 10px !important;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 14px !important;
+        border-radius: 16px;
+    }
+
+    .ppd-to-section-title {
+        font-size: 18px !important;
+        line-height: 1.4;
+    }
+
+    .ppd-to-section-text {
+        font-size: 13px;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .ppd-to-overview-card {
+        padding: 12px;
+    }
+
+    .ppd-to-overview-card h3 {
+        font-size: 15px;
+    }
+
+    .ppd-to-overview-card p {
+        font-size: 12px;
+    }
+
+    .ppd-to-stage {
+        min-width: 140px;
+    }
+
+    .ppd-to-stage-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 17px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 14px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .ppd-to-info-item,
+    .ppd-to-delivery-box,
+    .ppd-to-action-card {
+        padding: 12px;
+    }
+
+    .ppd-to-action-card .brand-solid-button,
+    .ppd-to-action-card .brand-outline-button {
+        min-height: 46px;
+        font-size: 13px;
+    }
+
+}
+
+
+/*==========================
+375px
+==========================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-to-section-badge {
+        font-size: 10px;
+    }
+
+    .ppd-to-section-title {
+        font-size: 17px !important;
+    }
+
+    .ppd-to-search-form {
+        gap: 12px;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        height: 44px;
+        padding: 0 12px;
+    }
+
+    .ppd-to-stage {
+        min-width: 130px;
+    }
+
+    .ppd-to-stage-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 13px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 11px;
+    }
+
+    .ppd-to-overview-card,
+    .ppd-to-info-item,
+    .ppd-to-delivery-box,
+    .ppd-to-action-card {
+        padding: 10px;
+    }
+
+}
+
+
+/*==========================
+320px
+==========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px 6px !important;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-search-card,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        padding: 10px !important;
+    }
+
+    .ppd-to-section-title {
+        font-size: 16px !important;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .ppd-to-stage {
+        min-width: 120px;
+    }
+
+    .ppd-to-stage-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .ppd-to-stage-title {
+        font-size: 12px;
+    }
+
+    .ppd-to-stage-text {
+        font-size: 10px;
+    }
+
+    .ppd-to-action-card .brand-solid-button,
+    .ppd-to-action-card .brand-outline-button {
+        min-height: 44px;
+        font-size: 12px;
+    }
+
+}
+
+
+/*=========================================================
+FINAL STRONG RESPONSIVE OVERRIDES
+=========================================================*/
+
+@media (max-width:992px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .ppd-to-overview-panel,
+    .ppd-to-overview-grid,
+    .ppd-to-details-grid,
+    .ppd-to-info-list,
+    .ppd-to-delivery-meta,
+    .ppd-to-actions-grid {
+        width: 100%;
+    }
+
+    .ppd-to-search-card,
+    .ppd-to-overview-panel,
+    .ppd-to-timeline-card,
+    .ppd-to-details-card,
+    .ppd-to-delivery-card,
+    .ppd-to-actions-card {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .ppd-to-search-form input,
+    .ppd-to-search-form select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ppd-to-overview-card,
+    .ppd-to-info-item,
+    .ppd-to-delivery-box,
+    .ppd-to-action-card {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .ppd-to-actions-grid>* {
+        width: 100%;
+    }
+
+    body,
+    .ppd-dashboard-main {
+        overflow-x: hidden !important;
+    }
+
+    .ppd-to-timeline-track::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .ppd-to-timeline-track::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background: rgba(0, 0, 0, .18);
+    }
+
+}
+
+/*==================================================
+        ORDER HISTORY RESPONSIVE
+==================================================*/
+
+/*--------------- Large Laptop ---------------*/
+
+@media (max-width:1200px) {
+
+    .ppd-oh-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ppd-oh-orders-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .ppd-oh-filter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/*--------------- Tablet Landscape ---------------*/
+
+@media (max-width:992px) {
+
+    .ppd-oh-summary-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-oh-orders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-oh-filter-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .ppd-oh-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ppd-oh-order-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .ppd-oh-mini-btn {
+        flex: 1 1 calc(50% - 10px);
+        justify-content: center;
+    }
+
+}
+
+
+/*--------------- Tablet Portrait ---------------*/
+
+@media (max-width:768px) {
+
+    .ppd-oh-summary-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .ppd-oh-filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-oh-orders-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-oh-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .ppd-oh-section-head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .ppd-oh-filter-actions {
+        width: 100%;
+        display: flex;
+        gap: 12px;
+    }
+
+    .ppd-oh-filter-btn {
+        flex: 1;
+    }
+
+    .ppd-oh-order-meta {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/*==================================================
+ORDER HISTORY RESPONSIVE
+PART 2 (576px / 480px)
+==================================================*/
+
+
+/*=========================
+576px
+=========================*/
+
+@media (max-width:576px) {
+
+    .ppd-dashboard-main {
+        padding: 18px 14px !important;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        padding: 18px !important;
+        border-radius: 18px;
+    }
+
+    .ppd-oh-section-title {
+        font-size: 22px !important;
+        line-height: 1.35;
+    }
+
+    .ppd-oh-section-text {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .ppd-oh-order-meta {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ppd-oh-details-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ppd-oh-filter-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        width: 100%;
+    }
+
+    .ppd-oh-filter-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .ppd-oh-filter-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ppd-oh-order-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ppd-oh-mini-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .ppd-oh-order-status {
+        align-self: flex-start;
+    }
+
+}
+
+
+/*=========================
+480px
+=========================*/
+
+@media (max-width:480px) {
+
+    .ppd-dashboard-main {
+        padding: 16px 12px !important;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        padding: 16px !important;
+    }
+
+    .ppd-oh-section-title {
+        font-size: 20px !important;
+    }
+
+    .ppd-oh-section-text {
+        font-size: 13px;
+    }
+
+    .ppd-oh-summary-card h3 {
+        font-size: 16px;
+    }
+
+    .ppd-oh-summary-card h2 {
+        font-size: 26px;
+    }
+
+    .ppd-oh-order-title {
+        font-size: 17px;
+    }
+
+    .ppd-oh-order-meta div {
+        padding: 12px;
+    }
+
+    .ppd-oh-details-grid div {
+        padding: 12px;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        height: 48px;
+        font-size: 14px;
+    }
+
+    .ppd-oh-filter-btn,
+    .ppd-oh-mini-btn {
+        min-height: 46px;
+        font-size: 14px;
+    }
+
+}
+
+/*==================================================
+ORDER HISTORY RESPONSIVE
+PART 3 (425px / 375px / 320px + FINAL OVERRIDES)
+==================================================*/
+
+
+/*=========================
+425px
+=========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+        padding: 14px 10px !important;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        padding: 14px !important;
+        border-radius: 16px;
+    }
+
+    .ppd-oh-section-title {
+        font-size: 18px !important;
+        line-height: 1.4;
+    }
+
+    .ppd-oh-section-text {
+        font-size: 13px;
+    }
+
+    .ppd-oh-summary-card h2 {
+        font-size: 24px;
+    }
+
+    .ppd-oh-summary-card h3 {
+        font-size: 15px;
+    }
+
+    .ppd-oh-order-title {
+        font-size: 16px;
+    }
+
+    .ppd-oh-order-meta {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .ppd-oh-order-meta div,
+    .ppd-oh-details-grid div {
+        padding: 12px;
+    }
+
+    .ppd-oh-filter-grid {
+        gap: 12px;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        height: 46px;
+        font-size: 13px;
+    }
+
+    .ppd-oh-filter-btn,
+    .ppd-oh-mini-btn {
+        min-height: 44px;
+        font-size: 13px;
+    }
+
+}
+
+
+/*=========================
+375px
+=========================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-oh-section-title {
+        font-size: 17px !important;
+    }
+
+    .ppd-oh-section-text {
+        font-size: 12px;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        padding: 12px !important;
+    }
+
+    .ppd-oh-summary-card h2 {
+        font-size: 22px;
+    }
+
+    .ppd-oh-summary-card h3 {
+        font-size: 14px;
+    }
+
+    .ppd-oh-order-title {
+        font-size: 15px;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        height: 44px;
+        padding: 0 12px;
+    }
+
+    .ppd-oh-order-meta div,
+    .ppd-oh-details-grid div {
+        padding: 10px;
+    }
+
+}
+
+
+/*=========================
+320px
+=========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px 6px !important;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        padding: 10px !important;
+    }
+
+    .ppd-oh-section-title {
+        font-size: 16px !important;
+    }
+
+    .ppd-oh-section-text {
+        font-size: 11px;
+    }
+
+    .ppd-oh-summary-card h2 {
+        font-size: 20px;
+    }
+
+    .ppd-oh-summary-card h3 {
+        font-size: 13px;
+    }
+
+    .ppd-oh-order-title {
+        font-size: 14px;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        height: 42px;
+        font-size: 12px;
+    }
+
+    .ppd-oh-filter-btn,
+    .ppd-oh-mini-btn {
+        min-height: 42px;
+        font-size: 12px;
+    }
+
+}
+
+
+/*==================================================
+FINAL STRONG RESPONSIVE OVERRIDES
+==================================================*/
+
+@media (max-width:992px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .ppd-oh-summary-grid,
+    .ppd-oh-filter-grid,
+    .ppd-oh-orders-grid,
+    .ppd-oh-details-grid,
+    .ppd-oh-order-meta {
+        width: 100%;
+    }
+
+    .ppd-oh-summary-card,
+    .ppd-oh-filter-card,
+    .ppd-oh-order-card,
+    .ppd-oh-details-card,
+    .ppd-oh-activity-card {
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    .ppd-oh-filter-grid input,
+    .ppd-oh-filter-grid select {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ppd-oh-order-meta div,
+    .ppd-oh-details-grid div {
+        word-break: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    .ppd-oh-order-actions>*,
+    .ppd-oh-filter-actions>* {
+        width: 100%;
+    }
+
+    body,
+    .ppd-dashboard-main {
+        overflow-x: hidden !important;
+    }
+
+}
+
+/*==================================================
+QUICK ACTIONS MOBILE FIX
+==================================================*/
+
+@media (max-width:768px) {
+
+    .ppd-oh-actions-grid,
+    .ppd-oh-quick-actions-grid,
+    .ppd-oh-action-grid {
+
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+
+    }
+
+    .ppd-oh-action-card {
+
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+
+        padding: 18px !important;
+
+        height: auto !important;
+
+    }
+
+    .ppd-oh-action-card h3 {
+
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+
+    }
+
+    .ppd-oh-action-card p {
+
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+
+        word-break: normal !important;
+        overflow-wrap: break-word !important;
+
+    }
+
+}
+
+
+/*=========================
+Mobile
+=========================*/
+
+@media (max-width:480px) {
+
+    .ppd-oh-actions-grid,
+    .ppd-oh-quick-actions-grid,
+    .ppd-oh-action-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .ppd-oh-action-card {
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        padding: 20px !important;
+
+    }
+
+    .ppd-oh-action-icon {
+
+        width: 60px !important;
+        height: 60px !important;
+
+        margin-bottom: 16px !important;
+
+    }
+
+    .ppd-oh-action-card h3 {
+
+        font-size: 18px !important;
+
+    }
+
+    .ppd-oh-action-card p {
+
+        width: 100% !important;
+
+    }
+
+}
+
+/*==================================================
+REORDER PRINTS RESPONSIVE - PART 1
+==================================================*/
+
+/* 1200px */
+@media (max-width:1200px) {
+
+    .ppd-rp-overview-grid,
+    .ppd-rp-orders-grid,
+    .ppd-rp-template-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-rp-custom-grid,
+    .ppd-rp-summary-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+/* 992px */
+@media (max-width:992px) {
+
+    .ppd-rp-overview-grid,
+    .ppd-rp-orders-grid,
+    .ppd-rp-template-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ppd-rp-custom-grid,
+    .ppd-rp-summary-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ppd-rp-order-meta {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-rp-custom-actions {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 16px !important;
+    }
+
+}
+
+/* 768px */
+@media (max-width:768px) {
+
+    .ppd-rp-overview-card,
+    .ppd-rp-orders-card,
+    .ppd-rp-templates-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+        padding: 20px !important;
+        border-radius: 22px !important;
+    }
+
+    .ppd-rp-section-head {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+    }
+
+    .ppd-rp-section-title {
+        font-size: 28px !important;
+        line-height: 1.35 !important;
+    }
+
+    .ppd-rp-order-top {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+    }
+
+    .ppd-rp-order-thumb {
+        width: 100% !important;
+        max-width: 100% !important;
+        height: 220px !important;
+        object-fit: cover !important;
+        border-radius: 18px !important;
+    }
+
+    .ppd-rp-order-actions,
+    .ppd-rp-template-actions,
+    .ppd-rp-custom-actions {
+        flex-direction: column !important;
+    }
+
+    .ppd-rp-order-actions a,
+    .ppd-rp-template-actions a,
+    .ppd-rp-custom-actions a {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+}
+
+/* 576px */
+@media (max-width:576px) {
+
+    .ppd-rp-overview-grid {
+        gap: 16px !important;
+    }
+
+    .ppd-rp-overview-card {
+        padding: 18px !important;
+    }
+
+    .ppd-rp-overview-value {
+        font-size: 34px !important;
+    }
+
+    .ppd-rp-order-meta {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .ppd-rp-template-meta {
+        gap: 8px !important;
+    }
+
+    .ppd-rp-field--full {
+        grid-column: auto !important;
+    }
+
+    .ppd-rp-field input,
+    .ppd-rp-field select,
+    .ppd-rp-field textarea {
+        width: 100% !important;
+    }
+
+}
+
+/* 480px */
+@media (max-width:480px) {
+
+    .ppd-rp-section-title {
+        font-size: 24px !important;
+    }
+
+    .ppd-rp-overview-title,
+    .ppd-rp-order-copy h4,
+    .ppd-rp-template-card h4 {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-rp-order-card,
+    .ppd-rp-template-card {
+        padding: 18px !important;
+    }
+
+    .ppd-rp-order-thumb {
+        height: 180px !important;
+    }
+
+}
+
+/* 375px */
+@media (max-width:375px) {
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+        padding: 16px !important;
+    }
+
+    .ppd-rp-section-title {
+        font-size: 22px !important;
+    }
+
+}
+
+/* 320px */
+@media (max-width:320px) {
+
+    .ppd-rp-section-title {
+        font-size: 20px !important;
+    }
+
+    .ppd-rp-order-thumb {
+        height: 150px !important;
+    }
+
+    .ppd-rp-mini-btn {
+        font-size: 14px !important;
+        padding: 12px !important;
+    }
+
+}
+
+/*==================================================
+REORDER PRINTS RESPONSIVE - PART 2
+==================================================*/
+
+
+/*=========================
+992px
+=========================*/
+
+@media (max-width:992px) {
+
+    .ppd-rp-order-copy,
+    .ppd-rp-template-meta {
+        text-align: left !important;
+    }
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .ppd-rp-order-meta div,
+    .ppd-rp-summary-grid div {
+
+        min-width: 0 !important;
+
+    }
+
+    .ppd-rp-order-meta strong,
+    .ppd-rp-summary-grid strong {
+
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+
+    }
+
+}
+
+
+/*=========================
+768px
+=========================*/
+
+@media (max-width:768px) {
+
+    .ppd-rp-overview-grid,
+    .ppd-rp-orders-grid,
+    .ppd-rp-template-grid {
+
+        gap: 18px !important;
+
+    }
+
+    .ppd-rp-custom-grid {
+
+        gap: 16px !important;
+
+    }
+
+    .ppd-rp-summary-grid {
+
+        gap: 16px !important;
+
+    }
+
+    .ppd-rp-overview-value {
+
+        font-size: 34px !important;
+
+    }
+
+    .ppd-rp-overview-title {
+
+        font-size: 20px !important;
+
+    }
+
+    .ppd-rp-overview-text {
+
+        font-size: 15px !important;
+        line-height: 1.7 !important;
+
+    }
+
+    .ppd-rp-order-copy h4 {
+
+        font-size: 22px !important;
+        line-height: 1.35 !important;
+
+    }
+
+    .ppd-rp-order-id {
+
+        font-size: 13px !important;
+
+    }
+
+    .ppd-rp-template-card h4 {
+
+        font-size: 22px !important;
+
+    }
+
+    .ppd-rp-template-meta strong {
+
+        line-height: 1.7 !important;
+
+    }
+
+}
+
+
+/*=========================
+576px
+=========================*/
+
+@media (max-width:576px) {
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+
+        border-radius: 18px !important;
+
+    }
+
+    .ppd-rp-order-top {
+
+        gap: 16px !important;
+
+    }
+
+    .ppd-rp-order-status {
+
+        align-self: flex-start !important;
+
+    }
+
+    .ppd-rp-order-meta {
+
+        padding: 14px !important;
+
+    }
+
+    .ppd-rp-summary-grid div {
+
+        padding: 14px !important;
+
+    }
+
+}
+
+
+/*=========================
+480px
+=========================*/
+
+@media (max-width:480px) {
+
+    .ppd-rp-overview-top {
+
+        flex-wrap: wrap !important;
+        gap: 12px !important;
+
+    }
+
+    .ppd-rp-overview-icon {
+
+        width: 52px !important;
+        height: 52px !important;
+        font-size: 18px !important;
+
+    }
+
+    .ppd-rp-order-thumb {
+
+        border-radius: 16px !important;
+
+    }
+
+    .ppd-rp-template-preview {
+
+        height: 180px !important;
+
+    }
+
+    .ppd-rp-template-preview i {
+
+        font-size: 46px !important;
+
+    }
+
+}
+
+
+/*=========================
+425px
+=========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+
+        padding: 14px 10px !important;
+
+    }
+
+    .ppd-rp-section-title {
+
+        font-size: 20px !important;
+
+    }
+
+    .ppd-rp-overview-value {
+
+        font-size: 30px !important;
+
+    }
+
+    .ppd-rp-overview-title {
+
+        font-size: 18px !important;
+
+    }
+
+    .ppd-rp-overview-text {
+
+        font-size: 14px !important;
+
+    }
+
+}
+
+
+/*=========================
+FINAL RESPONSIVE OVERRIDE
+=========================*/
+
+@media (max-width:992px) {
+
+    * {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .ppd-rp-overview-grid,
+    .ppd-rp-orders-grid,
+    .ppd-rp-template-grid,
+    .ppd-rp-custom-grid,
+    .ppd-rp-summary-grid {
+
+        width: 100% !important;
+
+    }
+
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-overview-card {
+
+        max-width: 100% !important;
+        overflow: hidden !important;
+
+    }
+
+    .ppd-rp-order-actions>*,
+    .ppd-rp-template-actions>*,
+    .ppd-rp-custom-actions>* {
+
+        width: 100% !important;
+
+    }
+
+    body,
+    .ppd-dashboard-main {
+
+        overflow-x: hidden !important;
+
+    }
+
+}
+
+/*==================================================
+REORDER PRINTS RESPONSIVE - PART 3
+FINAL MOBILE + STRONG OVERRIDES
+==================================================*/
+
+
+/*=========================
+375px
+=========================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+        padding: 14px !important;
+        border-radius: 16px !important;
+    }
+
+    .ppd-rp-section-title {
+        font-size: 18px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-rp-section-badge {
+        font-size: 11px !important;
+    }
+
+    .ppd-rp-overview-value {
+        font-size: 28px !important;
+    }
+
+    .ppd-rp-overview-title {
+        font-size: 17px !important;
+    }
+
+    .ppd-rp-overview-text {
+        font-size: 13px !important;
+        line-height: 1.7 !important;
+    }
+
+    .ppd-rp-order-copy h4,
+    .ppd-rp-template-card h4 {
+        font-size: 18px !important;
+    }
+
+    .ppd-rp-order-thumb {
+        height: 160px !important;
+    }
+
+    .ppd-rp-template-preview {
+        height: 150px !important;
+    }
+
+    .ppd-rp-field input,
+    .ppd-rp-field select {
+        height: 46px !important;
+        font-size: 14px !important;
+    }
+
+    .ppd-rp-field textarea {
+        min-height: 130px !important;
+        font-size: 14px !important;
+    }
+
+}
+
+
+/*=========================
+320px
+=========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px 6px !important;
+    }
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+        padding: 12px !important;
+    }
+
+    .ppd-rp-section-title {
+        font-size: 17px !important;
+    }
+
+    .ppd-rp-overview-value {
+        font-size: 24px !important;
+    }
+
+    .ppd-rp-overview-title {
+        font-size: 16px !important;
+    }
+
+    .ppd-rp-overview-text {
+        font-size: 12px !important;
+    }
+
+    .ppd-rp-order-copy h4,
+    .ppd-rp-template-card h4 {
+        font-size: 17px !important;
+    }
+
+    .ppd-rp-order-thumb {
+        height: 140px !important;
+    }
+
+    .ppd-rp-template-preview {
+        height: 130px !important;
+    }
+
+    .ppd-rp-template-preview i {
+        font-size: 38px !important;
+    }
+
+    .ppd-rp-field input,
+    .ppd-rp-field select {
+        height: 44px !important;
+        padding: 0 12px !important;
+        font-size: 13px !important;
+    }
+
+    .ppd-rp-field textarea {
+        min-height: 120px !important;
+        padding: 12px !important;
+        font-size: 13px !important;
+    }
+
+    .ppd-rp-mini-btn {
+        min-height: 44px !important;
+        font-size: 13px !important;
+    }
+
+}
+
+
+/*==================================================
+FINAL STRONG RESPONSIVE OVERRIDES
+==================================================*/
+
+@media (max-width:992px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+
+    .ppd-rp-overview-grid,
+    .ppd-rp-orders-grid,
+    .ppd-rp-template-grid,
+    .ppd-rp-custom-grid,
+    .ppd-rp-summary-grid {
+        width: 100% !important;
+    }
+
+    .ppd-rp-overview-card,
+    .ppd-rp-order-card,
+    .ppd-rp-template-card,
+    .ppd-rp-custom-card,
+    .ppd-rp-summary-card {
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .ppd-rp-order-meta,
+    .ppd-rp-summary-grid {
+        width: 100% !important;
+    }
+
+    .ppd-rp-order-meta div,
+    .ppd-rp-summary-grid div {
+        min-width: 0 !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+    }
+
+    .ppd-rp-field,
+    .ppd-rp-field--full {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .ppd-rp-field input,
+    .ppd-rp-field select,
+    .ppd-rp-field textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .ppd-rp-order-actions>*,
+    .ppd-rp-template-actions>*,
+    .ppd-rp-custom-actions>* {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    body,
+    .ppd-dashboard-main {
+        overflow-x: hidden !important;
+    }
+
+}
+
+/*==================================================
+PAYMENTS RESPONSIVE - PART 1
+==================================================*/
+
+/* 1200px */
+
+@media (max-width:1200px) {
+
+    .ppd-pm-overview-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-pm-method-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+
+    .ppd-pm-history-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-pm-actions-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+/* 992px */
+
+@media (max-width:992px) {
+
+    .ppd-pm-overview-grid,
+    .ppd-pm-method-grid,
+    .ppd-pm-history-grid,
+    .ppd-pm-actions-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .ppd-pm-current-grid,
+    .ppd-pm-billing-grid {
+
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+
+    .ppd-pm-current-actions,
+    .ppd-pm-history-actions,
+    .ppd-pm-billing-actions {
+
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 14px !important;
+
+    }
+
+}
+
+
+/* 768px */
+
+@media (max-width:768px) {
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+
+        padding: 20px !important;
+        border-radius: 22px !important;
+
+    }
+
+    .ppd-pm-section-head {
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+
+    }
+
+    .ppd-pm-section-title {
+
+        font-size: 28px !important;
+        line-height: 1.4 !important;
+
+    }
+
+    .ppd-pm-history-top {
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+
+    }
+
+}
+
+/*==================================================
+PAYMENTS RESPONSIVE - PART 2
+==================================================*/
+
+/* 576px */
+
+@media (max-width:576px) {
+
+    .ppd-pm-current-grid,
+    .ppd-pm-billing-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ppd-pm-current-grid div,
+    .ppd-pm-billing-field {
+        padding: 16px !important;
+    }
+
+    .ppd-pm-method-item {
+        padding: 22px 18px !important;
+        text-align: center;
+    }
+
+    .ppd-pm-method-icon {
+        margin: 0 auto 16px;
+    }
+
+    .ppd-pm-current-actions,
+    .ppd-pm-history-actions,
+    .ppd-pm-billing-actions {
+        flex-direction: column !important;
+        gap: 12px !important;
+    }
+
+    .ppd-pm-mini-btn,
+    .ppd-pm-select-btn {
+        width: 100% !important;
+        justify-content: center;
+    }
+
+    .ppd-pm-action-item {
+        padding: 22px 18px;
+    }
+
+}
+
+
+/* 480px */
+
+@media (max-width:480px) {
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+
+        padding: 18px !important;
+
+    }
+
+    .ppd-pm-overview-value {
+        font-size: 34px !important;
+    }
+
+    .ppd-pm-section-title {
+        font-size: 24px !important;
+    }
+
+    .ppd-pm-history-meta {
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+    }
+
+    .ppd-pm-history-item h4 {
+        font-size: 18px;
+    }
+
+    .ppd-pm-history-status {
+        margin-top: 8px;
+    }
+
+}
+
+
+/* 375px */
+
+@media (max-width:375px) {
+
+    .ppd-pm-overview-value {
+        font-size: 30px !important;
+    }
+
+    .ppd-pm-method-item strong,
+    .ppd-pm-action-item strong {
+        font-size: 18px;
+    }
+
+    .ppd-pm-method-item p,
+    .ppd-pm-action-item p,
+    .ppd-pm-overview-text,
+    .ppd-pm-history-meta span {
+        font-size: 14px;
+    }
+
+    .ppd-pm-current-grid strong,
+    .ppd-pm-billing-field strong {
+        font-size: 15px;
+        word-break: break-word;
+    }
+
+}
+
+
+/* 320px */
+
+@media (max-width:320px) {
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+
+        padding: 16px !important;
+
+    }
+
+    .ppd-pm-section-title {
+        font-size: 20px !important;
+    }
+
+    .ppd-pm-overview-value {
+        font-size: 28px !important;
+    }
+
+    .ppd-pm-mini-btn,
+    .ppd-pm-select-btn {
+        font-size: 14px;
+        padding: 12px 14px;
+    }
+
+}
+
+/*==================================================
+PAYMENTS RESPONSIVE - PART 3
+FINAL STRONG OVERRIDES
+==================================================*/
+
+
+/*=========================
+425px
+=========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+        padding: 14px 10px !important;
+    }
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+        padding: 16px !important;
+        border-radius: 16px !important;
+    }
+
+    .ppd-pm-section-title {
+        font-size: 22px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-pm-overview-value {
+        font-size: 30px !important;
+    }
+
+    .ppd-pm-history-item h4 {
+        font-size: 17px !important;
+    }
+
+    .ppd-pm-method-item strong,
+    .ppd-pm-action-item strong {
+        font-size: 17px !important;
+    }
+
+    .ppd-pm-method-item p,
+    .ppd-pm-action-item p,
+    .ppd-pm-overview-text {
+        font-size: 13px !important;
+    }
+
+}
+
+
+/*=========================
+375px
+=========================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-pm-section-title {
+        font-size: 20px !important;
+    }
+
+    .ppd-pm-overview-value {
+        font-size: 28px !important;
+    }
+
+    .ppd-pm-current-grid div,
+    .ppd-pm-history-item,
+    .ppd-pm-method-item,
+    .ppd-pm-action-item {
+        padding: 14px !important;
+    }
+
+    .ppd-pm-mini-btn,
+    .ppd-pm-select-btn {
+        min-height: 44px !important;
+        font-size: 13px !important;
+    }
+
+}
+
+
+/*=========================
+320px
+=========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px 6px !important;
+    }
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+        padding: 12px !important;
+    }
+
+    .ppd-pm-section-title {
+        font-size: 18px !important;
+    }
+
+    .ppd-pm-overview-value {
+        font-size: 24px !important;
+    }
+
+    .ppd-pm-history-item h4,
+    .ppd-pm-method-item strong {
+        font-size: 16px !important;
+    }
+
+    .ppd-pm-mini-btn,
+    .ppd-pm-select-btn {
+        min-height: 42px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+
+/*==================================================
+FINAL RESPONSIVE OVERRIDES
+==================================================*/
+
+@media (max-width:992px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        display: block;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .ppd-pm-overview-grid,
+    .ppd-pm-current-grid,
+    .ppd-pm-method-grid,
+    .ppd-pm-history-grid,
+    .ppd-pm-billing-grid,
+    .ppd-pm-actions-grid {
+        width: 100% !important;
+    }
+
+    .ppd-pm-overview-card,
+    .ppd-pm-current-card,
+    .ppd-pm-method-card,
+    .ppd-pm-history-card,
+    .ppd-pm-billing-card,
+    .ppd-pm-actions-card {
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .ppd-pm-current-grid>*,
+    .ppd-pm-history-meta>*,
+    .ppd-pm-billing-grid>* {
+        min-width: 0 !important;
+        overflow-wrap: anywhere !important;
+        word-break: break-word !important;
+    }
+
+    .ppd-pm-current-actions>*,
+    .ppd-pm-history-actions>*,
+    .ppd-pm-billing-actions>*,
+    .ppd-pm-actions-grid>* {
+        width: 100% !important;
+    }
+
+    body,
+    .ppd-dashboard-main {
+        overflow-x: hidden !important;
+    }
+
+}
+
+/*==================================================
+SAVED FILES RESPONSIVE - PART 1
+==================================================*/
+
+/*=========================
+1200px
+=========================*/
+
+@media (max-width:1200px) {
+
+    .ppd-sf-overview-grid,
+    .ppd-sf-files-grid,
+    .ppd-sf-recent-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-sf-storage-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+/*=========================
+992px
+=========================*/
+
+@media (max-width:992px) {
+
+    .ppd-sf-overview-grid,
+    .ppd-sf-files-grid,
+    .ppd-sf-recent-grid,
+    .ppd-sf-storage-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .ppd-sf-preview-grid {
+        grid-template-columns: 1fr !important;
+        gap: 24px !important;
+    }
+
+    .ppd-sf-preview-meta {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .ppd-sf-file-meta {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+}
+
+
+/*=========================
+768px
+=========================*/
+
+@media (max-width:768px) {
+
+    .ppd-sf-overview-card,
+    .ppd-sf-files-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-card,
+    .ppd-sf-storage-card,
+    .ppd-sf-file-card,
+    .ppd-sf-recent-item {
+
+        padding: 20px !important;
+        border-radius: 22px !important;
+
+    }
+
+    .ppd-sf-section-head {
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+
+    }
+
+    .ppd-sf-section-title {
+
+        font-size: 28px !important;
+        line-height: 1.35 !important;
+
+    }
+
+    .ppd-sf-file-top {
+
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+
+    }
+
+    .ppd-sf-file-actions,
+    .ppd-sf-preview-actions,
+    .ppd-sf-recent-actions {
+
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+
+    }
+
+    .ppd-sf-mini-btn {
+
+        width: 100% !important;
+        justify-content: center !important;
+
+    }
+
+}
+
+/*==================================================
+SAVED FILES RESPONSIVE - PART 2
+==================================================*/
+
+
+/*=========================
+576px
+=========================*/
+
+@media (max-width:576px) {
+
+    .ppd-sf-overview-card,
+    .ppd-sf-file-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-item,
+    .ppd-sf-storage-card {
+
+        padding: 18px !important;
+
+    }
+
+    .ppd-sf-overview-value {
+
+        font-size: 34px !important;
+
+    }
+
+    .ppd-sf-file-meta {
+
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+
+    }
+
+    .ppd-sf-preview-meta {
+
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+
+    }
+
+    .ppd-sf-storage-grid {
+
+        grid-template-columns: 1fr !important;
+
+    }
+
+    .ppd-sf-storage-grid>div {
+
+        padding: 16px !important;
+
+    }
+
+}
+
+
+/*=========================
+480px
+=========================*/
+
+@media (max-width:480px) {
+
+    .ppd-sf-overview-card,
+    .ppd-sf-file-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-item,
+    .ppd-sf-storage-card {
+
+        padding: 16px !important;
+
+    }
+
+    .ppd-sf-section-title {
+
+        font-size: 24px !important;
+
+    }
+
+    .ppd-sf-overview-value {
+
+        font-size: 30px !important;
+
+    }
+
+    .ppd-sf-overview-title {
+
+        font-size: 20px !important;
+
+    }
+
+    .ppd-sf-preview-visual {
+
+        min-height: 220px !important;
+
+    }
+
+    .ppd-sf-preview-file {
+
+        width: 120px !important;
+        height: 120px !important;
+
+    }
+
+    .ppd-sf-preview-file i {
+
+        font-size: 48px !important;
+
+    }
+
+    .ppd-sf-recent-thumb {
+
+        height: 180px !important;
+        object-fit: cover !important;
+
+    }
+
+}
+
+
+/*=========================
+425px
+=========================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-main {
+
+        padding: 14px 10px !important;
+
+    }
+
+    .ppd-sf-section-title {
+
+        font-size: 22px !important;
+
+    }
+
+    .ppd-sf-overview-value {
+
+        font-size: 28px !important;
+
+    }
+
+    .ppd-sf-overview-title,
+    .ppd-sf-file-copy h4,
+    .ppd-sf-recent-item h4 {
+
+        font-size: 18px !important;
+
+    }
+
+    .ppd-sf-file-specs strong,
+    .ppd-sf-file-storage strong {
+
+        line-height: 1.7 !important;
+
+    }
+
+}
+
+/*==================================================
+SAVED FILES RESPONSIVE - PART 3
+FINAL MOBILE + STRONG OVERRIDES
+==================================================*/
+
+
+/*=========================
+375px
+=========================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+        padding: 12px 8px !important;
+    }
+
+    .ppd-sf-overview-card,
+    .ppd-sf-file-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-item,
+    .ppd-sf-storage-card {
+        padding: 14px !important;
+        border-radius: 16px !important;
+    }
+
+    .ppd-sf-section-title {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-sf-section-badge {
+        font-size: 11px !important;
+    }
+
+    .ppd-sf-overview-value {
+        font-size: 26px !important;
+    }
+
+    .ppd-sf-overview-title,
+    .ppd-sf-file-copy h4,
+    .ppd-sf-recent-item h4 {
+        font-size: 17px !important;
+        line-height: 1.4 !important;
+    }
+
+    .ppd-sf-overview-text,
+    .ppd-sf-file-copy span,
+    .ppd-sf-recent-item p {
+        font-size: 13px !important;
+    }
+
+    .ppd-sf-preview-visual {
+        min-height: 180px !important;
+    }
+
+    .ppd-sf-preview-file {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .ppd-sf-preview-file i {
+        font-size: 42px !important;
+    }
+
+    .ppd-sf-recent-thumb {
+        height: 150px !important;
+    }
+
+}
+
+
+/*=========================
+320px
+=========================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-main {
+        padding: 10px 6px !important;
+    }
+
+    .ppd-sf-overview-card,
+    .ppd-sf-file-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-item,
+    .ppd-sf-storage-card {
+        padding: 12px !important;
+    }
+
+    .ppd-sf-section-title {
+        font-size: 18px !important;
+    }
+
+    .ppd-sf-overview-value {
+        font-size: 24px !important;
+    }
+
+    .ppd-sf-overview-title,
+    .ppd-sf-file-copy h4,
+    .ppd-sf-recent-item h4 {
+        font-size: 16px !important;
+    }
+
+    .ppd-sf-overview-text,
+    .ppd-sf-file-copy span,
+    .ppd-sf-recent-item p {
+        font-size: 12px !important;
+    }
+
+    .ppd-sf-preview-visual {
+        min-height: 150px !important;
+    }
+
+    .ppd-sf-preview-file {
+        width: 90px !important;
+        height: 90px !important;
+    }
+
+    .ppd-sf-preview-file i {
+        font-size: 36px !important;
+    }
+
+    .ppd-sf-mini-btn {
+        min-height: 42px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+
+/*==================================================
+FINAL STRONG RESPONSIVE OVERRIDES
+==================================================*/
+
+@media (max-width:992px) {
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    img {
+        display: block;
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    .ppd-sf-overview-grid,
+    .ppd-sf-files-grid,
+    .ppd-sf-preview-grid,
+    .ppd-sf-preview-meta,
+    .ppd-sf-file-meta,
+    .ppd-sf-recent-grid,
+    .ppd-sf-storage-grid {
+        width: 100% !important;
+    }
+
+    .ppd-sf-overview-card,
+    .ppd-sf-file-card,
+    .ppd-sf-preview-card,
+    .ppd-sf-recent-item,
+    .ppd-sf-storage-card {
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .ppd-sf-file-meta>*,
+    .ppd-sf-preview-meta>*,
+    .ppd-sf-storage-grid>* {
+        min-width: 0 !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .ppd-sf-file-actions>*,
+    .ppd-sf-preview-actions>*,
+    .ppd-sf-recent-actions>* {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+
+    body,
+    .ppd-dashboard-main {
+        overflow-x: hidden !important;
+    }
+
 }

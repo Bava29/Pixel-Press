@@ -8495,6 +8495,95 @@ html.dark-mode [class*="card"] * {
 
 }
 
+/* Auth pages only: keep login/register readable in dark mode */
+
+html.dark-mode .auth-page {
+    background: #0F172A !important;
+}
+
+html.dark-mode .auth-page .auth-card {
+    background: #111827 !important;
+    border: 1px solid #334155 !important;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, .35) !important;
+}
+
+html.dark-mode .auth-page .auth-top .theme-toggle-button,
+html.dark-mode .auth-page .auth-top .direction-toggle-button {
+    background: #1E293B !important;
+    color: #F8FAFC !important;
+    border: 1px solid #334155 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html.dark-mode .auth-page .auth-top .theme-toggle-button i,
+html.dark-mode .auth-page .auth-top .direction-toggle-button i {
+    color: inherit !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html.dark-mode .auth-page .auth-heading h2,
+html.dark-mode .auth-page .auth-heading p,
+html.dark-mode .auth-page .field-group label,
+html.dark-mode .auth-page .auth-form-options label,
+html.dark-mode .auth-page .auth-bottom {
+    color: #F8FAFC !important;
+}
+
+html.dark-mode .auth-page .field-group input {
+    background: #0F172A !important;
+    border-color: #334155 !important;
+    color: #F8FAFC !important;
+}
+
+html.dark-mode .auth-page .field-group input::placeholder {
+    color: #94A3B8 !important;
+}
+
+html.dark-mode .auth-page .password-visibility-toggle {
+    color: #CBD5E1 !important;
+}
+
+html.dark-mode .auth-page .auth-form-options a,
+html.dark-mode .auth-page .auth-bottom a {
+    color: var(--brand-primary-color) !important;
+}
+
+html.dark-mode .auth-page .auth-divider::before {
+    background: #334155 !important;
+}
+
+html.dark-mode .auth-page .auth-divider span {
+    background: #111827 !important;
+    color: #CBD5E1 !important;
+}
+
+html.dark-mode .auth-page .social-signin-links a {
+    background: #1E293B !important;
+    border-color: #334155 !important;
+}
+
+html.dark-mode .auth-page .social-signin-links .facebook-signin i {
+    color: #60A5FA !important;
+}
+
+html.dark-mode .auth-page .social-signin-links .apple-signin i {
+    color: #F8FAFC !important;
+}
+
+html.dark-mode .auth-page .social-signin-links .google-signin {
+    background: #1E293B !important;
+}
+
+html.dark-mode .auth-page .social-signin-links .apple-signin:hover {
+    background: #F8FAFC !important;
+}
+
+html.dark-mode .auth-page .social-signin-links .apple-signin:hover i {
+    color: #000000 !important;
+}
+
 /*=========================================
 HOME 2 + CONTACT PAGE
 DARK MODE OVERRIDE
@@ -8685,6 +8774,106 @@ html.dark-mode .faq-accordion-item.is-active {
     background: #243449 !important;
     border-color: var(--brand-primary-color) !important;
 
+}
+
+/* Printing Technology - Dark Mode Fix */
+
+html.dark-mode .technology-content,
+html.dark-mode .technology-list,
+html.dark-mode .technology-item {
+
+    background: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+}
+
+html.dark-mode .technology-item {
+
+    border-top: 1px solid #334155 !important;
+}
+
+html.dark-mode .technology-item:last-child {
+
+    border-bottom: 1px solid #334155 !important;
+}
+
+/*=========================================
+Remove Left & Right Border - Strong Override
+=========================================*/
+
+html.dark-mode .technology-content,
+html.dark-mode .technology-list,
+html.dark-mode .technology-item {
+
+    border-left: none !important;
+    border-right: none !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    background-image: none !important;
+}
+
+html.dark-mode .technology-item::before,
+html.dark-mode .technology-item::after,
+html.dark-mode .technology-content::before,
+html.dark-mode .technology-content::after,
+html.dark-mode .technology-list::before,
+html.dark-mode .technology-list::after {
+
+    display: none !important;
+    content: none !important;
+}
+
+/* Prevent any parent container border */
+
+html.dark-mode .technology-wrapper,
+html.dark-mode .printing-technology,
+html.dark-mode .technology-container {
+
+    border-left: none !important;
+    border-right: none !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/*=========================================
+HOME 2 CTA BUTTON FIX - STRONG OVERRIDE
+=========================================*/
+
+html.dark-mode .premium-cta .brand-outline-button,
+html.dark-mode .premium-cta .brand-outline-button:link,
+html.dark-mode .premium-cta .brand-outline-button:visited,
+body.dark-mode .premium-cta .brand-outline-button,
+body.dark-mode .premium-cta .brand-outline-button:link,
+body.dark-mode .premium-cta .brand-outline-button:visited {
+
+    color: #FFFFFF !important;
+    border: 2px solid rgba(255, 255, 255, .35) !important;
+}
+
+html.dark-mode .premium-cta .brand-outline-button:hover,
+html.dark-mode .premium-cta .brand-outline-button:focus,
+html.dark-mode .premium-cta .brand-outline-button:active,
+body.dark-mode .premium-cta .brand-outline-button:hover,
+body.dark-mode .premium-cta .brand-outline-button:focus,
+body.dark-mode .premium-cta .brand-outline-button:active {
+
+    background: #FFFFFF !important;
+    color: #0F766E !important;
+    border-color: #FFFFFF !important;
+}
+
+html.dark-mode .premium-cta .brand-outline-button:hover *,
+html.dark-mode .premium-cta .brand-outline-button:focus *,
+html.dark-mode .premium-cta .brand-outline-button:active *,
+body.dark-mode .premium-cta .brand-outline-button:hover *,
+body.dark-mode .premium-cta .brand-outline-button:focus *,
+body.dark-mode .premium-cta .brand-outline-button:active * {
+
+    color: #0F766E !important;
+    fill: #0F766E !important;
 }
 
 /***************************************************************Responsive************************************************************/
@@ -12367,4 +12556,67 @@ Testimonials - iPad Pro
         margin: 0 auto;
     }
 
+}
+
+/* Login & Register Pages */
+
+.auth-page {
+    min-height: 100vh;
+    padding: 40px 0;
+}
+
+body:has(.auth-page) {
+    padding-top: 0 !important;
+}
+
+/*=========================================
+Dark Mode & RTL Toggle Icons Fix
+=========================================*/
+
+body.dark-mode .theme-toggle-button,
+body.dark-mode .direction-toggle-button,
+body.dark-mode .dark-mode-toggle,
+body.dark-mode .rtl-toggle,
+body.dark-mode .theme-toggle,
+body.dark-mode .direction-toggle {
+    background: #1e293b !important;
+    border: 1px solid rgba(255, 255, 255, .15) !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .theme-toggle-button i,
+body.dark-mode .direction-toggle-button i,
+body.dark-mode .dark-mode-toggle i,
+body.dark-mode .rtl-toggle i,
+body.dark-mode .theme-toggle i,
+body.dark-mode .direction-toggle i,
+body.dark-mode .theme-toggle-button svg,
+body.dark-mode .direction-toggle-button svg,
+body.dark-mode .dark-mode-toggle svg,
+body.dark-mode .rtl-toggle svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: inline-block !important;
+}
+
+body.dark-mode .theme-toggle-button:hover,
+body.dark-mode .direction-toggle-button:hover,
+body.dark-mode .dark-mode-toggle:hover,
+body.dark-mode .rtl-toggle:hover {
+    background: var(--brand-primary-color) !important;
+    border-color: var(--brand-primary-color) !important;
+}
+
+body.dark-mode .theme-toggle-button:hover i,
+body.dark-mode .direction-toggle-button:hover i,
+body.dark-mode .dark-mode-toggle:hover i,
+body.dark-mode .rtl-toggle:hover i,
+body.dark-mode .theme-toggle-button:hover svg,
+body.dark-mode .direction-toggle-button:hover svg {
+    color: #ffffff !important;
+    fill: #ffffff !important;
+    stroke: #ffffff !important;
 }
