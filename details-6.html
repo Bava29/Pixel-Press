@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PixelPress</title>
+
+    <meta name="description"
+        content="PixelPress is a modern print and copy shop offering business cards, flyers, brochures, banners, document printing, and custom print solutions.">
+
+    <meta name="keywords"
+        content="print shop, printing services, business cards, flyers, brochures, banners, document printing">
+
+    <meta name="author" content="PixelPress">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-container">
+
+            <nav class="primary-navbar">
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img src="images/logo.png" alt="PixelPress">
+
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="primary-nav-menu">
+
+                    <li class="dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html">Home 1</a></li>
+
+                            <li><a href="home-2.html">Home 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="header-actions">
+
+                    <button class="theme-toggle-button">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button class="direction-toggle-button">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="login.html" class="brand-solid-button">
+
+                        Login
+
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open menu"
+                        aria-controls="mobileNavSidebar" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+            <aside class="mobile-nav-sidebar" id="mobileNavSidebar" aria-hidden="true" aria-label="Mobile navigation">
+
+                <div class="mobile-nav-sidebar-inner">
+
+                    <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="Close menu">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <ul class="mobile-nav-menu">
+
+                        <li class="mobile-nav-dropdown">
+
+                            <div class="mobile-nav-dropdown-header">
+
+                                <a href="index.html">Home</a>
+
+                                <button class="mobile-nav-dropdown-toggle" type="button"
+                                    aria-label="Toggle Home submenu" aria-expanded="false">
+
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                </button>
+
+                            </div>
+
+                            <ul class="mobile-nav-submenu">
+
+                                <li><a href="index.html">Home 1</a></li>
+
+                                <li><a href="home-2.html">Home 2</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                    <div class="mobile-nav-utility-group">
+
+                        <button class="mobile-nav-utility-button theme-toggle-button" type="button"
+                            aria-label="Dark mode toggle">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                        <button class="mobile-nav-utility-button direction-toggle-button" type="button"
+                            aria-label="RTL mode toggle">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+                    </div>
+
+                    <a href="login.html" class="brand-solid-button mobile-nav-login">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+    <!--=========================================
+Page Banner Start
+==========================================-->
+
+    <section class="page-banner d6-banner">
+
+        <div class="site-container">
+
+            <div class="page-banner-content">
+
+                <span class="banner-subtitle">
+
+                    Professional Printing Service
+
+                </span>
+
+                <h1>
+
+                    Binding & Finishing
+
+                </h1>
+                <p>
+
+                    Give your printed materials a polished and professional finish with our
+                    comprehensive binding and finishing services.
+                </p>
+
+                <ul class="breadcrumb">
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+
+                        Binding & Finishing
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Page Banner End
+==========================================-->
+
+
+    <!--=========================================
+Binding & Finishing Overview Start
+==========================================-->
+
+    <section class="business-card-overview page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-overview-wrapper">
+
+                <div class="business-card-overview-image">
+
+                    <img src="images/binding-overview.jpg" alt="Binding & Finishing Services">
+
+                </div>
+
+                <div class="business-card-overview-content">
+
+                    <span>About This Service</span>
+
+                    <h2>
+                        Professional Binding & Finishing
+                        Services for a Perfect Presentation
+                    </h2>
+
+                    <p>
+
+                        At PixelPress, we provide professional binding and finishing
+                        services that enhance the appearance, durability, and
+                        organization of your printed documents. Using modern
+                        equipment and precision finishing techniques, we ensure
+                        every project is completed with exceptional quality and
+                        attention to detail.
+
+                    </p>
+
+                    <p>
+
+                        Whether you need spiral binding, comb binding, wire
+                        binding, lamination, folding, cutting, stapling, or
+                        custom finishing, our services deliver polished results
+                        for reports, presentations, manuals, catalogs, portfolios,
+                        and business documents.
+
+                    </p>
+
+                    <div class="business-card-feature-grid">
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-book-open"></i>
+
+                            <div>
+
+                                <h4>Multiple Binding Options</h4>
+
+                                <p>
+
+                                    Spiral, comb, wire, and staple binding
+                                    solutions for every type of document.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-scissors"></i>
+
+                            <div>
+
+                                <h4>Precision Finishing</h4>
+
+                                <p>
+
+                                    Professional cutting, folding, trimming,
+                                    and finishing for a clean, refined look.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Binding & Finishing Overview End
+==========================================-->
+
+    <!--=========================================
+Binding & Finishing Specifications Start
+==========================================-->
+
+    <section class="business-card-specifications page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Service Specifications</span>
+
+                <h2>Customize Your Binding & Finishing Services</h2>
+
+                <p>
+
+                    Enhance your printed documents with professional binding,
+                    finishing, and protective solutions designed to improve
+                    presentation, durability, and organization for every project.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-spec-grid">
+
+                <!-- Specification 1 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                    </div>
+
+                    <h3>Binding Options</h3>
+
+                    <p>
+
+                        Choose from a variety of professional binding
+                        methods for reports, books, and presentations.
+
+                    </p>
+
+                    <span>Spiral • Comb • Wire • Stapled</span>
+
+                </div>
+
+
+                <!-- Specification 2 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <h3>Finishing Services</h3>
+
+                    <p>
+
+                        Give your documents a polished appearance with
+                        precision finishing techniques.
+
+                    </p>
+
+                    <span>Lamination • Folding • Trimming</span>
+
+                </div>
+
+
+                <!-- Specification 3 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-file-circle-check"></i>
+
+                    </div>
+
+                    <h3>Document Types</h3>
+
+                    <p>
+
+                        Suitable for business reports, manuals,
+                        portfolios, catalogs, and academic projects.
+
+                    </p>
+
+                    <span>Reports • Books • Presentations</span>
+
+                </div>
+
+
+                <!-- Specification 4 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <h3>Protection Options</h3>
+
+                    <p>
+
+                        Protect important documents with premium
+                        lamination and durable finishing solutions.
+
+                    </p>
+
+                    <span>Gloss • Matte • Thermal Lamination</span>
+
+                </div>
+
+
+                <!-- Specification 5 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-scissors"></i>
+
+                    </div>
+
+                    <h3>Precision Finishing</h3>
+
+                    <p>
+
+                        Accurate cutting, creasing, punching, and
+                        trimming for a quality and professional final result.
+
+                    </p>
+
+                    <span>Cutting • Creasing • Punching</span>
+
+                </div>
+
+
+                <!-- Specification 6 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <h3>Turnaround</h3>
+
+                    <p>
+
+                        Fast processing and timely completion for
+                        both individual and bulk finishing projects.
+
+                    </p>
+
+                    <span>Same Day • 1–2 Business Days</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Binding & Finishing Specifications End
+==========================================-->
+
+    <!--=========================================
+Binding & Finishing Services Process Start
+==========================================-->
+
+    <section class="business-card-process page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Our Process</span>
+
+                <h2>Simple Steps to Complete Your Binding & Finishing</h2>
+
+                <p>
+
+                    From submitting your printed documents to receiving perfectly
+                    finished materials, our streamlined process ensures precision,
+                    durability, and a professional presentation every time.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-process-wrapper">
+
+                <!-- Step 1 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    </div>
+
+                    <span>Step 01</span>
+
+                    <h3>Submit Documents</h3>
+
+                    <p>
+
+                        Upload your print-ready files or bring your already printed
+                        documents for binding and finishing services.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </div>
+
+                    <span>Step 02</span>
+
+                    <h3>Choose Options</h3>
+
+                    <p>
+
+                        Select your preferred binding style, lamination,
+                        trimming, folding, and finishing requirements.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 3 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                    </div>
+
+                    <span>Step 03</span>
+
+                    <h3>Quality Binding</h3>
+
+                    <p>
+
+                        Our experts carefully bind and finish your documents
+                        using high-quality equipment and premium materials.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 4 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-file-circle-check"></i>
+
+                    </div>
+
+                    <span>Step 04</span>
+
+                    <h3>Quality Inspection</h3>
+
+                    <p>
+
+                        Every document is inspected to ensure clean finishing,
+                        secure binding, and a flawless presentation.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 5 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <span>Step 05</span>
+
+                    <h3>Ready for Collection</h3>
+
+                    <p>
+
+                        Your finished documents are securely packed and made
+                        ready for store pickup or convenient delivery.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Binding & Finishing Services Process End
+==========================================-->
+
+    <!--=========================================
+Binding & Finishing Services CTA Start
+==========================================-->
+
+    <section class="business-card-cta page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-cta-wrapper">
+
+                <span>Let's Print Together</span>
+
+                <h2>
+                    Give Your Documents a Professional Finish
+                    with Expert Binding & Finishing Services
+                </h2>
+
+                <p>
+
+                    From spiral and comb binding to lamination, trimming,
+                    folding, and document finishing, PixelPress provides
+                    high-quality solutions that enhance durability,
+                    organization, and presentation for every project.
+
+                </p>
+
+                <div class="business-card-cta-buttons">
+
+                    <a href="contact.html" class="brand-solid-button">
+
+                        Get a Free Quote
+
+                    </a>
+
+                    <a href="services.html" class="brand-outline-button">
+
+                        Explore More Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Binding & Finishing Services CTA End
+==========================================-->
+
+
+
+    <!--=========================================
+Footer Start
+==========================================-->
+
+    <footer class="site-footer">
+
+        <div class="site-container">
+
+            <div class="footer-grid-layout">
+
+                <!-- Footer About -->
+
+                <div class="footer-column footer-about">
+
+                    <a href="index.html" class="footer-brand">
+
+                        <img src="images/logo.png" alt="PixelPress Logo">
+
+                    </a>
+
+                    <p>
+                        PixelPress delivers premium-quality printing solutions for
+                        businesses, students, and individuals with fast turnaround,
+                        exceptional quality, and reliable customer support.
+                    </p>
+
+                    <div class="footer-social-links">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="#">Business Cards</a></li>
+
+                        <li><a href="#">Flyers & Brochures</a></li>
+
+                        <li><a href="#">Banner Printing</a></li>
+
+                        <li><a href="#">Document Printing</a></li>
+
+                        <li><a href="#">Custom Printing</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact Info</h3>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>info@pixelpress.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="site-copyright">
+
+                <div class="copyright-row">
+
+                    <p>
+
+                        © 2026 PixelPress. All Rights Reserved.
+
+                    </p>
+
+                    <div class="footer-legal-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================
+Footer End
+==========================================-->
+
+    <!--=========================================
+Scroll To Top
+==========================================-->
+
+    <button class="back-to-top-button" id="backToTopButton">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

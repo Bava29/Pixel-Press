@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Order History | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Review completed orders, filter purchase history, and revisit previous print jobs in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Order History</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Order History</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="ppd-oh-summary-grid">
+
+                <article class="ppd-oh-summary-card">
+                    <div class="ppd-oh-summary-top">
+                        <span class="ppd-oh-summary-icon ppd-oh-summary-icon--teal"><i
+                                class="fa-solid fa-clipboard-list"></i></span>
+                        <span class="ppd-oh-summary-badge">All Time</span>
+                    </div>
+                    <strong class="ppd-oh-summary-value">126</strong>
+                    <h3 class="ppd-oh-summary-title">Total Orders</h3>
+                    <p class="ppd-oh-summary-text">All completed, pending, and archived print records.</p>
+                </article>
+
+                <article class="ppd-oh-summary-card">
+                    <div class="ppd-oh-summary-top">
+                        <span class="ppd-oh-summary-icon ppd-oh-summary-icon--green"><i
+                                class="fa-solid fa-circle-check"></i></span>
+                        <span class="ppd-oh-summary-badge">Success Rate</span>
+                    </div>
+                    <strong class="ppd-oh-summary-value">118</strong>
+                    <h3 class="ppd-oh-summary-title">Completed Orders</h3>
+                    <p class="ppd-oh-summary-text">Finished and delivered print jobs with zero issues.</p>
+                </article>
+
+                <article class="ppd-oh-summary-card">
+                    <div class="ppd-oh-summary-top">
+                        <span class="ppd-oh-summary-icon ppd-oh-summary-icon--orange"><i
+                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                        <span class="ppd-oh-summary-badge">Lifetime</span>
+                    </div>
+                    <strong class="ppd-oh-summary-value">$8,240</strong>
+                    <h3 class="ppd-oh-summary-title">Total Amount Spent</h3>
+                    <p class="ppd-oh-summary-text">Cumulative spend across all finished print work.</p>
+                </article>
+
+                <article class="ppd-oh-summary-card">
+                    <div class="ppd-oh-summary-top">
+                        <span class="ppd-oh-summary-icon ppd-oh-summary-icon--slate"><i
+                                class="fa-solid fa-calendar-check"></i></span>
+                        <span class="ppd-oh-summary-badge">Most Recent</span>
+                    </div>
+                    <strong class="ppd-oh-summary-value">Aug 02, 2026</strong>
+                    <h3 class="ppd-oh-summary-title">Last Order Date</h3>
+                    <p class="ppd-oh-summary-text">Your newest order was completed just recently.</p>
+                </article>
+
+            </section>
+
+            <section class="ppd-oh-filter-card">
+
+                <div class="ppd-oh-section-head">
+                    <div>
+                        <span class="ppd-oh-section-badge">Search &amp; Filter</span>
+                        <h3 class="ppd-oh-section-title">Find a past order in seconds</h3>
+                    </div>
+                    <div class="ppd-oh-filter-actions">
+                        <button type="button" class="ppd-oh-filter-btn ppd-oh-filter-btn--ghost">Reset Filter</button>
+                        <button type="button" class="ppd-oh-filter-btn">Search</button>
+                    </div>
+                </div>
+
+                <div class="ppd-oh-filter-grid">
+                    <div class="ppd-oh-field">
+                        <label for="oh-order-id">Search Order ID</label>
+                        <input id="oh-order-id" type="text" placeholder="Enter order number">
+                    </div>
+                    <div class="ppd-oh-field">
+                        <label for="oh-service">Search Service Name</label>
+                        <input id="oh-service" type="text" placeholder="Enter service name">
+                    </div>
+                    <div class="ppd-oh-field">
+                        <label for="oh-date-range">Date Range</label>
+                        <input id="oh-date-range" type="text" placeholder="Aug 01, 2026 - Aug 02, 2026">
+                    </div>
+                    <div class="ppd-oh-field">
+                        <label for="oh-status">Order Status</label>
+                        <select id="oh-status">
+                            <option>Completed</option>
+                            <option>Delivered</option>
+                            <option>Cancelled</option>
+                        </select>
+                    </div>
+                    <div class="ppd-oh-field">
+                        <label for="oh-sort">Sort By</label>
+                        <select id="oh-sort">
+                            <option>Newest First</option>
+                            <option>Oldest First</option>
+                            <option>Highest Amount</option>
+                        </select>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="ppd-oh-orders-card">
+
+                <div class="ppd-oh-section-head">
+                    <div>
+                        <span class="ppd-oh-section-badge">Order History</span>
+                        <h3 class="ppd-oh-section-title">Browse completed orders as premium cards</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-oh-orders-grid">
+
+                    <article class="ppd-oh-order-card">
+                        <div class="ppd-oh-order-top">
+                            <img src="images/order-1.jpg" alt="Order thumbnail" class="ppd-oh-order-thumb">
+                            <span class="ppd-oh-order-status ppd-oh-order-status--completed">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-copy">
+                            <span class="ppd-oh-order-id">#PP-2051</span>
+                            <h4>Business Cards</h4>
+                        </div>
+                        <div class="ppd-oh-order-meta">
+                            <div><span>Order Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>Completion Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>Quantity</span><strong>500 pcs</strong></div>
+                            <div><span>Total Amount</span><strong>$180.00</strong></div>
+                            <div><span>Payment Status</span><strong>Paid</strong></div>
+                            <div><span>Order Status</span><strong>Delivered</strong></div>
+                        </div>
+                        <div class="ppd-oh-order-badge-row">
+                            <span class="ppd-oh-completed-badge">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-actions">
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">View Details</a>
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">Download Invoice</a>
+                            <a href="reorder-prints.html" class="ppd-oh-mini-btn">Print Again</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-oh-order-card">
+                        <div class="ppd-oh-order-top">
+                            <img src="images/order-2.jpg" alt="Order thumbnail" class="ppd-oh-order-thumb">
+                            <span class="ppd-oh-order-status ppd-oh-order-status--completed">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-copy">
+                            <span class="ppd-oh-order-id">#PP-2048</span>
+                            <h4>Presentation Binding</h4>
+                        </div>
+                        <div class="ppd-oh-order-meta">
+                            <div><span>Order Date</span><strong>Aug 01, 2026</strong></div>
+                            <div><span>Completion Date</span><strong>Aug 04, 2026</strong></div>
+                            <div><span>Quantity</span><strong>25 sets</strong></div>
+                            <div><span>Total Amount</span><strong>$142.00</strong></div>
+                            <div><span>Payment Status</span><strong>Paid</strong></div>
+                            <div><span>Order Status</span><strong>Ready</strong></div>
+                        </div>
+                        <div class="ppd-oh-order-badge-row">
+                            <span class="ppd-oh-completed-badge">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-actions">
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">View Details</a>
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">Download Invoice</a>
+                            <a href="reorder-prints.html" class="ppd-oh-mini-btn">Print Again</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-oh-order-card">
+                        <div class="ppd-oh-order-top">
+                            <img src="images/order-3.jpg" alt="Order thumbnail" class="ppd-oh-order-thumb">
+                            <span class="ppd-oh-order-status ppd-oh-order-status--completed">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-copy">
+                            <span class="ppd-oh-order-id">#PP-2036</span>
+                            <h4>Flyer Campaign</h4>
+                        </div>
+                        <div class="ppd-oh-order-meta">
+                            <div><span>Order Date</span><strong>Jul 29, 2026</strong></div>
+                            <div><span>Completion Date</span><strong>Jul 30, 2026</strong></div>
+                            <div><span>Quantity</span><strong>1,000 pcs</strong></div>
+                            <div><span>Total Amount</span><strong>$240.00</strong></div>
+                            <div><span>Payment Status</span><strong>Paid</strong></div>
+                            <div><span>Order Status</span><strong>Delivered</strong></div>
+                        </div>
+                        <div class="ppd-oh-order-badge-row">
+                            <span class="ppd-oh-completed-badge">Completed</span>
+                        </div>
+                        <div class="ppd-oh-order-actions">
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">View Details</a>
+                            <a href="#" class="ppd-oh-mini-btn ppd-oh-mini-btn--ghost">Download Invoice</a>
+                            <a href="reorder-prints.html" class="ppd-oh-mini-btn">Print Again</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-oh-preview-card">
+
+                <div class="ppd-oh-section-head">
+                    <div>
+                        <span class="ppd-oh-section-badge">Order Details Preview</span>
+                        <h3 class="ppd-oh-section-title">Expand a recent order for detailed production specs</h3>
+                    </div>
+                </div>
+
+                <details class="ppd-oh-details-accordion" open>
+                    <summary>
+                        <span>Brand Brochure Final.pdf</span>
+                        <strong>Presentation Binding - Completed</strong>
+                    </summary>
+                    <div class="ppd-oh-details-grid">
+                        <div><span>File Name</span><strong>Brand Brochure Final.pdf</strong></div>
+                        <div><span>Print Specifications</span><strong>Premium Matte · Full Color · Perfect
+                                Bound</strong></div>
+                        <div><span>Paper Size</span><strong>A4</strong></div>
+                        <div><span>Paper Type</span><strong>Premium Matte</strong></div>
+                        <div><span>Print Color</span><strong>Full Color</strong></div>
+                        <div><span>Copies</span><strong>25</strong></div>
+                        <div><span>Binding Type</span><strong>Perfect Bound</strong></div>
+                        <div><span>Lamination</span><strong>Matte Lamination</strong></div>
+                        <div><span>Delivery Method</span><strong>Pickup</strong></div>
+                    </div>
+                </details>
+            </section>
+
+            <section class="ppd-oh-activity-card">
+
+                <div class="ppd-oh-section-head">
+                    <div>
+                        <span class="ppd-oh-section-badge">Recent Activity</span>
+                        <h3 class="ppd-oh-section-title">Track the latest order actions</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-oh-activity-list">
+                    <article class="ppd-oh-activity-item">
+                        <span class="ppd-oh-activity-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="ppd-oh-activity-copy">
+                            <strong>Order Completed</strong>
+                            <p>Your brochure order finished successfully and was marked ready.</p>
+                            <span>Aug 02, 2026 05:10 PM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-oh-activity-item">
+                        <span class="ppd-oh-activity-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        <div class="ppd-oh-activity-copy">
+                            <strong>Invoice Downloaded</strong>
+                            <p>An invoice copy was downloaded after the order was completed.</p>
+                            <span>Aug 02, 2026 05:14 PM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-oh-activity-item">
+                        <span class="ppd-oh-activity-icon"><i class="fa-solid fa-print"></i></span>
+                        <div class="ppd-oh-activity-copy">
+                            <strong>Print Again Requested</strong>
+                            <p>The same production job was selected again for a quick reorder.</p>
+                            <span>Aug 02, 2026 05:18 PM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-oh-activity-item">
+                        <span class="ppd-oh-activity-icon"><i class="fa-solid fa-credit-card"></i></span>
+                        <div class="ppd-oh-activity-copy">
+                            <strong>Payment Received</strong>
+                            <p>The final payment was confirmed and linked to the order record.</p>
+                            <span>Aug 02, 2026 05:20 PM</span>
+                        </div>
+                    </article>
+                </div>
+
+            </section>
+
+            <section class="ppd-oh-actions-card">
+
+                <div class="ppd-oh-section-head">
+                    <div>
+                        <span class="ppd-oh-section-badge">Quick Actions</span>
+                        <h3 class="ppd-oh-section-title">Fast follow-up options for repeat work</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-oh-actions-grid">
+                    <a href="reorder-prints.html" class="ppd-oh-action-card">
+                        <span class="ppd-oh-action-icon"><i class="fa-solid fa-print"></i></span>
+                        <strong>Print Again</strong>
+                        <p>Reuse the same completed job and jump back into ordering.</p>
+                    </a>
+
+                    <a href="#" class="ppd-oh-action-card">
+                        <span class="ppd-oh-action-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        <strong>Download All Invoices</strong>
+                        <p>Get a full bundle of invoices for your finished print history.</p>
+                    </a>
+
+                    <a href="saved-files.html" class="ppd-oh-action-card">
+                        <span class="ppd-oh-action-icon"><i class="fa-solid fa-folder-open"></i></span>
+                        <strong>View Saved Files</strong>
+                        <p>Open your saved artwork, documents, and frequently reused files.</p>
+                    </a>
+
+                    <a href="#" class="ppd-oh-action-card">
+                        <span class="ppd-oh-action-icon"><i class="fa-solid fa-headset"></i></span>
+                        <strong>Contact Support</strong>
+                        <p>Talk to the print desk for follow-up help on any old order.</p>
+                    </a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

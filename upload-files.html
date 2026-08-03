@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Upload Files | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Upload print-ready files, set print specifications, and review your order summary in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Upload Files</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Upload Files</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="ppd-upload-hero-card">
+
+                <div class="ppd-upload-hero-copy">
+                    <span class="ppd-upload-hero-badge">Premium Upload Workspace</span>
+                    <h3 class="ppd-upload-hero-title">Drop in your files and prepare them for a polished print run.</h3>
+                    <p class="ppd-upload-hero-text">
+                        Keep every document organized in one place, from single-page flyers to high-volume brochures,
+                        with a clean upload flow designed for quick approvals.
+                    </p>
+
+                    <div class="ppd-upload-hero-chips">
+                        <span class="ppd-upload-chip">PDF</span>
+                        <span class="ppd-upload-chip">AI</span>
+                        <span class="ppd-upload-chip">PSD</span>
+                        <span class="ppd-upload-chip">JPG</span>
+                        <span class="ppd-upload-chip">PNG</span>
+                        <span class="ppd-upload-chip">DOCX</span>
+                    </div>
+
+                    <div class="ppd-upload-hero-notes">
+                        <div>
+                            <span>Formats</span>
+                            <strong>PDF, AI, PSD, JPG, PNG, DOCX</strong>
+                        </div>
+                        <div>
+                            <span>Maximum file size</span>
+                            <strong>250 MB per file only is supported</strong>
+                        </div>
+                        <div>
+                            <span>Upload guidance</span>
+                            <strong>Use high-resolution, print-ready exports</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-upload-dropzone-panel">
+                    <div class="ppd-upload-dropzone-visual">
+                        <span class="ppd-upload-dropzone-orb"></span>
+                        <span class="ppd-upload-dropzone-orb ppd-upload-dropzone-orb--accent"></span>
+                        <div class="ppd-upload-dropzone-icon">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                        </div>
+                    </div>
+
+                    <div class="ppd-upload-dropzone-box">
+                        <h3>Drag &amp; Drop your files here</h3>
+                        <p>Or choose documents from your device to begin a new print workflow.</p>
+
+                        <button type="button" class="ppd-upload-browse-btn">
+                            <i class="fa-solid fa-folder-open"></i>
+                            <span>Browse Files</span>
+                        </button>
+
+                        <div class="ppd-upload-support-row">
+                            <span>Accepted: PDF, AI, PSD, JPG, PNG, DOCX</span>
+                            <span>Max: 250 MB</span>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="ppd-upload-files-section">
+
+                <div class="ppd-upload-section-head">
+                    <div>
+                        <span class="ppd-upload-section-kicker">Uploaded Files</span>
+                        <h3 class="ppd-upload-section-title">Modern file cards for every upload in progress</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-upload-files-grid">
+
+                    <article class="ppd-upload-file-card">
+                        <div class="ppd-upload-file-top">
+                            <div class="ppd-upload-file-icon ppd-upload-file-icon--pdf">
+                                <i class="fa-solid fa-file-pdf"></i>
+                            </div>
+                            <span class="ppd-upload-file-status ppd-upload-file-status--uploading">Uploading</span>
+                        </div>
+                        <h4 class="ppd-upload-file-name">Brand Brochure Final.pdf</h4>
+                        <div class="ppd-upload-file-meta">
+                            <span>18.4 MB</span>
+                            <span>Aug 02, 2026</span>
+                            <span>PDF</span>
+                        </div>
+                        <div class="ppd-upload-progress">
+                            <div class="ppd-upload-progress-bar" style="width: 82%;"></div>
+                        </div>
+                        <div class="ppd-upload-progress-copy">
+                            <span>82% complete</span>
+                            <strong>Processing artwork</strong>
+                        </div>
+                        <div class="ppd-upload-file-actions">
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--ghost">Preview</button>
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--danger">Delete</button>
+                        </div>
+                    </article>
+
+                    <article class="ppd-upload-file-card">
+                        <div class="ppd-upload-file-top">
+                            <div class="ppd-upload-file-icon ppd-upload-file-icon--docx">
+                                <i class="fa-solid fa-file-word"></i>
+                            </div>
+                            <span class="ppd-upload-file-status ppd-upload-file-status--ready">Ready</span>
+                        </div>
+                        <h4 class="ppd-upload-file-name">Invoice Template.docx</h4>
+                        <div class="ppd-upload-file-meta">
+                            <span>3.2 MB</span>
+                            <span>Aug 01, 2026</span>
+                            <span>DOCX</span>
+                        </div>
+                        <div class="ppd-upload-progress">
+                            <div class="ppd-upload-progress-bar ppd-upload-progress-bar--brand" style="width: 100%;">
+                            </div>
+                        </div>
+                        <div class="ppd-upload-progress-copy">
+                            <span>100% complete</span>
+                            <strong>Ready for print setup</strong>
+                        </div>
+                        <div class="ppd-upload-file-actions">
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--ghost">Preview</button>
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--danger">Delete</button>
+                        </div>
+                    </article>
+
+                    <article class="ppd-upload-file-card">
+                        <div class="ppd-upload-file-top">
+                            <div class="ppd-upload-file-icon ppd-upload-file-icon--image">
+                                <i class="fa-solid fa-file-image"></i>
+                            </div>
+                            <span class="ppd-upload-file-status ppd-upload-file-status--synced">Synced</span>
+                        </div>
+                        <h4 class="ppd-upload-file-name">Event Banner Artwork.png</h4>
+                        <div class="ppd-upload-file-meta">
+                            <span>26.8 MB</span>
+                            <span>Jul 30, 2026</span>
+                            <span>PNG</span>
+                        </div>
+                        <div class="ppd-upload-progress">
+                            <div class="ppd-upload-progress-bar ppd-upload-progress-bar--accent" style="width: 96%;">
+                            </div>
+                        </div>
+                        <div class="ppd-upload-progress-copy">
+                            <span>96% complete</span>
+                            <strong>Large-format preview</strong>
+                        </div>
+                        <div class="ppd-upload-file-actions">
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--ghost">Preview</button>
+                            <button type="button"
+                                class="ppd-upload-file-btn ppd-upload-file-btn--danger">Delete</button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-upload-workspace">
+
+                <div class="ppd-upload-spec-card">
+                    <div class="ppd-upload-section-head">
+                        <div>
+                            <span class="ppd-upload-section-kicker">Print Specifications</span>
+                            <h3 class="ppd-upload-section-title">Set the print details with a premium finishing form
+                            </h3>
+                        </div>
+                    </div>
+
+                    <form class="ppd-upload-spec-form">
+                        <div class="ppd-upload-spec-grid">
+                            <div class="ppd-upload-field">
+                                <label for="paper-size">Paper Size</label>
+                                <select id="paper-size" name="paper-size">
+                                    <option>A4</option>
+                                    <option>A3</option>
+                                    <option>Letter</option>
+                                    <option>Legal</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="paper-type">Paper Type</label>
+                                <select id="paper-type" name="paper-type">
+                                    <option>Premium Matte</option>
+                                    <option>Glossy</option>
+                                    <option>Satin</option>
+                                    <option>Recycled</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="print-color">Print Color</label>
+                                <select id="print-color" name="print-color">
+                                    <option>Full Color</option>
+                                    <option>Black &amp; White</option>
+                                    <option>Spot Color</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="orientation">Print Orientation</label>
+                                <select id="orientation" name="orientation">
+                                    <option>Portrait</option>
+                                    <option>Landscape</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="sides">Single / Double Side</label>
+                                <select id="sides" name="sides">
+                                    <option>Single Side</option>
+                                    <option>Double Side</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="copies">Number of Copies</label>
+                                <input id="copies" name="copies" type="number" min="1" value="1">
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="binding">Binding Type</label>
+                                <select id="binding" name="binding">
+                                    <option>No Binding</option>
+                                    <option>Stapled</option>
+                                    <option>Spiral</option>
+                                    <option>Perfect Bound</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field">
+                                <label for="lamination">Lamination</label>
+                                <select id="lamination" name="lamination">
+                                    <option>None</option>
+                                    <option>Gloss Lamination</option>
+                                    <option>Matte Lamination</option>
+                                </select>
+                            </div>
+
+                            <div class="ppd-upload-field ppd-upload-field--full">
+                                <label for="instructions">Additional Instructions</label>
+                                <textarea id="instructions" name="instructions" rows="5"
+                                    placeholder="Add notes for paper stock, finishing, delivery, or any special print requirements."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <aside class="ppd-upload-summary-card">
+                    <div class="ppd-upload-summary-head">
+                        <span class="ppd-upload-summary-kicker">Price Summary</span>
+                        <h3>Preview your investment before order</h3>
+                    </div>
+
+                    <div class="ppd-upload-summary-list">
+                        <div class="ppd-upload-summary-row">
+                            <span>Printing Cost</span>
+                            <strong>$124.00</strong>
+                        </div>
+                        <div class="ppd-upload-summary-row">
+                            <span>Additional Charges</span>
+                            <strong>$18.00</strong>
+                        </div>
+                        <div class="ppd-upload-summary-row ppd-upload-summary-row--total">
+                            <span>Total Amount</span>
+                            <strong>$142.00</strong>
+                        </div>
+                        <div class="ppd-upload-summary-row">
+                            <span>Estimated Delivery</span>
+                            <strong>Aug 04, 2026</strong>
+                        </div>
+                    </div>
+
+                    <div class="ppd-upload-summary-note">
+                        Taxes and final finishing charges will be confirmed at checkout.
+                    </div>
+
+                    <a href="print-orders.html" class="ppd-upload-continue-btn">
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <span>Continue to Print Order</span>
+                    </a>
+                </aside>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

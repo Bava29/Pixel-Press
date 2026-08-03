@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PixelPress</title>
+
+    <meta name="description"
+        content="PixelPress is a modern print and copy shop offering business cards, flyers, brochures, banners, document printing, and custom print solutions.">
+
+    <meta name="keywords"
+        content="print shop, printing services, business cards, flyers, brochures, banners, document printing">
+
+    <meta name="author" content="PixelPress">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-container">
+
+            <nav class="primary-navbar">
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img src="images/logo.png" alt="PixelPress">
+
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="primary-nav-menu">
+
+                    <li class="dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html">Home 1</a></li>
+
+                            <li><a href="home-2.html">Home 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="header-actions">
+
+                    <button class="theme-toggle-button">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button class="direction-toggle-button">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="login.html" class="brand-solid-button">
+
+                        Login
+
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open menu"
+                        aria-controls="mobileNavSidebar" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+            <aside class="mobile-nav-sidebar" id="mobileNavSidebar" aria-hidden="true" aria-label="Mobile navigation">
+
+                <div class="mobile-nav-sidebar-inner">
+
+                    <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="Close menu">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <ul class="mobile-nav-menu">
+
+                        <li class="mobile-nav-dropdown">
+
+                            <div class="mobile-nav-dropdown-header">
+
+                                <a href="index.html">Home</a>
+
+                                <button class="mobile-nav-dropdown-toggle" type="button"
+                                    aria-label="Toggle Home submenu" aria-expanded="false">
+
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                </button>
+
+                            </div>
+
+                            <ul class="mobile-nav-submenu">
+
+                                <li><a href="index.html">Home 1</a></li>
+
+                                <li><a href="home-2.html">Home 2</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                    <div class="mobile-nav-utility-group">
+
+                        <button class="mobile-nav-utility-button theme-toggle-button" type="button"
+                            aria-label="Dark mode toggle">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                        <button class="mobile-nav-utility-button direction-toggle-button" type="button"
+                            aria-label="RTL mode toggle">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+                    </div>
+
+                    <a href="login.html" class="brand-solid-button mobile-nav-login">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+    <!--=========================================
+Page Banner Start
+==========================================-->
+
+    <section class="page-banner d2-banner">
+
+        <div class="site-container">
+
+            <div class="page-banner-content">
+
+                <span class="banner-subtitle">
+
+                    Professional Printing Service
+
+                </span>
+
+                <h1>
+
+                    Document Printing & Copying
+
+                </h1>
+
+                <p>
+
+                    Print documents with exceptional clarity and precision.
+
+                </p>
+
+                <ul class="breadcrumb">
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+
+                        Document Printing & Copying
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Page Banner End
+==========================================-->
+
+
+    <!--=========================================
+Document Printing Overview Start
+==========================================-->
+
+    <section class="business-card-overview page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-overview-wrapper">
+
+                <div class="business-card-overview-image">
+
+                    <img src="images/document-printing-overview.jpg" alt="Document Printing & Copying">
+
+                </div>
+
+                <div class="business-card-overview-content">
+
+                    <span>About This Service</span>
+
+                    <h2>
+                        Professional Document Printing &
+                        Copying for Every Requirement
+                    </h2>
+
+                    <p>
+
+                        At PixelPress, we offer reliable document printing and
+                        copying services for students, professionals, businesses,
+                        and organizations. Using advanced digital printing
+                        technology, we ensure every document is produced with
+                        exceptional clarity, accuracy, and consistent quality.
+
+                    </p>
+
+                    <p>
+
+                        Whether you need assignments, project reports,
+                        presentations, office documents, contracts, manuals,
+                        certificates, or training materials, our professional
+                        printing solutions are designed to deliver fast,
+                        affordable, and high-quality results.
+
+                    </p>
+
+                    <div class="business-card-feature-grid">
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-file-lines"></i>
+
+                            <div>
+
+                                <h4>High-Quality Printing</h4>
+
+                                <p>
+                                    Sharp text and vibrant clean colors for professional-looking documents.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-copy"></i>
+
+                            <div>
+
+                                <h4>Black & Color Copies</h4>
+
+                                <p>
+                                    Fast and accurate copying services for personal, academic, and business needs.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Document Printing Overview End
+==========================================-->
+
+    <!--=========================================
+Document Printing Specifications Start
+==========================================-->
+
+    <section class="business-card-specifications page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Print Specifications</span>
+
+                <h2>Customize Your Document Printing Requirements</h2>
+
+                <p>
+
+                    Select the ideal paper size, printing options, binding, and
+                    finishing services to create professional documents that meet
+                    your personal, academic, and business needs.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-spec-grid">
+
+                <!-- Specification 1 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-ruler-combined"></i>
+
+                    </div>
+
+                    <h3>Paper Sizes</h3>
+
+                    <p>
+
+                        Choose from standard paper sizes suitable for reports,
+                        assignments, presentations, and office documents.
+
+                    </p>
+
+                    <span>A5 • A4 • A3 • Custom Sizes</span>
+
+                </div>
+
+
+                <!-- Specification 2 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <h3>Paper Types</h3>
+
+                    <p>
+
+                        Select from premium paper options designed for everyday
+                        printing and professional presentations.
+
+                    </p>
+
+                    <span>Standard • Premium • Matte • Glossy</span>
+
+                </div>
+
+
+                <!-- Specification 3 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-print"></i>
+
+                    </div>
+
+                    <h3>Printing Options</h3>
+
+                    <p>
+
+                        High-quality black & white and full-color printing with
+                        sharp text and vibrant graphics.
+
+                    </p>
+
+                    <span>Black & White • Full Color</span>
+
+                </div>
+
+
+                <!-- Specification 4 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-copy"></i>
+
+                    </div>
+
+                    <h3>Print Format</h3>
+
+                    <p>
+
+                        Print documents on single-sided or double-sided pages
+                        according to your project requirements.
+
+                    </p>
+
+                    <span>Single Side • Double Side</span>
+
+                </div>
+
+
+                <!-- Specification 5 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                    </div>
+
+                    <h3>Binding & Finishing</h3>
+
+                    <p>
+
+                        Enhance your documents with spiral binding, lamination,
+                        stapling, folding, and professional finishing.
+
+                    </p>
+
+                    <span>Spiral • Lamination • Stapling</span>
+
+                </div>
+
+
+                <!-- Specification 6 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <h3>Turnaround</h3>
+
+                    <p>
+
+                        Fast document printing with same-day and next-business-day
+                        production for urgent requirements.
+
+                    </p>
+
+                    <span>Same Day • 1–2 Business Days</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Document Printing Specifications End
+==========================================-->
+
+
+    <!--=========================================
+Document Printing & Copying Process Start
+==========================================-->
+
+    <section class="business-card-process page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Our Process</span>
+
+                <h2>Simple Steps to Print Your Documents with Ease</h2>
+
+                <p>
+
+                    From uploading your files to receiving professionally printed
+                    documents, our streamlined process ensures speed, accuracy,
+                    and exceptional print quality every step of the way.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-process-wrapper">
+
+                <!-- Step 1 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    </div>
+
+                    <span>Step 01</span>
+
+                    <h3>Upload Documents</h3>
+
+                    <p>
+
+                        Upload your PDF, Word, PowerPoint, or image files securely
+                        through our online platform.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </div>
+
+                    <span>Step 02</span>
+
+                    <h3>Select Print Options</h3>
+
+                    <p>
+
+                        Choose paper size as your wish, color mode, print quantity,
+                        binding, and finishing preferences.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 3 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-print"></i>
+
+                    </div>
+
+                    <span>Step 03</span>
+
+                    <h3>Quality Printing</h3>
+
+                    <p>
+
+                        Your documents are printed using advanced digital
+                        printing technology for sharp and consistent results.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 4 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-file-circle-check"></i>
+
+                    </div>
+
+                    <span>Step 04</span>
+
+                    <h3>Quality Inspection</h3>
+
+                    <p>
+
+                        Every printed document is carefully inspected to ensure
+                        excellent print quality and accuracy.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 5 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <span>Step 05</span>
+
+                    <h3>Pickup or Delivery</h3>
+
+                    <p>
+
+                        Collect your completed order from our store or have it
+                        delivered safely to your preferred location.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Document Printing & Copying Process End
+==========================================-->
+
+    <!--=========================================
+Document Printing & Copying CTA Start
+==========================================-->
+
+    <section class="business-card-cta page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-cta-wrapper">
+
+                <span>Let's Print Together</span>
+
+                <h2>
+                    Need Professional Document Printing
+                    with Fast Turnaround?
+                </h2>
+
+                <p>
+
+                    From assignments and project reports to business documents,
+                    presentations, and manuals, PixelPress delivers high-quality
+                    document printing and copying services with exceptional
+                    accuracy, premium finishes, and reliable delivery.
+
+                </p>
+
+                <div class="business-card-cta-buttons">
+
+                    <a href="contact.html" class="brand-solid-button">
+
+                        Get a Free Quote
+
+                    </a>
+
+                    <a href="services.html" class="brand-outline-button">
+
+                        Explore More Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Document Printing & Copying CTA End
+==========================================-->
+
+
+
+
+    <!--=========================================
+Footer Start
+==========================================-->
+
+    <footer class="site-footer">
+
+        <div class="site-container">
+
+            <div class="footer-grid-layout">
+
+                <!-- Footer About -->
+
+                <div class="footer-column footer-about">
+
+                    <a href="index.html" class="footer-brand">
+
+                        <img src="images/logo.png" alt="PixelPress Logo">
+
+                    </a>
+
+                    <p>
+                        PixelPress delivers premium-quality printing solutions for
+                        businesses, students, and individuals with fast turnaround,
+                        exceptional quality, and reliable customer support.
+                    </p>
+
+                    <div class="footer-social-links">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="#">Business Cards</a></li>
+
+                        <li><a href="#">Flyers & Brochures</a></li>
+
+                        <li><a href="#">Banner Printing</a></li>
+
+                        <li><a href="#">Document Printing</a></li>
+
+                        <li><a href="#">Custom Printing</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact Info</h3>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>info@pixelpress.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="site-copyright">
+
+                <div class="copyright-row">
+
+                    <p>
+
+                        © 2026 PixelPress. All Rights Reserved.
+
+                    </p>
+
+                    <div class="footer-legal-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================
+Footer End
+==========================================-->
+
+    <!--=========================================
+Scroll To Top
+==========================================-->
+
+    <button class="back-to-top-button" id="backToTopButton">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

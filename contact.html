@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PixelPress</title>
+
+    <meta name="description"
+        content="PixelPress is a modern print and copy shop offering business cards, flyers, brochures, banners, document printing, and custom print solutions.">
+
+    <meta name="keywords"
+        content="print shop, printing services, business cards, flyers, brochures, banners, document printing">
+
+    <meta name="author" content="PixelPress">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-container">
+
+            <nav class="primary-navbar">
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img src="images/logo.png" alt="PixelPress">
+
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="primary-nav-menu">
+
+                    <li class="dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html">Home 1</a></li>
+
+                            <li><a href="home-2.html">Home 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li class="is-active"><a href="contact.html">Contact</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="header-actions">
+
+                    <button class="theme-toggle-button">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button class="direction-toggle-button">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="login.html" class="brand-solid-button">
+
+                        Login
+
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle"
+                        aria-label="Open menu" aria-controls="mobileNavSidebar" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+            <aside class="mobile-nav-sidebar" id="mobileNavSidebar" aria-hidden="true"
+                aria-label="Mobile navigation">
+
+                <div class="mobile-nav-sidebar-inner">
+
+                    <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="Close menu">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <ul class="mobile-nav-menu">
+
+                        <li class="mobile-nav-dropdown">
+
+                            <div class="mobile-nav-dropdown-header">
+
+                                <a href="index.html">Home</a>
+
+                                <button class="mobile-nav-dropdown-toggle" type="button"
+                                    aria-label="Toggle Home submenu" aria-expanded="false">
+
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                </button>
+
+                            </div>
+
+                            <ul class="mobile-nav-submenu">
+
+                                <li><a href="index.html">Home 1</a></li>
+
+                                <li><a href="home-2.html">Home 2</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li class="is-active"><a href="contact.html">Contact</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                    <div class="mobile-nav-utility-group">
+
+                        <button class="mobile-nav-utility-button theme-toggle-button" type="button"
+                            aria-label="Dark mode toggle">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                        <button class="mobile-nav-utility-button direction-toggle-button" type="button"
+                            aria-label="RTL mode toggle">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+                    </div>
+
+                    <a href="login.html" class="brand-solid-button mobile-nav-login">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+    <!--=========================================
+Page Banner Start
+==========================================-->
+
+    <section class="page-banner">
+
+        <div class="site-container">
+
+            <div class="page-banner-content">
+
+                <span class="banner-subtitle">
+
+                    Get In Touch
+
+                </span>
+
+                <h1>
+
+                    Contact Us
+
+                </h1>
+
+                <p>
+
+                    Have a question, need a custom quote, or want to discuss your
+                    next printing project? We're here to help with fast, reliable,
+                    and professional printing solutions.
+
+                </p>
+
+                <ul class="breadcrumb">
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+
+                        Contact
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Page Banner End
+==========================================-->
+
+    <!--=========================================
+Contact Information Start
+==========================================-->
+
+    <section class="contact-info page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Contact Information</span>
+
+                <h2>We're Here to Help</h2>
+
+                <p>
+
+                    Reach out to our team through your preferred contact method.
+                    We're always ready to assist with your printing needs.
+
+                </p>
+
+            </div>
+
+            <div class="contact-info-grid">
+
+                <!-- Phone -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                    <h3>Call Us</h3>
+
+                    <p>Speak with our experts.</p>
+
+                    <a href="tel:+919876543210">
+
+                        +91 98765 43210
+
+                    </a>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </div>
+
+                    <h3>Email Us</h3>
+
+                    <p>Send us your project details.</p>
+
+                    <a href="mailto:info@pixelpress.com">
+
+                        info@pixelpress.com
+
+                    </a>
+
+                </div>
+
+                <!-- Address -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <h3>Visit Us</h3>
+
+                    <p>Discuss your project.</p>
+
+                    <a href="#">
+
+                        Chennai, Tamil Nadu
+
+                    </a>
+
+                </div>
+
+                <!-- WhatsApp -->
+
+                <div class="contact-card">
+
+                    <div class="contact-icon">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </div>
+
+                    <h3>WhatsApp</h3>
+
+                    <p>For Quick responses.</p>
+
+                    <a href="#">
+
+                        Chat With Us
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Contact Information End
+==========================================-->
+
+    <!--=========================================
+Working Hours Start
+==========================================-->
+
+    <section class="working-hours page-section-padding">
+
+        <div class="site-container">
+
+            <div class="hours-wrapper">
+
+                <div class="hours-content">
+
+                    <span class="section-badge">
+
+                        Business Hours
+
+                    </span>
+
+                    <h2>
+
+                        Visit Us During Our Working Hours
+
+                    </h2>
+
+                    <p>
+
+                        We're available throughout the week to assist with your
+                        printing requirements. Whether you need a quick quote,
+                        custom printing consultation, or same-day services, our
+                        team is ready to help.
+
+                    </p>
+
+                    <div class="status-box">
+
+                        <span class="status-dot"></span>
+
+                        <p>
+
+                            <strong>Open Now</strong> • Fast responses during
+                            business hours.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="hours-card">
+
+                    <ul>
+
+                        <li>
+
+                            <span>Monday</span>
+
+                            <strong>09:00 AM - 07:00 PM</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Tuesday</span>
+
+                            <strong>09:00 AM - 07:00 PM</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Wednesday</span>
+
+                            <strong>09:00 AM - 07:00 PM</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Thursday</span>
+
+                            <strong>09:00 AM - 07:00 PM</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Friday</span>
+
+                            <strong>09:00 AM - 07:00 PM</strong>
+
+                        </li>
+
+                        <li>
+
+                            <span>Saturday</span>
+
+                            <strong>10:00 AM - 05:00 PM</strong>
+
+                        </li>
+
+                        <li class="hours-closed">
+
+                            <span>Sunday</span>
+
+                            <strong>Closed</strong>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Working Hours End
+==========================================-->
+
+    <!--=========================================
+Contact Form Start
+==========================================-->
+
+    <section class="contact-form-section page-section-padding">
+
+        <div class="site-container">
+
+            <div class="contact-wrapper">
+
+                <!-- Contact Form -->
+
+                <div class="contact-form-box">
+
+                    <span class="section-badge">
+
+                        Send Message
+
+                    </span>
+
+                    <h2>
+
+                        Let's Discuss Your Printing Project
+
+                    </h2>
+
+                    <p>
+
+                        Fill out the form below and our team will get back to you
+                        as soon as possible with the best printing solution for
+                        your requirements.
+
+                    </p>
+
+                    <form action="#">
+
+                        <div class="form-grid">
+
+                            <div class="field-group">
+
+                                <label>Your Name</label>
+
+                                <input type="text" placeholder="Enter your name">
+
+                            </div>
+
+                            <div class="field-group">
+
+                                <label>Email Address</label>
+
+                                <input type="email" placeholder="Enter your email">
+
+                            </div>
+
+                            <div class="field-group">
+
+                                <label>Phone Number</label>
+
+                                <input type="tel" placeholder="Enter phone number">
+
+                            </div>
+
+                            <div class="field-group">
+
+                                <label>Subject</label>
+
+                                <input type="text" placeholder="Enter subject">
+
+                            </div>
+
+                        </div>
+
+                        <div class="field-group">
+
+                            <label>Message</label>
+
+                            <textarea rows="6" placeholder="Write your message..."></textarea>
+
+                        </div>
+
+                        <button type="submit" class="brand-solid-button">
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Google Map -->
+
+                <div class="map-box">
+
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23105245834!2d79.8789875295672!3d13.047985949771817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1785511090745!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+
+                    <div class="map-card">
+
+                        <h3>
+
+                            PixelPress Printing
+
+                        </h3>
+
+                        <p>
+
+                            Chennai, Tamil Nadu
+
+                        </p>
+
+                        <a href="#" class="brand-solid-button">
+
+                            Get Directions
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Contact Form End
+==========================================-->
+
+    <!--=========================================
+Footer Start
+==========================================-->
+
+    <footer class="site-footer">
+
+        <div class="site-container">
+
+            <div class="footer-grid-layout">
+
+                <!-- Footer About -->
+
+                <div class="footer-column footer-about">
+
+                    <a href="index.html" class="footer-brand">
+
+                        <img src="images/logo.png" alt="PixelPress Logo">
+
+                    </a>
+
+                    <p>
+                        PixelPress delivers premium-quality printing solutions for
+                        businesses, students, and individuals with fast turnaround,
+                        exceptional quality, and reliable customer support.
+                    </p>
+
+                    <div class="footer-social-links">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="#">Business Cards</a></li>
+
+                        <li><a href="#">Flyers & Brochures</a></li>
+
+                        <li><a href="#">Banner Printing</a></li>
+
+                        <li><a href="#">Document Printing</a></li>
+
+                        <li><a href="#">Custom Printing</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact Info</h3>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>info@pixelpress.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="site-copyright">
+
+                <div class="copyright-row">
+
+                    <p>
+
+                        © 2026 PixelPress. All Rights Reserved.
+
+                    </p>
+
+                    <div class="footer-legal-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================
+Footer End
+==========================================-->
+
+    <!--=========================================
+Scroll To Top
+==========================================-->
+
+    <button class="back-to-top-button" id="backToTopButton">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

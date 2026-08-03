@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PixelPress</title>
+
+    <meta name="description"
+        content="PixelPress is a modern print and copy shop offering business cards, flyers, brochures, banners, document printing, and custom print solutions.">
+
+    <meta name="keywords"
+        content="print shop, printing services, business cards, flyers, brochures, banners, document printing">
+
+    <meta name="author" content="PixelPress">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-container">
+
+            <nav class="primary-navbar">
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img src="images/logo.png" alt="PixelPress">
+
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="primary-nav-menu">
+
+                    <li class="dropdown is-active">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li class="is-active"><a href="index.html">Home 1</a></li>
+
+                            <li><a href="home-2.html">Home 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="header-actions">
+
+                    <button class="theme-toggle-button">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button class="direction-toggle-button">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="login.html" class="brand-solid-button">
+
+                        Login
+
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open menu"
+                        aria-controls="mobileNavSidebar" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+            <aside class="mobile-nav-sidebar" id="mobileNavSidebar" aria-hidden="true" aria-label="Mobile navigation">
+
+                <div class="mobile-nav-sidebar-inner">
+
+                    <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="Close menu">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <ul class="mobile-nav-menu">
+
+                        <li class="mobile-nav-dropdown is-active">
+
+                            <div class="mobile-nav-dropdown-header">
+
+                                <a href="index.html">Home</a>
+
+                                <button class="mobile-nav-dropdown-toggle" type="button"
+                                    aria-label="Toggle Home submenu" aria-expanded="false">
+
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                </button>
+
+                            </div>
+
+                            <ul class="mobile-nav-submenu">
+
+                                <li class="is-active"><a href="index.html">Home 1</a></li>
+
+                                <li><a href="home-2.html">Home 2</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                    <div class="mobile-nav-utility-group">
+
+                        <button class="mobile-nav-utility-button theme-toggle-button" type="button"
+                            aria-label="Dark mode toggle">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                        <button class="mobile-nav-utility-button direction-toggle-button" type="button"
+                            aria-label="RTL mode toggle">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+                    </div>
+
+                    <a href="login.html" class="brand-solid-button mobile-nav-login">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+    <!--=========================================
+Hero Section Start
+==========================================-->
+
+    <section class="hero">
+
+        <div class="site-container">
+
+            <div class="hero-content">
+
+                <!-- Hero Text -->
+
+                <div class="hero-text">
+
+                    <span class="hero-one-subtitle">
+
+                        Professional Printing & Copy Services
+
+                    </span>
+
+                    <h1>
+
+                        Premium Printing Solutions for Every Business Need
+
+                    </h1>
+
+                    <p>
+
+                        From business cards and brochures to banners and custom
+                        prints, PixelPress delivers exceptional print quality with
+                        fast turnaround and affordable pricing.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#" class="brand-solid-button">
+
+                            Order Now
+
+                        </a>
+
+                        <a href="services.html" class="brand-outline-button">
+
+                            Explore Services
+
+                        </a>
+
+                    </div>
+
+                    <div class="hero-features">
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                            <span>Premium Quality</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-truck-fast"></i>
+
+                            <span>Fast Delivery</span>
+
+                        </div>
+
+                        <div class="feature">
+
+                            <i class="fa-solid fa-tags"></i>
+
+                            <span>Affordable Pricing</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Hero Image -->
+
+                <div class="hero-image">
+
+                    <img src="images/hero-print.png" alt="Printing Services">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Hero Section End
+==========================================-->
+
+    <!--=========================================
+Why Choose Us Start
+==========================================-->
+
+    <section class="why-choose page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Why Choose Us</span>
+
+                <h2>Why Choose PixelPress?</h2>
+
+                <p>
+
+                    We combine premium printing technology, expert craftsmanship,
+                    and exceptional customer service to deliver outstanding
+                    printing solutions.
+
+                </p>
+
+            </div>
+
+            <div class="why-grid">
+
+                <!-- Card 1 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="fa-solid fa-award"></i>
+
+                    </div>
+
+                    <h3>Premium Quality</h3>
+
+                    <p>
+
+                        High-quality printing with sharp colors and premium
+                        finishing for every project.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="fa-solid fa-bolt"></i>
+
+                    </div>
+
+                    <h3>Fast Turnaround</h3>
+
+                    <p>
+
+                        Quick production and super fast reliable delivery to meet your
+                        deadlines.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="fa-solid fa-wallet"></i>
+
+                    </div>
+
+                    <h3>Affordable Pricing</h3>
+
+                    <p>
+
+                        Competitive prices with excellent value for businesses and
+                        individuals.
+
+                    </p>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="why-card">
+
+                    <div class="why-icon">
+
+                        <i class="fa-solid fa-headset"></i>
+
+                    </div>
+
+                    <h3>Expert Call Support</h3>
+
+                    <p>
+
+                        Friendly professionals ready to help you choose the perfect
+                        printing solution.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Why Choose Us End
+==========================================-->
+
+    <!--=========================================
+Home 1 Print Categories Start
+==========================================-->
+
+    <section class="home1-print-categories page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Explore Categories</span>
+
+                <h2>Print Solutions for Every Need</h2>
+
+                <p>
+
+                    From everyday business essentials to large-format promotional
+                    materials, discover professional printing services designed to
+                    meet every requirement.
+
+                </p>
+
+            </div>
+
+            <!-- Category 1 -->
+
+            <div class="home1-category-item">
+
+                <div class="home1-category-image">
+
+                    <img src="images/business-printing.jpg" alt="Business Printing">
+
+                </div>
+
+                <div class="home1-category-content">
+
+                    <span class="home1-category-tag">
+
+                        Business Printing
+
+                    </span>
+
+                    <h3>
+
+                        Professional Business Printing
+
+                    </h3>
+
+                    <p>
+
+                        Create a lasting first impression with premium business
+                        cards, letterheads, envelopes, invoices, and corporate
+                        stationery designed for modern businesses.
+
+                    </p>
+
+                    <a href="#" class="brand-solid-button">
+
+                        Explore Category
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Category 2 -->
+
+            <div class="home1-category-item home1-layout-reverse">
+
+                <div class="home1-category-image">
+
+                    <img src="images/marketing-materials.jpg" alt="Marketing Materials">
+
+                </div>
+
+                <div class="home1-category-content">
+
+                    <span class="home1-category-tag">
+
+                        Marketing Materials
+
+                    </span>
+
+                    <h3>
+
+                        Promote Your Brand Effectively
+
+                    </h3>
+
+                    <p>
+
+                        Flyers, brochures, catalogs and promotional materials
+                        printed with vibrant colors to help your business
+                        reach more customers.
+
+                    </p>
+
+                    <a href="#" class="brand-solid-button">
+
+                        Explore Category
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Category 3 -->
+
+            <div class="home1-category-item">
+
+                <div class="home1-category-image">
+
+                    <img src="images/large-format.jpg" alt="Large Format Printing">
+
+                </div>
+
+                <div class="home1-category-content">
+
+                    <span class="home1-category-tag">
+
+                        Large Format Printing
+
+                    </span>
+
+                    <h3>
+
+                        Large Prints That Stand Out
+
+                    </h3>
+
+                    <p>
+
+                        High-quality banners, posters, flex boards and exhibition
+                        graphics produced with exceptional clarity and durability.
+
+                    </p>
+
+                    <a href="#" class="brand-solid-button">
+
+                        Explore Category
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- Category 4 -->
+
+            <div class="home1-category-item home1-layout-reverse">
+
+                <div class="home1-category-image">
+
+                    <img src="images/custom-printing.jpg" alt="Custom Printing">
+
+                </div>
+
+                <div class="home1-category-content">
+
+                    <span class="home1-category-tag">
+
+                        Custom Printing
+
+                    </span>
+
+                    <h3>
+
+                        Customized Print Solutions
+
+                    </h3>
+
+                    <p>
+
+                        Personalized stickers, labels, invitations,
+                        gift cards and unique printing solutions
+                        tailored to your creative ideas.
+
+                    </p>
+
+                    <a href="#" class="brand-solid-button">
+
+                        Explore Category
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Home 1 Print Categories End
+==========================================-->
+
+    <!--=========================================
+How It Works Start
+==========================================-->
+
+    <section class="work-process page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Simple Process</span>
+
+                <h2>How It Works</h2>
+
+                <p>
+
+                    Ordering your prints is simple. Upload your artwork, customize
+                    your print preferences, confirm your order, and we'll deliver
+                    premium-quality prints to your doorstep.
+
+                </p>
+
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-line"></div>
+
+                <!-- Step 1 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-circle">
+
+                        <i class="fa-solid fa-upload"></i>
+
+                    </div>
+
+                    <span class="step-number">01</span>
+
+                    <h3>Upload Artwork</h3>
+
+                    <p>
+
+                        Upload your print-ready files in PDF, docx, JPG, PNG or AI format.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-circle">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </div>
+
+                    <span class="step-number">02</span>
+
+                    <h3>Customize</h3>
+
+                    <p>
+
+                        Select paper type, size, quantity and finishing options.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 3 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-circle">
+
+                        <i class="fa-solid fa-print"></i>
+
+                    </div>
+
+                    <span class="step-number">03</span>
+
+                    <h3>Print & Review</h3>
+
+                    <p>
+
+                        Our experts carefully print and inspect each and every order.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 4 -->
+
+                <div class="timeline-item">
+
+                    <div class="timeline-circle">
+
+                        <i class="fa-solid fa-truck-fast"></i>
+
+                    </div>
+
+                    <span class="step-number">04</span>
+
+                    <h3>Fast Delivery</h3>
+
+                    <p>
+
+                        Receive your premium-quality prints safely at your location.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+How It Works End
+==========================================-->
+
+    <!--=========================================
+Recent Print Projects Start
+==========================================-->
+
+    <section class="portfolio page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Our Portfolio</span>
+
+                <h2>Recent Print Projects</h2>
+
+                <p>
+
+                    Explore a selection of our recently completed printing
+                    projects, crafted with precision and premium-quality finishing.
+
+                </p>
+
+            </div>
+
+            <div class="portfolio-grid">
+
+                <div class="portfolio-item large-text">
+
+                    <img src="images/project-1.jpg" alt="Business Cards">
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <img src="images/project-2.jpg" alt="Brochure">
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <img src="images/project-3.jpg" alt="Banner">
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <img src="images/project-4.jpg" alt="Poster">
+
+                </div>
+
+                <div class="portfolio-item">
+
+                    <img src="images/project-5.jpg" alt="Sticker">
+
+                </div>
+
+            </div>
+
+            <div class="portfolio-btn">
+
+                <a href="#" class="brand-solid-button">
+
+                    View Full Gallery
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Recent Print Projects End
+==========================================-->
+
+    <!--=========================================
+Industries We Serve Start
+==========================================-->
+
+    <section class="industries page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Who We Serve</span>
+
+                <h2>Printing Solutions for Every Industry</h2>
+
+                <p>
+
+                    We provide premium-quality printing services tailored to meet
+                    the unique needs of businesses, educational institutions,
+                    healthcare organizations, retailers, and more.
+
+                </p>
+
+            </div>
+
+            <div class="industries-grid">
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-building"></i>
+
+                    </div>
+
+                    <h3>Corporate</h3>
+
+                    <p>
+
+                        Business cards, letterheads, brochures,
+                        annual reports and office stationery.
+
+                    </p>
+
+                </div>
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-graduation-cap"></i>
+
+                    </div>
+
+                    <h3>Education</h3>
+
+                    <p>
+
+                        Certificates, ID cards, project reports,
+                        notebooks and educational materials.
+
+                    </p>
+
+                </div>
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-hospital"></i>
+
+                    </div>
+
+                    <h3>Healthcare</h3>
+
+                    <p>
+
+                        Hospital Medical forms, prescription pads,
+                        appointment cards and brochures.
+
+                    </p>
+
+                </div>
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-store"></i>
+
+                    </div>
+
+                    <h3>Retail</h3>
+
+                    <p>
+
+                        Product labels, price tags,
+                        shopping bags and promotional prints.
+
+                    </p>
+
+                </div>
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-bullhorn"></i>
+
+                    </div>
+
+                    <h3>Marketing</h3>
+
+                    <p>
+
+                        Flyers, banners, posters,
+                        catalogues and advertising materials.
+
+                    </p>
+
+                </div>
+
+                <div class="industry-card">
+
+                    <div class="industry-icon">
+
+                        <i class="fa-solid fa-champagne-glasses"></i>
+
+                    </div>
+
+                    <h3>Events</h3>
+
+                    <p>
+
+                        Invitation cards, standees,
+                        welcome boards and event branding.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Industries We Serve End
+==========================================-->
+
+    <!--=========================================
+Testimonials Start
+==========================================-->
+
+    <section class="testimonials page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Testimonials</span>
+
+                <h2>Trusted by Businesses & Individuals</h2>
+
+                <p>
+
+                    Discover why businesses, students, and organizations choose
+                    PixelPress for high-quality printing with reliable service and
+                    exceptional customer support.
+
+                </p>
+
+            </div>
+
+            <div class="testimonial-wrapper">
+
+                <!-- Testimonial 1 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-header">
+
+                        <div class="client-info">
+
+                            <img src="images/client-1.jpg" alt="Client">
+
+                            <div>
+
+                                <h3>Sarah Johnson</h3>
+
+                                <span>Marketing Manager</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                    <p class="testimonial-text">
+
+                        PixelPress is great with vibrant colors and
+                        premium paper quality. The entire process
+                        was smooth from upload to the fast delivery.
+
+                    </p>
+
+                    <ul class="project-info">
+
+                        <li><i class="fa-solid fa-check"></i> Business Cards</li>
+                        <li><i class="fa-solid fa-check"></i> 2,000 Copies</li>
+                        <li><i class="fa-solid fa-check"></i> Delivered in 24 Hours</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Testimonial 2 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-header">
+
+                        <div class="client-info">
+
+                            <img src="images/client-2.jpg" alt="Client">
+
+                            <div>
+
+                                <h3>Michael Brown</h3>
+
+                                <span>Business Owner</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                    <p class="testimonial-text">
+
+                        Our exhibition banners turned out exactly as we imagined.
+                        Excellent finishing, durable material, and outstanding
+                        customer support.
+
+                    </p>
+
+                    <ul class="project-info">
+
+                        <li><i class="fa-solid fa-check"></i> Banner Printing</li>
+                        <li><i class="fa-solid fa-check"></i> Premium Vinyl</li>
+                        <li><i class="fa-solid fa-check"></i> Same Day Delivery</li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Testimonial 3 -->
+
+                <div class="testimonial-card">
+
+                    <div class="testimonial-header">
+
+                        <div class="client-info">
+
+                            <img src="images/client-3.jpg" alt="Client">
+
+                            <div>
+
+                                <h3>Emma Wilson</h3>
+
+                                <span>Event Organizer</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="rating">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                        </div>
+
+                    </div>
+
+                    <p class="testimonial-text">
+
+                        We ordered brochures and invitation cards for our event.
+                        Everything arrived on time with good expected design and exceptional print quality.
+
+                    </p>
+
+                    <ul class="project-info">
+
+                        <li><i class="fa-solid fa-check"></i> Brochure Printing</li>
+                        <li><i class="fa-solid fa-check"></i> Matte Finish</li>
+                        <li><i class="fa-solid fa-check"></i> Bulk Order</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Testimonials End
+==========================================-->
+
+    <!--=========================================
+Home 1 Call To Action Start
+==========================================-->
+
+    <section class="home1-cta page-section-padding">
+
+        <div class="site-container">
+
+            <div class="home1-cta-wrapper">
+
+                <div class="home1-cta-content">
+
+                    <span>Let's Get Started</span>
+
+                    <h2>Ready to Bring Your Ideas to Life?</h2>
+
+                    <p>
+
+                        Whether you need business cards, marketing materials,
+                        banners, or custom printing, PixelPress is here to deliver
+                        exceptional quality with fast turnaround and affordable
+                        pricing.
+
+                    </p>
+
+                    <div class="home1-cta-buttons">
+
+                        <a href="contact.html" class="brand-solid-button">
+
+                            Get a Free Quote
+
+                        </a>
+
+                        <a href="services.html" class="brand-outline-button">
+
+                            Explore Services
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="home1-cta-info">
+
+                    <div class="home1-info-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <div>
+
+                            <span>Call Us</span>
+
+                            <h4>+91 98765 43210</h4>
+
+                        </div>
+
+                    </div>
+
+                    <div class="home1-info-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <div>
+
+                            <span>Email Us</span>
+
+                            <h4>info@pixelpress.com</h4>
+
+                        </div>
+
+                    </div>
+
+                    <div class="home1-info-box">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <div>
+
+                            <span>Visit Us</span>
+
+                            <h4>Chennai, Tamil Nadu</h4>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Home 1 Call To Action End
+==========================================-->
+
+    <!--=========================================
+Footer Start
+==========================================-->
+
+    <footer class="site-footer">
+
+        <div class="site-container">
+
+            <div class="footer-grid-layout">
+
+                <!-- Footer About -->
+
+                <div class="footer-column footer-about">
+
+                    <a href="index.html" class="footer-brand">
+
+                        <img src="images/logo.png" alt="PixelPress Logo">
+
+                    </a>
+
+                    <p>
+                        PixelPress delivers premium-quality printing solutions for
+                        businesses, students, and individuals with fast turnaround,
+                        exceptional quality, and reliable customer support.
+                    </p>
+
+                    <div class="footer-social-links">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="#">Business Cards</a></li>
+
+                        <li><a href="#">Flyers & Brochures</a></li>
+
+                        <li><a href="#">Banner Printing</a></li>
+
+                        <li><a href="#">Document Printing</a></li>
+
+                        <li><a href="#">Custom Printing</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact Info</h3>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>info@pixelpress.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="site-copyright">
+
+                <div class="copyright-row">
+
+                    <p>
+
+                        © 2026 PixelPress. All Rights Reserved.
+
+                    </p>
+
+                    <div class="footer-legal-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================
+Footer End
+==========================================-->
+
+    <!--=========================================
+Scroll To Top
+==========================================-->
+
+    <button class="back-to-top-button" id="backToTopButton">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

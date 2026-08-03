@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Payments | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Manage current payments, review payment history, update billing information, and choose payment methods in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Payments</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Payments</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="ppd-pm-overview-grid">
+
+                <article class="ppd-pm-overview-card">
+                    <div class="ppd-pm-overview-top">
+                        <span class="ppd-pm-overview-icon ppd-pm-overview-icon--teal"><i
+                                class="fa-solid fa-wallet"></i></span>
+                        <span class="ppd-pm-overview-badge">This Month</span>
+                    </div>
+                    <strong class="ppd-pm-overview-value">24</strong>
+                    <h3 class="ppd-pm-overview-title">Total Payments</h3>
+                    <p class="ppd-pm-overview-text">Payments recorded across print orders and services.</p>
+                </article>
+
+                <article class="ppd-pm-overview-card">
+                    <div class="ppd-pm-overview-top">
+                        <span class="ppd-pm-overview-icon ppd-pm-overview-icon--orange"><i
+                                class="fa-solid fa-hourglass-half"></i></span>
+                        <span class="ppd-pm-overview-badge">Due Now</span>
+                    </div>
+                    <strong class="ppd-pm-overview-value">3</strong>
+                    <h3 class="ppd-pm-overview-title">Pending Payments</h3>
+                    <p class="ppd-pm-overview-text">Open balances waiting for completion.</p>
+                </article>
+
+                <article class="ppd-pm-overview-card">
+                    <div class="ppd-pm-overview-top">
+                        <span class="ppd-pm-overview-icon ppd-pm-overview-icon--green"><i
+                                class="fa-solid fa-circle-check"></i></span>
+                        <span class="ppd-pm-overview-badge">Cleared</span>
+                    </div>
+                    <strong class="ppd-pm-overview-value">21</strong>
+                    <h3 class="ppd-pm-overview-title">Completed Payments</h3>
+                    <p class="ppd-pm-overview-text">Successfully collected and marked paid.</p>
+                </article>
+
+                <article class="ppd-pm-overview-card">
+                    <div class="ppd-pm-overview-top">
+                        <span class="ppd-pm-overview-icon ppd-pm-overview-icon--slate"><i
+                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                        <span class="ppd-pm-overview-badge">Lifetime</span>
+                    </div>
+                    <strong class="ppd-pm-overview-value">$8,240</strong>
+                    <h3 class="ppd-pm-overview-title">Total Amount Spent</h3>
+                    <p class="ppd-pm-overview-text">Cumulative amount spent across all orders.</p>
+                </article>
+
+            </section>
+
+            <section class="ppd-pm-current-card">
+
+                <div class="ppd-pm-section-head">
+                    <div>
+                        <span class="ppd-pm-section-badge">Current Payment</span>
+                        <h3 class="ppd-pm-section-title">Your active balance is ready for checkout</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-current-grid">
+                    <div><span>Order ID</span><strong>#PP-2048</strong></div>
+                    <div><span>Service Name</span><strong>Presentation Binding</strong></div>
+                    <div><span>Payment Status</span><strong class="ppd-pm-status-text">Due</strong></div>
+                    <div><span>Payment Due Date</span><strong>Aug 04, 2026</strong></div>
+                    <div><span>Printing Charges</span><strong>$124.00</strong></div>
+                    <div><span>Additional Charges</span><strong>$18.00</strong></div>
+                    <div><span>Discount</span><strong>-$10.00</strong></div>
+                    <div><span>Tax</span><strong>$16.00</strong></div>
+                    <div><span>Grand Total</span><strong>$142.00</strong></div>
+                </div>
+
+                <div class="ppd-pm-current-actions">
+                    <a href="#" class="ppd-pm-mini-btn">Pay Now</a>
+                    <a href="#" class="ppd-pm-mini-btn ppd-pm-mini-btn--ghost">Download Invoice</a>
+                </div>
+
+            </section>
+
+            <section class="ppd-pm-method-card">
+
+                <div class="ppd-pm-section-head">
+                    <div>
+                        <span class="ppd-pm-section-badge">Payment Methods</span>
+                        <h3 class="ppd-pm-section-title">Select a payment method that fits your workflow</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-method-grid">
+
+                    <article class="ppd-pm-method-item ppd-pm-method-item--active">
+                        <span class="ppd-pm-method-icon"><i class="fa-solid fa-indian-rupee-sign"></i></span>
+                        <strong>UPI</strong>
+                        <p>Fast digital payment with instant confirmation.</p>
+                        <a href="#" class="ppd-pm-select-btn">Select Payment</a>
+                    </article>
+
+                    <article class="ppd-pm-method-item">
+                        <span class="ppd-pm-method-icon"><i class="fa-regular fa-credit-card"></i></span>
+                        <strong>Credit Card</strong>
+                        <p>Secure card payment for quick checkout.</p>
+                        <a href="#" class="ppd-pm-select-btn">Select Payment</a>
+                    </article>
+
+                    <article class="ppd-pm-method-item">
+                        <span class="ppd-pm-method-icon"><i class="fa-solid fa-building-columns"></i></span>
+                        <strong>Net Banking</strong>
+                        <p>Pay directly to the shop through your bank account.</p>
+                        <a href="#" class="ppd-pm-select-btn">Select Payment</a>
+                    </article>
+
+                    <article class="ppd-pm-method-item">
+                        <span class="ppd-pm-method-icon"><i class="fa-solid fa-wallet"></i></span>
+                        <strong>Wallet</strong>
+                        <p>Use a stored wallet balance for convenience.</p>
+                        <a href="#" class="ppd-pm-select-btn">Select Payment</a>
+                    </article>
+
+                    <article class="ppd-pm-method-item">
+                        <span class="ppd-pm-method-icon"><i class="fa-solid fa-store"></i></span>
+                        <strong>Cash on Pickup</strong>
+                        <p>Pay when you collect the finished order.</p>
+                        <a href="#" class="ppd-pm-select-btn">Select Payment</a>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-pm-history-card">
+
+                <div class="ppd-pm-section-head">
+                    <div>
+                        <span class="ppd-pm-section-badge">Payment History</span>
+                        <h3 class="ppd-pm-section-title">Review previous payments as premium cards</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-history-grid">
+
+                    <article class="ppd-pm-history-item">
+                        <div class="ppd-pm-history-top">
+                            <div>
+                                <span class="ppd-pm-history-id">TXN-204810</span>
+                                <h4>#PP-2048</h4>
+                            </div>
+                            <span class="ppd-pm-history-status ppd-pm-history-status--paid">Paid</span>
+                        </div>
+                        <div class="ppd-pm-history-meta">
+                            <div><span>Payment Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>Payment Method</span><strong>UPI</strong></div>
+                            <div><span>Amount</span><strong>$142.00</strong></div>
+                            <div><span>Invoice Number</span><strong>INV-88241</strong></div>
+                        </div>
+                        <div class="ppd-pm-history-actions">
+                            <a href="#" class="ppd-pm-mini-btn ppd-pm-mini-btn--ghost">View Invoice</a>
+                            <a href="#" class="ppd-pm-mini-btn">Download Receipt</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-pm-history-item">
+                        <div class="ppd-pm-history-top">
+                            <div>
+                                <span class="ppd-pm-history-id">TXN-204512</span>
+                                <h4>#PP-2036</h4>
+                            </div>
+                            <span class="ppd-pm-history-status ppd-pm-history-status--paid">Paid</span>
+                        </div>
+                        <div class="ppd-pm-history-meta">
+                            <div><span>Payment Date</span><strong>Jul 30, 2026</strong></div>
+                            <div><span>Payment Method</span><strong>Credit Card</strong></div>
+                            <div><span>Amount</span><strong>$240.00</strong></div>
+                            <div><span>Invoice Number</span><strong>INV-87654</strong></div>
+                        </div>
+                        <div class="ppd-pm-history-actions">
+                            <a href="#" class="ppd-pm-mini-btn ppd-pm-mini-btn--ghost">View Invoice</a>
+                            <a href="#" class="ppd-pm-mini-btn">Download Receipt</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-pm-history-item">
+                        <div class="ppd-pm-history-top">
+                            <div>
+                                <span class="ppd-pm-history-id">TXN-204120</span>
+                                <h4>#PP-2028</h4>
+                            </div>
+                            <span class="ppd-pm-history-status ppd-pm-history-status--paid">Paid</span>
+                        </div>
+                        <div class="ppd-pm-history-meta">
+                            <div><span>Payment Date</span><strong>Jul 25, 2026</strong></div>
+                            <div><span>Payment Method</span><strong>Wallet</strong></div>
+                            <div><span>Amount</span><strong>$96.00</strong></div>
+                            <div><span>Invoice Number</span><strong>INV-86901</strong></div>
+                        </div>
+                        <div class="ppd-pm-history-actions">
+                            <a href="#" class="ppd-pm-mini-btn ppd-pm-mini-btn--ghost">View Invoice</a>
+                            <a href="#" class="ppd-pm-mini-btn">Download Receipt</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-pm-billing-card">
+
+                <div class="ppd-pm-section-head">
+                    <div>
+                        <span class="ppd-pm-section-badge">Billing Information</span>
+                        <h3 class="ppd-pm-section-title">Keep billing details up to date</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-billing-grid">
+                    <div class="ppd-pm-billing-field">
+                        <span>Customer Name</span>
+                        <strong>Alex Morgan</strong>
+                    </div>
+                    <div class="ppd-pm-billing-field">
+                        <span>Email Address</span>
+                        <strong>alex.morgan@example.com</strong>
+                    </div>
+                    <div class="ppd-pm-billing-field">
+                        <span>Mobile Number</span>
+                        <strong>+91 98765 43210</strong>
+                    </div>
+                    <div class="ppd-pm-billing-field">
+                        <span>Billing Address</span>
+                        <strong>24 MG Road, Chennai, Tamil Nadu</strong>
+                    </div>
+                    <div class="ppd-pm-billing-field">
+                        <span>GST Number (Optional)</span>
+                        <strong>33ABCDE1234F1Z5</strong>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-billing-actions">
+                    <a href="#" class="ppd-pm-mini-btn ppd-pm-mini-btn--ghost">Edit Billing Details</a>
+                    <a href="#" class="ppd-pm-mini-btn">Save Changes</a>
+                </div>
+
+            </section>
+
+            <section class="ppd-pm-actions-card">
+
+                <div class="ppd-pm-section-head">
+                    <div>
+                        <span class="ppd-pm-section-badge">Quick Payment Actions</span>
+                        <h3 class="ppd-pm-section-title">Fast shortcuts for billing tasks</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-pm-actions-grid">
+
+                    <a href="#" class="ppd-pm-action-item">
+                        <span class="ppd-pm-action-icon"><i class="fa-solid fa-wallet"></i></span>
+                        <strong>Make Payment</strong>
+                        <p>Complete a pending balance in a few simple steps.</p>
+                    </a>
+
+                    <a href="#" class="ppd-pm-action-item">
+                        <span class="ppd-pm-action-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        <strong>Download Invoice</strong>
+                        <p>Get the latest invoice copy for current or past orders.</p>
+                    </a>
+
+                    <a href="#" class="ppd-pm-action-item">
+                        <span class="ppd-pm-action-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+                        <strong>View Payment History</strong>
+                        <p>Open and download your full record of completed transactions.</p>
+                    </a>
+
+                    <a href="#" class="ppd-pm-action-item">
+                        <span class="ppd-pm-action-icon"><i class="fa-solid fa-headset"></i></span>
+                        <strong>Billing Support</strong>
+                        <p>Talk to the billing team about invoices or payment issues.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

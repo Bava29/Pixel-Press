@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Saved Files | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Browse saved print files, preview uploaded assets, track storage usage, and reuse documents in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Saved Files</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Saved Files</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="ppd-sf-overview-grid">
+
+                <article class="ppd-sf-overview-card">
+                    <div class="ppd-sf-overview-top">
+                        <span class="ppd-sf-overview-icon ppd-sf-overview-icon--teal"><i
+                                class="fa-solid fa-folder-open"></i></span>
+                        <span class="ppd-sf-overview-badge">Library</span>
+                    </div>
+                    <strong class="ppd-sf-overview-value">148</strong>
+                    <h3 class="ppd-sf-overview-title">Total Saved Files</h3>
+                    <p class="ppd-sf-overview-text">All stored print-ready assets and reusable documents.</p>
+                </article>
+
+                <article class="ppd-sf-overview-card">
+                    <div class="ppd-sf-overview-top">
+                        <span class="ppd-sf-overview-icon ppd-sf-overview-icon--green"><i
+                                class="fa-solid fa-file-pdf"></i></span>
+                        <span class="ppd-sf-overview-badge">Most Common</span>
+                    </div>
+                    <strong class="ppd-sf-overview-value">86</strong>
+                    <h3 class="ppd-sf-overview-title">PDF Files</h3>
+                    <p class="ppd-sf-overview-text">High-resolution and quality PDFs ready for direct printing.</p>
+                </article>
+
+                <article class="ppd-sf-overview-card">
+                    <div class="ppd-sf-overview-top">
+                        <span class="ppd-sf-overview-icon ppd-sf-overview-icon--orange"><i
+                                class="fa-solid fa-image"></i></span>
+                        <span class="ppd-sf-overview-badge">Creative</span>
+                    </div>
+                    <strong class="ppd-sf-overview-value">41</strong>
+                    <h3 class="ppd-sf-overview-title">Image Files</h3>
+                    <p class="ppd-sf-overview-text">Artwork, full banners, Flyers and design previews in storage.</p>
+                </article>
+
+                <article class="ppd-sf-overview-card">
+                    <div class="ppd-sf-overview-top">
+                        <span class="ppd-sf-overview-icon ppd-sf-overview-icon--slate"><i
+                                class="fa-solid fa-database"></i></span>
+                        <span class="ppd-sf-overview-badge">Used</span>
+                    </div>
+                    <strong class="ppd-sf-overview-value">18.4 GB</strong>
+                    <h3 class="ppd-sf-overview-title">Storage Used</h3>
+                    <p class="ppd-sf-overview-text">Space consumed by uploaded and saved documents.</p>
+                </article>
+
+            </section>
+
+            <section class="ppd-sf-files-card">
+
+                <div class="ppd-sf-section-head">
+                    <div>
+                        <span class="ppd-sf-section-badge">My Saved Files</span>
+                        <h3 class="ppd-sf-section-title">Your reusable file library in premium cards</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-sf-files-grid">
+
+                    <article class="ppd-sf-file-card">
+                        <div class="ppd-sf-file-top">
+                            <div class="ppd-sf-file-icon"><i class="fa-solid fa-file-pdf"></i></div>
+                            <span class="ppd-sf-file-status">Ready</span>
+                        </div>
+                        <div class="ppd-sf-file-copy">
+                            <span class="ppd-sf-file-id">#SF-1001</span>
+                            <h4>Brand Brochure Final.pdf</h4>
+                        </div>
+                        <div class="ppd-sf-file-meta">
+                            <div><span>Type</span><strong>PDF</strong></div>
+                            <div><span>Size</span><strong>18.4 MB</strong></div>
+                            <div><span>Upload Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>Last Used</span><strong>Aug 02, 2026</strong></div>
+                        </div>
+                        <div class="ppd-sf-file-specs">
+                            <span>Print Specifications</span>
+                            <strong>A4 &middot; Matte &middot; Full Color &middot; Perfect Bound</strong>
+                        </div>
+                        <div class="ppd-sf-file-storage">
+                            <span>Storage Status</span>
+                            <strong>Stored safely in your file library</strong>
+                        </div>
+                        <div class="ppd-sf-file-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Download</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Preview</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--danger">Delete</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-sf-file-card">
+                        <div class="ppd-sf-file-top">
+                            <div class="ppd-sf-file-icon"><i class="fa-solid fa-file-lines"></i></div>
+                            <span class="ppd-sf-file-status">Ready</span>
+                        </div>
+                        <div class="ppd-sf-file-copy">
+                            <span class="ppd-sf-file-id">#SF-1028</span>
+                            <h4>Invoice Template.docx</h4>
+                        </div>
+                        <div class="ppd-sf-file-meta">
+                            <div><span>Type</span><strong>DOCX</strong></div>
+                            <div><span>Size</span><strong>3.2 MB</strong></div>
+                            <div><span>Upload Date</span><strong>Aug 01, 2026</strong></div>
+                            <div><span>Last Used</span><strong>Aug 01, 2026</strong></div>
+                        </div>
+                        <div class="ppd-sf-file-specs">
+                            <span>Print Specifications</span>
+                            <strong>A4 &middot; Black &amp; White &middot; Double-sided</strong>
+                        </div>
+                        <div class="ppd-sf-file-storage">
+                            <span>Storage Status</span>
+                            <strong>Occupies minimal storage space</strong>
+                        </div>
+                        <div class="ppd-sf-file-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Download</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Preview</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--danger">Delete</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-sf-file-card">
+                        <div class="ppd-sf-file-top">
+                            <div class="ppd-sf-file-icon"><i class="fa-solid fa-image"></i></div>
+                            <span class="ppd-sf-file-status">Recent</span>
+                        </div>
+                        <div class="ppd-sf-file-copy">
+                            <span class="ppd-sf-file-id">#SF-1086</span>
+                            <h4>Event Banner Artwork.png</h4>
+                        </div>
+                        <div class="ppd-sf-file-meta">
+                            <div><span>Type</span><strong>PNG</strong></div>
+                            <div><span>Size</span><strong>26.8 MB</strong></div>
+                            <div><span>Upload Date</span><strong>Jul 30, 2026</strong></div>
+                            <div><span>Last Used</span><strong>Jul 31, 2026</strong></div>
+                        </div>
+                        <div class="ppd-sf-file-specs">
+                            <span>Print Specifications</span>
+                            <strong>Large Format &middot; Full Color &middot; Laminated</strong>
+                        </div>
+                        <div class="ppd-sf-file-storage">
+                            <span>Storage Status</span>
+                            <strong>Large asset stored with preview ready</strong>
+                        </div>
+                        <div class="ppd-sf-file-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Download</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Preview</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--danger">Delete</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-sf-preview-card">
+
+                <div class="ppd-sf-section-head">
+                    <div>
+                        <span class="ppd-sf-section-badge">File Preview</span>
+                        <h3 class="ppd-sf-section-title">Open a saved file in the preview workspace</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-sf-preview-grid">
+                    <div class="ppd-sf-preview-visual">
+                        <div class="ppd-sf-preview-file">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                    </div>
+                    <div class="ppd-sf-preview-info">
+                        <div class="ppd-sf-preview-meta">
+                            <div><span>File Name</span><strong>Brand Brochure Final.pdf</strong></div>
+                            <div><span>Upload Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>File Type</span><strong>PDF</strong></div>
+                            <div><span>File Size</span><strong>18.4 MB</strong></div>
+                            <div><span>Pages</span><strong>24</strong></div>
+                            <div><span>Print Specifications</span><strong>A4 · Premium Matte · Full Color</strong></div>
+                        </div>
+                        <div class="ppd-sf-preview-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Download</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="ppd-sf-recent-card">
+
+                <div class="ppd-sf-section-head">
+                    <div>
+                        <span class="ppd-sf-section-badge">Recently Used Files</span>
+                        <h3 class="ppd-sf-section-title">Most recently printed assets</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-sf-recent-grid">
+
+                    <article class="ppd-sf-recent-item">
+                        <img src="images/saved-1.jpg" alt="Recent file thumbnail" class="ppd-sf-recent-thumb">
+                        <h4>Brand Brochure Final.pdf</h4>
+                        <p>Last printed Aug 02, 2026</p>
+                        <strong>Printed 4 times</strong>
+                        <div class="ppd-sf-recent-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-sf-recent-item">
+                        <img src="images/saved-2.jpg" alt="Recent file thumbnail" class="ppd-sf-recent-thumb">
+                        <h4>Invoice Template.docx</h4>
+                        <p>Last printed Aug 01, 2026</p>
+                        <strong>Printed 2 times</strong>
+                        <div class="ppd-sf-recent-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-sf-recent-item">
+                        <img src="images/saved-3.jpg" alt="Recent file thumbnail" class="ppd-sf-recent-thumb">
+                        <h4>Event Banner Artwork.png</h4>
+                        <p>Last printed Jul 31, 2026</p>
+                        <strong>Printed 3 times</strong>
+                        <div class="ppd-sf-recent-actions">
+                            <a href="#" class="ppd-sf-mini-btn">Print Again</a>
+                            <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-sf-storage-card">
+
+                <div class="ppd-sf-section-head">
+                    <div>
+                        <span class="ppd-sf-section-badge">File Storage Summary</span>
+                        <h3 class="ppd-sf-section-title">Monitor how your library is using space</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-sf-storage-grid">
+                    <div><span>Total Storage Used</span><strong>18.4 GB</strong></div>
+                    <div><span>Available Storage</span><strong>31.6 GB</strong></div>
+                    <div><span>Number of Saved Files</span><strong>148</strong></div>
+                    <div><span>Recently Uploaded Files</span><strong>12</strong></div>
+                </div>
+
+                <div class="ppd-sf-storage-bar">
+                    <div class="ppd-sf-storage-fill" style="width: 37%;"></div>
+                </div>
+
+                <div class="ppd-sf-storage-actions">
+                    <a href="upload-files.html" class="ppd-sf-mini-btn">Upload New File</a>
+                    <a href="#" class="ppd-sf-mini-btn ppd-sf-mini-btn--ghost">Manage Files</a>
+                </div>
+
+            </section>
+
+            <section class="ppd-sf-actions-card">
+
+                <div class="ppd-sf-section-head">
+                    <div>
+                        <span class="ppd-sf-section-badge">Quick File Actions</span>
+                        <h3 class="ppd-sf-section-title">Fast access to your most-used file workflows</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-sf-actions-grid">
+
+                    <a href="upload-files.html" class="ppd-sf-action-item">
+                        <span class="ppd-sf-action-icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                        <strong>Upload New File</strong>
+                        <p>Add fresh documents and artwork to your library.</p>
+                    </a>
+
+                    <a href="print-orders.html" class="ppd-sf-action-item">
+                        <span class="ppd-sf-action-icon"><i class="fa-solid fa-print"></i></span>
+                        <strong>Print Saved File</strong>
+                        <p>Send a stored and saved file of yours into a new print order.</p>
+                    </a>
+
+                    <a href="#" class="ppd-sf-action-item">
+                        <span class="ppd-sf-action-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        <strong>Download Files</strong>
+                        <p>Download the original and quality versions from your library.</p>
+                    </a>
+
+                    <a href="#" class="ppd-sf-action-item">
+                        <span class="ppd-sf-action-icon"><i class="fa-solid fa-database"></i></span>
+                        <strong>Manage Storage</strong>
+                        <p>Review file usage and keep your storage organized.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>PixelPress</title>
+
+    <meta name="description"
+        content="PixelPress is a modern print and copy shop offering business cards, flyers, brochures, banners, document printing, and custom print solutions.">
+
+    <meta name="keywords"
+        content="print shop, printing services, business cards, flyers, brochures, banners, document printing">
+
+    <meta name="author" content="PixelPress">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-container">
+
+            <nav class="primary-navbar">
+
+                <!-- Logo -->
+
+                <div class="brand-logo">
+
+                    <a href="index.html">
+
+                        <img src="images/logo.png" alt="PixelPress">
+
+                    </a>
+
+                </div>
+
+                <!-- Navigation -->
+
+                <ul class="primary-nav-menu">
+
+                    <li class="dropdown">
+
+                        <a href="#">
+                            Home
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="index.html">Home 1</a></li>
+
+                            <li><a href="home-2.html">Home 2</a></li>
+
+                        </ul>
+
+                    </li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="services.html">Services</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li><a href="dashboard.html">Dashboard</a></li>
+
+                </ul>
+
+                <!-- Right -->
+
+                <div class="header-actions">
+
+                    <button class="theme-toggle-button">
+
+                        <i class="fa-solid fa-moon"></i>
+
+                    </button>
+
+                    <button class="direction-toggle-button">
+
+                        <i class="fa-solid fa-right-left"></i>
+
+                    </button>
+
+                    <a href="login.html" class="brand-solid-button">
+
+                        Login
+
+                    </a>
+
+                    <button class="mobile-menu-toggle" type="button" id="mobileMenuToggle" aria-label="Open menu"
+                        aria-controls="mobileNavSidebar" aria-expanded="false">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </div>
+
+            </nav>
+
+            <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true"></div>
+
+            <aside class="mobile-nav-sidebar" id="mobileNavSidebar" aria-hidden="true" aria-label="Mobile navigation">
+
+                <div class="mobile-nav-sidebar-inner">
+
+                    <button class="mobile-nav-close" type="button" id="mobileNavClose" aria-label="Close menu">
+
+                        <i class="fa-solid fa-xmark"></i>
+
+                    </button>
+
+                    <ul class="mobile-nav-menu">
+
+                        <li class="mobile-nav-dropdown">
+
+                            <div class="mobile-nav-dropdown-header">
+
+                                <a href="index.html">Home</a>
+
+                                <button class="mobile-nav-dropdown-toggle" type="button"
+                                    aria-label="Toggle Home submenu" aria-expanded="false">
+
+                                    <i class="fa-solid fa-angle-down"></i>
+
+                                </button>
+
+                            </div>
+
+                            <ul class="mobile-nav-submenu">
+
+                                <li><a href="index.html">Home 1</a></li>
+
+                                <li><a href="home-2.html">Home 2</a></li>
+
+                            </ul>
+
+                        </li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="dashboard.html">Dashboard</a></li>
+
+                    </ul>
+
+                    <div class="mobile-nav-utility-group">
+
+                        <button class="mobile-nav-utility-button theme-toggle-button" type="button"
+                            aria-label="Dark mode toggle">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+                        <button class="mobile-nav-utility-button direction-toggle-button" type="button"
+                            aria-label="RTL mode toggle">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+                    </div>
+
+                    <a href="login.html" class="brand-solid-button mobile-nav-login">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </header>
+
+
+    <!--=========================================
+Page Banner Start
+==========================================-->
+
+    <section class="page-banner d5-banner">
+
+        <div class="site-container">
+
+            <div class="page-banner-content">
+
+                <span class="banner-subtitle">
+
+                    Professional Printing Service
+
+                </span>
+
+                <h1>
+
+                    Sticker & Label Printing
+
+                </h1>
+
+                <p>
+
+                    Enhance your products and brand identity with professionally printed
+                    stickers and labels designed for every application.
+
+                </p>
+
+                <ul class="breadcrumb">
+
+                    <li>
+
+                        <a href="index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+                        <a href="services.html">
+
+                            Services
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <i class="fa-solid fa-angle-right"></i>
+
+                    </li>
+
+                    <li>
+
+                        Sticker & Label Printing
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Page Banner End
+==========================================-->
+
+
+    <!--=========================================
+Sticker & Label Printing Overview Start
+==========================================-->
+
+    <section class="business-card-overview page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-overview-wrapper">
+
+                <div class="business-card-overview-image">
+
+                    <img src="images/sticker-overview.jpg" alt="Sticker & Label Printing">
+
+                </div>
+
+                <div class="business-card-overview-content">
+
+                    <span>About This Service</span>
+
+                    <h2>
+                        Premium Sticker & Label Printing
+                        for Products & Brand Identity
+                    </h2>
+
+                    <p>
+
+                        At PixelPress, we provide high-quality sticker and label
+                        printing solutions that help businesses enhance their
+                        branding, product packaging, and promotional campaigns.
+                        Using advanced printing technology, we produce vibrant,
+                        durable, and precision-cut stickers that deliver a
+                        professional finish.
+
+                    </p>
+
+                    <p>
+
+                        Whether you need product labels, packaging stickers,
+                        barcode labels, logo stickers, promotional decals,
+                        or custom-shaped labels, our printing services are
+                        designed to meet your branding needs with exceptional
+                        quality and long-lasting performance.
+
+                    </p>
+
+                    <div class="business-card-feature-grid">
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-tags"></i>
+
+                            <div>
+
+                                <h4>Custom Shapes & Sizes</h4>
+
+                                <p>
+
+                                    Choose from standard or custom die-cut
+                                    stickers and labels for every application.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="business-card-feature-item">
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                            <div>
+
+                                <h4>Waterproof Materials</h4>
+
+                                <p>
+
+                                    Durable waterproof and weather-resistant
+                                    materials suitable for indoor and outdoor use.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Sticker & Label Printing Overview End
+==========================================-->
+
+
+    <!--=========================================
+Sticker & Label Printing Specifications Start
+==========================================-->
+
+    <section class="business-card-specifications page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Print Specifications</span>
+
+                <h2>Customize Your Sticker & Label Printing</h2>
+
+                <p>
+
+                    Create durable and eye-catching stickers and labels with
+                    customizable sizes, premium materials, vibrant printing,
+                    and professional finishes tailored to your branding needs.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-spec-grid">
+
+                <!-- Specification 1 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-tags"></i>
+
+                    </div>
+
+                    <h3>Custom Sizes</h3>
+
+                    <p>
+
+                        Choose from standard or custom dimensions for product
+                        labels, packaging, branding, and promotional stickers.
+
+                    </p>
+
+                    <span>Standard • Custom • Die-Cut</span>
+
+                </div>
+
+
+                <!-- Specification 2 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <h3>Sticker Materials</h3>
+
+                    <p>
+
+                        Select premium materials designed for indoor,
+                        outdoor, and long-lasting applications.
+
+                    </p>
+
+                    <span>Vinyl • Paper • Transparent • Kraft</span>
+
+                </div>
+
+
+                <!-- Specification 3 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-palette"></i>
+
+                    </div>
+
+                    <h3>Print Quality</h3>
+
+                    <p>
+
+                        High-resolution printing with vibrant colors and
+                        sharp graphics for a professional finish.
+
+                    </p>
+
+                    <span>Full Color • High Resolution</span>
+
+                </div>
+
+
+                <!-- Specification 4 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-droplet"></i>
+
+                    </div>
+
+                    <h3>Finish Options</h3>
+
+                    <p>
+
+                        Choose protective finishes that enhance your print appearance
+                        and improve durability.
+
+                    </p>
+
+                    <span>Matte • Glossy • Waterproof</span>
+
+                </div>
+
+
+                <!-- Specification 5 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-certificate"></i>
+
+                    </div>
+
+                    <h3>Adhesive Quality</h3>
+
+                    <p>
+
+                        Strong adhesive options suitable for packaging,
+                        bottles, boxes, glass, and various surfaces.
+
+                    </p>
+
+                    <span>Permanent • Removable</span>
+
+                </div>
+
+
+                <!-- Specification 6 -->
+
+                <div class="business-card-spec-item">
+
+                    <div class="business-card-spec-icon">
+
+                        <i class="fa-solid fa-clock"></i>
+
+                    </div>
+
+                    <h3>Turnaround</h3>
+
+                    <p>
+
+                        Fast production with reliable delivery for product
+                        labeling and promotional requirements.
+
+                    </p>
+
+                    <span>1–3 Business Days</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Sticker & Label Printing Specifications End
+==========================================-->
+
+    <!--=========================================
+Sticker & Label Printing Process Start
+==========================================-->
+
+    <section class="business-card-process page-section-padding">
+
+        <div class="site-container">
+
+            <div class="section-heading">
+
+                <span>Our Process</span>
+
+                <h2>Simple Steps to Create Premium Stickers & Labels</h2>
+
+                <p>
+
+                    From submitting your design to receiving high-quality stickers
+                    and labels, our streamlined process ensures vibrant printing,
+                    precision cutting, and reliable delivery for every order.
+
+                </p>
+
+            </div>
+
+            <div class="business-card-process-wrapper">
+
+                <!-- Step 1 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    </div>
+
+                    <span>Step 01</span>
+
+                    <h3>Upload Artwork</h3>
+
+                    <p>
+
+                        Upload your sticker or label design, logo, or branding
+                        files, or share your custom design requirements.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 2 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-sliders"></i>
+
+                    </div>
+
+                    <span>Step 02</span>
+
+                    <h3>Specifications</h3>
+
+                    <p>
+
+                        Choose the size, material, finish, adhesive type,
+                        shape, and quantity for your stickers or labels.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 3 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-tags"></i>
+
+                    </div>
+
+                    <span>Step 03</span>
+
+                    <h3>Precision Printing</h3>
+
+                    <p>
+
+                        We print your stickers and labels using premium quality
+                        materials with vibrant colors and sharp details.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 4 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-file-circle-check"></i>
+
+                    </div>
+
+                    <span>Step 04</span>
+
+                    <h3>Quality Inspection</h3>
+
+                    <p>
+
+                        Every sticker and label is carefully selected and inspected for
+                        print quality, color accuracy, and precise cutting.
+
+                    </p>
+
+                </div>
+
+                <!-- Step 5 -->
+
+                <div class="business-card-process-item">
+
+                    <div class="business-card-process-icon">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                    </div>
+
+                    <span>Step 05</span>
+
+                    <h3>Delivery</h3>
+
+                    <p>
+
+                        Your completed order is securely packed and delivered
+                        safely, ready for branding, packaging, or promotional use.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Sticker & Label Printing Process End
+==========================================-->
+
+    <!--=========================================
+Sticker & Label Printing CTA Start
+==========================================-->
+
+    <section class="business-card-cta page-section-padding">
+
+        <div class="site-container">
+
+            <div class="business-card-cta-wrapper">
+
+                <span>Let's Print Together</span>
+
+                <h2>
+                    Make Your Brand Stand Out with
+                    Premium Sticker & Label Printing
+                </h2>
+
+                <p>
+
+                    From custom product labels and packaging stickers to
+                    promotional decals and branding solutions, PixelPress
+                    delivers vibrant, durable, and precision-crafted sticker
+                    and label printing that enhances your products and leaves
+                    a lasting impression.
+
+                </p>
+
+                <div class="business-card-cta-buttons">
+
+                    <a href="contact.html" class="brand-solid-button">
+
+                        Get a Free Quote
+
+                    </a>
+
+                    <a href="services.html" class="brand-outline-button">
+
+                        Explore More Services
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+Sticker & Label Printing CTA End
+==========================================-->
+
+
+
+    <!--=========================================
+Footer Start
+==========================================-->
+
+    <footer class="site-footer">
+
+        <div class="site-container">
+
+            <div class="footer-grid-layout">
+
+                <!-- Footer About -->
+
+                <div class="footer-column footer-about">
+
+                    <a href="index.html" class="footer-brand">
+
+                        <img src="images/logo.png" alt="PixelPress Logo">
+
+                    </a>
+
+                    <p>
+                        PixelPress delivers premium-quality printing solutions for
+                        businesses, students, and individuals with fast turnaround,
+                        exceptional quality, and reliable customer support.
+                    </p>
+
+                    <div class="footer-social-links">
+
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    </div>
+
+                </div>
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>Quick Links</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="index.html">Home</a></li>
+
+                        <li><a href="about.html">About</a></li>
+
+                        <li><a href="services.html">Services</a></li>
+
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Services -->
+
+                <div class="footer-column">
+
+                    <h3>Our Services</h3>
+
+                    <ul class="footer-link-list">
+
+                        <li><a href="#">Business Cards</a></li>
+
+                        <li><a href="#">Flyers & Brochures</a></li>
+
+                        <li><a href="#">Banner Printing</a></li>
+
+                        <li><a href="#">Document Printing</a></li>
+
+                        <li><a href="#">Custom Printing</a></li>
+
+                    </ul>
+
+                </div>
+
+                <!-- Contact -->
+
+                <div class="footer-column">
+
+                    <h3>Contact Info</h3>
+
+                    <ul class="footer-contact-list">
+
+                        <li>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            <span>Chennai, Tamil Nadu, India</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <span>+91 98765 43210</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <span>info@pixelpress.com</span>
+
+                        </li>
+
+                        <li>
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <span>Mon - Sat : 9:00 AM - 8:00 PM</span>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+
+            <div class="site-copyright">
+
+                <div class="copyright-row">
+
+                    <p>
+
+                        © 2026 PixelPress. All Rights Reserved.
+
+                    </p>
+
+                    <div class="footer-legal-links">
+
+                        <a href="#">Privacy Policy</a>
+
+                        <a href="#">Terms & Conditions</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--=========================================
+Footer End
+==========================================-->
+
+    <!--=========================================
+Scroll To Top
+==========================================-->
+
+    <button class="back-to-top-button" id="backToTopButton">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

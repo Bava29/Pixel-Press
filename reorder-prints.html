@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Reorder Prints | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Reorder previously printed jobs, reuse templates, customize print settings, and explore recommended products in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Reorder Prints</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Reorder Prints</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+            <section class="ppd-rp-overview-grid">
+
+                <article class="ppd-rp-overview-card">
+                    <div class="ppd-rp-overview-top">
+                        <span class="ppd-rp-overview-icon ppd-rp-overview-icon--teal"><i
+                                class="fa-solid fa-clipboard-list"></i></span>
+                        <span class="ppd-rp-overview-badge">Active</span>
+                    </div>
+                    <strong class="ppd-rp-overview-value">126</strong>
+                    <h3 class="ppd-rp-overview-title">Previous Orders</h3>
+                    <p class="ppd-rp-overview-text">Completed jobs available to reorder instantly.</p>
+                </article>
+
+                <article class="ppd-rp-overview-card">
+                    <div class="ppd-rp-overview-top">
+                        <span class="ppd-rp-overview-icon ppd-rp-overview-icon--green"><i
+                                class="fa-solid fa-folder-open"></i></span>
+                        <span class="ppd-rp-overview-badge">Saved</span>
+                    </div>
+                    <strong class="ppd-rp-overview-value">42</strong>
+                    <h3 class="ppd-rp-overview-title">Saved Print Files</h3>
+                    <p class="ppd-rp-overview-text">Reusable files ready for repeat production.</p>
+                </article>
+
+                <article class="ppd-rp-overview-card">
+                    <div class="ppd-rp-overview-top">
+                        <span class="ppd-rp-overview-icon ppd-rp-overview-icon--orange"><i
+                                class="fa-solid fa-rotate"></i></span>
+                        <span class="ppd-rp-overview-badge">Popular</span>
+                    </div>
+                    <strong class="ppd-rp-overview-value">18</strong>
+                    <h3 class="ppd-rp-overview-title">Frequently Reordered</h3>
+                    <p class="ppd-rp-overview-text">Your most repeated print jobs across services.</p>
+                </article>
+
+                <article class="ppd-rp-overview-card">
+                    <div class="ppd-rp-overview-top">
+                        <span class="ppd-rp-overview-icon ppd-rp-overview-icon--slate"><i
+                                class="fa-solid fa-arrow-rotate-right"></i></span>
+                        <span class="ppd-rp-overview-badge">Lifetime</span>
+                    </div>
+                    <strong class="ppd-rp-overview-value">86</strong>
+                    <h3 class="ppd-rp-overview-title">Total Reorders</h3>
+                    <p class="ppd-rp-overview-text">Every repeat order placed from your account.</p>
+                </article>
+
+            </section>
+
+            <section class="ppd-rp-orders-card">
+
+                <div class="ppd-rp-section-head">
+                    <div>
+                        <span class="ppd-rp-section-badge">Recently Ordered Prints</span>
+                        <h3 class="ppd-rp-section-title">Jump back into your latest print jobs</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-orders-grid">
+
+                    <article class="ppd-rp-order-card">
+                        <div class="ppd-rp-order-top">
+                            <img src="images/order-1.jpg" alt="Order thumbnail" class="ppd-rp-order-thumb">
+                            <span class="ppd-rp-order-status">Delivered</span>
+                        </div>
+                        <div class="ppd-rp-order-copy">
+                            <span class="ppd-rp-order-id">#PP-2051</span>
+                            <h4>Business Cards</h4>
+                        </div>
+                        <div class="ppd-rp-order-meta">
+                            <div><span>Order Date</span><strong>Aug 02, 2026</strong></div>
+                            <div><span>Quantity</span><strong>500 pcs</strong></div>
+                            <div><span>Total Amount</span><strong>$180.00</strong></div>
+                            <div><span>Previous Specs</span><strong>Matte, Full Color, 2-Sided</strong></div>
+                        </div>
+                        <div class="ppd-rp-order-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Reorder Now</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-order-card">
+                        <div class="ppd-rp-order-top">
+                            <img src="images/order-2.jpg" alt="Order thumbnail" class="ppd-rp-order-thumb">
+                            <span class="ppd-rp-order-status">Completed</span>
+                        </div>
+                        <div class="ppd-rp-order-copy">
+                            <span class="ppd-rp-order-id">#PP-2048</span>
+                            <h4>Presentation Binding</h4>
+                        </div>
+                        <div class="ppd-rp-order-meta">
+                            <div><span>Order Date</span><strong>Aug 01, 2026</strong></div>
+                            <div><span>Quantity</span><strong>25 sets</strong></div>
+                            <div><span>Total Amount</span><strong>$142.00</strong></div>
+                            <div><span>Previous Specs</span><strong>A4, Matte, Perfect Bound</strong></div>
+                        </div>
+                        <div class="ppd-rp-order-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Reorder Now</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-order-card">
+                        <div class="ppd-rp-order-top">
+                            <img src="images/order-3.jpg" alt="Order thumbnail" class="ppd-rp-order-thumb">
+                            <span class="ppd-rp-order-status">Delivered</span>
+                        </div>
+                        <div class="ppd-rp-order-copy">
+                            <span class="ppd-rp-order-id">#PP-2036</span>
+                            <h4>Flyer Campaign</h4>
+                        </div>
+                        <div class="ppd-rp-order-meta">
+                            <div><span>Order Date</span><strong>Jul 29, 2026</strong></div>
+                            <div><span>Quantity</span><strong>1,000 pcs</strong></div>
+                            <div><span>Total Amount</span><strong>$240.00</strong></div>
+                            <div><span>Previous Specs</span><strong>Glossy, Full Color, 1-Sided</strong></div>
+                        </div>
+                        <div class="ppd-rp-order-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Reorder Now</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">View Details</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-rp-templates-card">
+
+                <div class="ppd-rp-section-head">
+                    <div>
+                        <span class="ppd-rp-section-badge">Saved Print Templates</span>
+                        <h3 class="ppd-rp-section-title">Use your most common layouts again</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-template-grid">
+
+                    <article class="ppd-rp-template-card">
+                        <div class="ppd-rp-template-preview">
+                            <i class="fa-solid fa-file-pdf"></i>
+                        </div>
+                        <h4>Brand Brochure Template</h4>
+                        <div class="ppd-rp-template-meta">
+                            <span>PDF</span>
+                            <span>Last used Aug 02, 2026</span>
+                            <strong>Matte &middot; Full Color &middot; Perfect Bound</strong>
+                        </div>
+                        <div class="ppd-rp-template-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Use Template</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">Edit Specifications</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-template-card">
+                        <div class="ppd-rp-template-preview">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <h4>Invoice Template</h4>
+                        <div class="ppd-rp-template-meta">
+                            <span>DOCX</span>
+                            <span>Last used Aug 01, 2026</span>
+                            <strong>A4 &middot; Black &amp; White &middot; Double-sided</strong>
+                        </div>
+                        <div class="ppd-rp-template-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Use Template</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">Edit Specifications</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-template-card">
+                        <div class="ppd-rp-template-preview">
+                            <i class="fa-solid fa-image"></i>
+                        </div>
+                        <h4>Event Banner Layout</h4>
+                        <div class="ppd-rp-template-meta">
+                            <span>PNG</span>
+                            <span>Last used Jul 30, 2026</span>
+                            <strong>Large Format &middot; Full Color &middot; Laminated</strong>
+                        </div>
+                        <div class="ppd-rp-template-actions">
+                            <a href="#" class="ppd-rp-mini-btn">Use Template</a>
+                            <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">Edit Specifications</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-rp-custom-card">
+
+                <div class="ppd-rp-section-head">
+                    <div>
+                        <span class="ppd-rp-section-badge">Customize Reorder</span>
+                        <h3 class="ppd-rp-section-title">Fine tune the print setup before continuing</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-custom-grid">
+                    <div class="ppd-rp-field">
+                        <label for="rp-paper-size">Paper Size</label>
+                        <select id="rp-paper-size">
+                            <option>A4</option>
+                            <option>A3</option>
+                            <option>Letter</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-paper-type">Paper Type</label>
+                        <select id="rp-paper-type">
+                            <option>Premium Matte</option>
+                            <option>Glossy</option>
+                            <option>Satin</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-color">Print Color</label>
+                        <select id="rp-color">
+                            <option>Full Color</option>
+                            <option>Black &amp; White</option>
+                            <option>Spot Color</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-orientation">Orientation</label>
+                        <select id="rp-orientation">
+                            <option>Portrait</option>
+                            <option>Landscape</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-sides">Single / Double Side</label>
+                        <select id="rp-sides">
+                            <option>Single Side</option>
+                            <option>Double Side</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-copies">Number of Copies</label>
+                        <input id="rp-copies" type="number" min="1" value="25">
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-binding">Binding Type</label>
+                        <select id="rp-binding">
+                            <option>Perfect Bound</option>
+                            <option>Stapled</option>
+                            <option>Spiral</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field">
+                        <label for="rp-lamination">Lamination</label>
+                        <select id="rp-lamination">
+                            <option>Matte Lamination</option>
+                            <option>Gloss Lamination</option>
+                            <option>None</option>
+                        </select>
+                    </div>
+                    <div class="ppd-rp-field ppd-rp-field--full">
+                        <label for="rp-notes">Additional Instructions</label>
+                        <textarea id="rp-notes" rows="5"
+                            placeholder="Add any special repeat-order notes for the production team."></textarea>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-custom-actions">
+                    <a href="#" class="ppd-rp-mini-btn">Update Print Settings</a>
+                    <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">Continue</a>
+                </div>
+
+            </section>
+
+            <section class="ppd-rp-summary-card">
+
+                <div class="ppd-rp-section-head">
+                    <div>
+                        <span class="ppd-rp-section-badge">Reorder Summary</span>
+                        <h3 class="ppd-rp-section-title">Review the repeat order before confirmation</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-summary-grid">
+                    <div><span>Selected Product</span><strong>Presentation Binding</strong></div>
+                    <div><span>Quantity</span><strong>25 sets</strong></div>
+                    <div><span>Printing Cost</span><strong>$124.00</strong></div>
+                    <div><span>Additional Charges</span><strong>$18.00</strong></div>
+                    <div><span>Estimated Delivery Date</span><strong>Aug 04, 2026</strong></div>
+                    <div><span>Grand Total</span><strong>$142.00</strong></div>
+                </div>
+
+                <div class="ppd-rp-summary-actions">
+                    <a href="#" class="ppd-rp-mini-btn">Confirm Reorder</a>
+                    <a href="#" class="ppd-rp-mini-btn ppd-rp-mini-btn--ghost">Cancel</a>
+                </div>
+
+            </section>
+
+            <section class="ppd-rp-recommend-card">
+
+                <div class="ppd-rp-section-head">
+                    <div>
+                        <span class="ppd-rp-section-badge">Recommended Prints</span>
+                        <h3 class="ppd-rp-section-title">Popular products to reorder or try next</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-rp-recommend-grid">
+
+                    <article class="ppd-rp-recommend-item">
+                        <img src="images/reorder-1.jpg" alt="Business cards" class="ppd-rp-recommend-img">
+                        <h4>Business Cards</h4>
+                        <p>Compact premium cards for quick networking and brand recognition.</p>
+                        <div class="ppd-rp-recommend-footer">
+                            <strong>From $60.00</strong>
+                            <a href="#" class="ppd-rp-mini-btn">Order Now</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-recommend-item">
+                        <img src="images/reorder-2.jpg" alt="Flyers" class="ppd-rp-recommend-img">
+                        <h4>Flyers</h4>
+                        <p>Fast-moving promotional prints for events and product launches.</p>
+                        <div class="ppd-rp-recommend-footer">
+                            <strong>From $45.00</strong>
+                            <a href="#" class="ppd-rp-mini-btn">Order Now</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-recommend-item">
+                        <img src="images/reorder-3.jpg" alt="Brochures" class="ppd-rp-recommend-img">
+                        <h4>Brochures</h4>
+                        <p>Elegant multi-page print formats for premium service storytelling.</p>
+                        <div class="ppd-rp-recommend-footer">
+                            <strong>From $95.00</strong>
+                            <a href="#" class="ppd-rp-mini-btn">Order Now</a>
+                        </div>
+                    </article>
+
+                    <article class="ppd-rp-recommend-item">
+                        <img src="images/reorder-4.jpg" alt="Posters" class="ppd-rp-recommend-img">
+                        <h4>Posters</h4>
+                        <p>Large-format visuals for campaigns, signage, and in-store displays.</p>
+                        <div class="ppd-rp-recommend-footer">
+                            <strong>From $120.00</strong>
+                            <a href="#" class="ppd-rp-mini-btn">Order Now</a>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

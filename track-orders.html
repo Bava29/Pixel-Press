@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PixelPress Track Orders | Customer Dashboard</title>
+
+    <meta name="description"
+        content="Track active print orders, review delivery details, and follow every status update in the PixelPress customer dashboard.">
+
+    <meta name="author" content="PixelPress">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="ppd-dashboard-body">
+
+    <div class="ppd-dashboard-shell">
+
+        <aside class="ppd-dashboard-sidebar">
+
+            <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                <img src="images/logo.png" alt="PixelPress">
+            </a>
+
+            <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                <a class="ppd-sidebar-link" href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="upload-files.html">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                    <span>Upload Files</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="print-orders.html">
+                    <i class="fa-solid fa-print"></i>
+                    <span>Print Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link ppd-sidebar-link--active" href="track-orders.html">
+                    <i class="fa-solid fa-truck-fast"></i>
+                    <span>Track Orders</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="order-history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Order History</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="reorder-prints.html">
+                    <i class="fa-solid fa-rotate"></i>
+                    <span>Reorder Prints</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="payments.html">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Payments</span>
+                </a>
+
+                <a class="ppd-sidebar-link" href="saved-files.html">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span>Saved Files</span>
+                </a>
+
+            </nav>
+
+            <div class="ppd-sidebar-footer">
+                <a href="login.html" class="ppd-logout-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+
+        </aside>
+
+        <main class="ppd-dashboard-main">
+
+            <header class="ppd-dashboard-header">
+
+                <div class="ppd-header-copy">
+                    <span class="ppd-header-kicker">Customer Dashboard</span>
+                    <h1 class="ppd-header-title">Track Orders</h1>
+                </div>
+
+                <div class="ppd-header-mobile">
+                    <button class="ppd-header-icon-btn ppd-dashboard-menu-toggle" type="button"
+                        id="ppdDashboardMenuToggle" aria-label="Open dashboard menu"
+                        aria-controls="ppdDashboardMobileSidebar" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <h1 class="ppd-header-title">Track Orders</h1>
+                </div>
+
+                <div class="ppd-header-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <section class="ppd-to-overview-panel">
+
+                <div class="ppd-to-overview-copy">
+                    <span class="ppd-to-section-badge">Active Order Overview</span>
+                    <h3 class="ppd-to-section-title">Your current print order is moving through production</h3>
+                    <p class="ppd-to-section-text">
+                        This premium overview keeps the full order context visible, including timing, priority, and
+                        the best way to reach support if you need help.
+                    </p>
+
+                    <div class="ppd-to-overview-grid">
+                        <div>
+                            <span>Order ID</span>
+                            <strong>#PP-2048</strong>
+                        </div>
+                        <div>
+                            <span>Service Name</span>
+                            <strong>Presentation Binding</strong>
+                        </div>
+                        <div>
+                            <span>Order Date</span>
+                            <strong>Aug 01, 2026</strong>
+                        </div>
+                        <div>
+                            <span>Delivery Date</span>
+                            <strong>Aug 04, 2026</strong>
+                        </div>
+                        <div>
+                            <span>Current Status</span>
+                            <strong class="ppd-to-status-text">Printing</strong>
+                        </div>
+                        <div>
+                            <span>Order Priority</span>
+                            <strong>Priority</strong>
+                        </div>
+                        <div>
+                            <span>Total Amount</span>
+                            <strong>$142.00</strong>
+                        </div>
+                        <div class="ppd-to-overview-totalfill">
+                            <div class="ppd-to-overview-totalfill-copy">
+                                <span>Amount Breakdown</span>
+                                <strong>Printing $124 + Delivery $12 + Tax $16 - Discount $10</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="ppd-to-support-btn">
+                        <i class="fa-solid fa-headset"></i>
+                        <span>Contact Support</span>
+                    </a>
+                </div>
+
+                <div class="ppd-to-overview-side">
+                    <div class="ppd-to-overview-stat">
+                        <span>Progress</span>
+                        <strong>68%</strong>
+                    </div>
+                    <div class="ppd-to-overview-stat">
+                        <span>Queue Position</span>
+                        <strong>2 of 6</strong>
+                    </div>
+                    <div class="ppd-to-overview-focus">
+                        <span>Next Milestone</span>
+                        <strong>Binding / Finishing</strong>
+                        <p>Expected to begin once the active print batch clears quality review.</p>
+                    </div>
+                    <div class="ppd-to-overview-minirow">
+                        <div class="ppd-to-overview-mini">
+                            <span>Turnaround</span>
+                            <strong>4:30 - 6:00 PM</strong>
+                        </div>
+                        <div class="ppd-to-overview-mini">
+                            <span>Support Window</span>
+                            <strong>Open until 8 PM</strong>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="ppd-to-timeline-card">
+
+                <div class="ppd-to-section-head">
+                    <div>
+                        <span class="ppd-to-section-badge">Live Order Tracking</span>
+                        <h3 class="ppd-to-section-title">Track every production stage in a horizontal timeline</h3>
+                    </div>
+                    <div class="ppd-to-progress-pill">68% complete</div>
+                </div>
+
+                <div class="ppd-to-timeline-track">
+
+                    <div class="ppd-to-stage ppd-to-stage--done">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-circle-check"></i></span>
+                        <strong>Order Placed</strong>
+                        <p>Aug 01, 2026 08:15 AM</p>
+                    </div>
+
+                    <div class="ppd-to-stage ppd-to-stage--done">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-file-circle-check"></i></span>
+                        <strong>File Verified</strong>
+                        <p>Aug 01, 2026 09:05 AM</p>
+                    </div>
+
+                    <div class="ppd-to-stage ppd-to-stage--active">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-print"></i></span>
+                        <strong>Printing</strong>
+                        <p>In progress now</p>
+                    </div>
+
+                    <div class="ppd-to-stage">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-layer-group"></i></span>
+                        <strong>Binding</strong>
+                        <p>Pending</p>
+                    </div>
+
+                    <div class="ppd-to-stage">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-clipboard-check"></i></span>
+                        <strong>Quality Check</strong>
+                        <p>Pending</p>
+                    </div>
+
+                    <div class="ppd-to-stage">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-box"></i></span>
+                        <strong>Pickup/Delivery</strong>
+                        <p>Pending</p>
+                    </div>
+
+                    <div class="ppd-to-stage">
+                        <span class="ppd-to-stage-dot"><i class="fa-solid fa-truck"></i></span>
+                        <strong>Delivered</strong>
+                        <p>Pending</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-to-details-grid">
+
+                <article class="ppd-to-info-card">
+                    <div class="ppd-to-section-head">
+                        <div>
+                            <span class="ppd-to-section-badge">Order Details</span>
+                            <h3 class="ppd-to-section-title">Complete print job details in one place</h3>
+                        </div>
+                    </div>
+
+                    <div class="ppd-to-info-list">
+                        <div><span>Order Number</span><strong>#PP-2048</strong></div>
+                        <div><span>File Name</span><strong>Presentation_Final.pdf</strong></div>
+                        <div><span>Print Service</span><strong>Presentation Binding</strong></div>
+                        <div><span>Paper Size</span><strong>A4</strong></div>
+                        <div><span>Paper Type</span><strong>Premium Matte</strong></div>
+                        <div><span>Color Option</span><strong>Full Color</strong></div>
+                        <div><span>Quantity</span><strong>25 Sets</strong></div>
+                        <div><span>Binding Type</span><strong>Perfect Bound</strong></div>
+                        <div><span>Lamination</span><strong>Matte Lamination</strong></div>
+                        <div><span>Delivery Method</span><strong>Pickup</strong></div>
+                    </div>
+                </article>
+
+                <article class="ppd-to-delivery-card">
+                    <div class="ppd-to-section-head">
+                        <div>
+                            <span class="ppd-to-section-badge">Delivery Information</span>
+                            <h3 class="ppd-to-section-title">See where the order is headed next</h3>
+                        </div>
+                    </div>
+
+                    <div class="ppd-to-delivery-address">
+                        <span>Delivery Address</span>
+                        <strong>PixelPress Customer Desk, 24 MG Road, Chennai, Tamil Nadu</strong>
+                    </div>
+
+                    <div class="ppd-to-delivery-meta">
+                        <div><span>Delivery Method</span><strong>Pickup</strong></div>
+                        <div><span>Estimated Delivery Time</span><strong>Aug 04, 2026 05:30 PM</strong></div>
+                        <div><span>Delivery Status</span><strong class="ppd-to-status-text">Preparing</strong></div>
+                        <div><span>Courier Information</span><strong>Not required for pickup orders</strong></div>
+                    </div>
+
+                    <a href="#" class="ppd-to-shipment-btn">
+                        <i class="fa-solid fa-location-arrow"></i>
+                        <span>Track Shipment</span>
+                    </a>
+                </article>
+
+            </section>
+
+            <section class="ppd-to-activity-card">
+
+                <div class="ppd-to-section-head">
+                    <div>
+                        <span class="ppd-to-section-badge">Activity Timeline</span>
+                        <h3 class="ppd-to-section-title">Every update captured in a vertical status feed</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-to-activity-list">
+
+                    <article class="ppd-to-activity-item ppd-to-activity-item--done">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-circle-check"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Order Placed</strong>
+                            <p>Customer submitted the print order from the dashboard.</p>
+                            <span>Aug 01, 2026 08:15 AM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item ppd-to-activity-item--done">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-credit-card"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Payment Successful</strong>
+                            <p>Payment confirmation received and allocated to the order.</p>
+                            <span>Aug 01, 2026 08:20 AM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item ppd-to-activity-item--done">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-file-circle-check"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Files Verified</strong>
+                            <p>Artwork and file settings passed the production review.</p>
+                            <span>Aug 01, 2026 09:05 AM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item ppd-to-activity-item--done">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-print"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Printing Started</strong>
+                            <p>The job entered the active print queue and began production.</p>
+                            <span>Aug 02, 2026 09:10 AM</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item ppd-to-activity-item--active">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-layer-group"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Printing Completed</strong>
+                            <p>Print output is complete and moving toward finishing.</p>
+                            <span>In progress</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Binding Started</strong>
+                            <p>Pending completion of finishing and assembly steps.</p>
+                            <span>Pending</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-clipboard-check"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Quality Inspection</strong>
+                            <p>Final inspection will confirm print readiness and finish quality.</p>
+                            <span>Pending</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-box"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Ready for Pickup</strong>
+                            <p>Your order will be marked ready once the finishing stage is done.</p>
+                            <span>Pending</span>
+                        </div>
+                    </article>
+
+                    <article class="ppd-to-activity-item">
+                        <span class="ppd-to-activity-icon"><i class="fa-solid fa-truck"></i></span>
+                        <div class="ppd-to-activity-copy">
+                            <strong>Delivered</strong>
+                            <p>Delivery confirmation will appear here after completion.</p>
+                            <span>Pending</span>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+            <section class="ppd-to-actions-card">
+
+                <div class="ppd-to-section-head">
+                    <div>
+                        <span class="ppd-to-section-badge">Order Actions</span>
+                        <h3 class="ppd-to-section-title">Quick actions for the current print order</h3>
+                    </div>
+                </div>
+
+                <div class="ppd-to-actions-grid">
+
+                    <a href="#" class="ppd-to-action-card">
+                        <span class="ppd-to-action-icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                        <strong>Download Invoice</strong>
+                        <p>Get the billing copy for your active print order.</p>
+                    </a>
+
+                    <a href="reorder-prints.html" class="ppd-to-action-card">
+                        <span class="ppd-to-action-icon"><i class="fa-solid fa-print"></i></span>
+                        <strong>Print Again</strong>
+                        <p>Reuse the same file and create a print request.</p>
+                    </a>
+
+                    <a href="#" class="ppd-to-action-card">
+                        <span class="ppd-to-action-icon"><i class="fa-solid fa-headset"></i></span>
+                        <strong>Contact Support</strong>
+                        <p>Reach the support desk for help.</p>
+                    </a>
+
+                    <a href="#" class="ppd-to-action-card ppd-to-action-card--danger">
+                        <span class="ppd-to-action-icon"><i class="fa-solid fa-ban"></i></span>
+                        <strong>Cancel Order</strong>
+                        <p>Available only while the order is still processing.</p>
+                    </a>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="ppd-dashboard-sidebar-overlay" id="ppdDashboardSidebarOverlay" aria-hidden="true"></div>
+
+        <aside class="ppd-dashboard-sidebar ppd-dashboard-sidebar--mobile" id="ppdDashboardMobileSidebar"
+            aria-hidden="true" aria-label="Mobile customer dashboard navigation">
+
+            <div class="ppd-mobile-sidebar-inner">
+
+                <button class="ppd-dashboard-sidebar-close" type="button" id="ppdDashboardSidebarClose"
+                    aria-label="Close dashboard menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <a href="index.html" class="ppd-sidebar-brand" aria-label="PixelPress dashboard home">
+                    <img src="images/logo.png" alt="PixelPress">
+                </a>
+
+                <nav class="ppd-sidebar-nav" aria-label="Customer dashboard navigation">
+
+                    <a class="ppd-sidebar-link" href="dashboard.html">
+                        <i class="fa-solid fa-table-columns"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="upload-files.html">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <span>Upload Files</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="print-orders.html">
+                        <i class="fa-solid fa-print"></i>
+                        <span>Print Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link ppd-sidebar-link--active" href="track-orders.html">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <span>Track Orders</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="order-history.html">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Order History</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="reorder-prints.html">
+                        <i class="fa-solid fa-rotate"></i>
+                        <span>Reorder Prints</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="payments.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payments</span>
+                    </a>
+
+                    <a class="ppd-sidebar-link" href="saved-files.html">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <span>Saved Files</span>
+                    </a>
+
+                </nav>
+
+                <div class="ppd-header-tools ppd-mobile-sidebar-tools">
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Notifications">
+                        <i class="fa-regular fa-bell"></i>
+                        <span class="ppd-notification-badge">3</span>
+                    </button>
+
+                    <button class="ppd-header-icon-btn" type="button" aria-label="Settings">
+                        <i class="fa-solid fa-gear"></i>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="Dark mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-regular fa-moon"></i>
+                        </span>
+                    </button>
+
+                    <button class="ppd-header-mode-btn" type="button" aria-label="RTL mode toggle">
+                        <span class="ppd-header-mode-icon">
+                            <i class="fa-solid fa-right-left"></i>
+                        </span>
+                    </button>
+
+                </div>
+
+                <div class="ppd-mobile-sidebar-profile">
+                    <div class="ppd-profile-card">
+                        <img src="images/customer-profile.jpg" alt="Customer profile">
+                        <div class="ppd-profile-copy">
+                            <strong>Alex Morgan</strong>
+                            <span>Premium Account</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ppd-sidebar-footer ppd-mobile-sidebar-footer">
+                    <a href="login.html" class="ppd-logout-link">
+                        <i class="fa-solid fa-right-from-bracket"></i>
+                        <span>Logout</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
