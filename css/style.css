@@ -12620,3 +12620,96 @@ body.dark-mode .direction-toggle-button:hover svg {
     fill: #ffffff !important;
     stroke: #ffffff !important;
 }
+
+/* iPad Mini */
+@media (min-width:768px) and (max-width:834px) {
+
+    .auth-top {
+
+        top: 15px;
+        right: 15px;
+        /* increase this if you need more space */
+
+    }
+
+}
+
+/*=========================================
+Story Card Mobile Fix
+=========================================*/
+@media (max-width: 767px) {
+
+    .story-image {
+        width: 120px;
+        height: 120px;
+    }
+
+    .story-overlay {
+        padding: 12px;
+    }
+
+    .overlay-icon {
+        width: 34px;
+        height: 34px;
+        margin-bottom: 8px;
+    }
+
+    .overlay-icon i {
+        font-size: 14px;
+    }
+
+    .story-overlay h3 {
+        font-size: 14px;
+        line-height: 1.25;
+        word-break: break-word;
+    }
+
+}
+
+/*=========================================
+AUTH TOP MOBILE FIX
+=========================================*/
+
+@media (max-width:767px) {
+
+    .auth-page {
+
+        padding: 80px 16px 40px !important;
+
+    }
+
+    .auth-top {
+
+        position: absolute !important;
+
+        top: 18px !important;
+        right: 18px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-end !important;
+
+        gap: 14px !important;
+
+        width: auto !important;
+
+        z-index: 9999 !important;
+
+    }
+
+    .auth-top .theme-toggle-button,
+    .auth-top .direction-toggle-button {
+
+        width: 44px !important;
+        height: 44px !important;
+
+        min-width: 44px !important;
+        min-height: 44px !important;
+
+        margin: 0 !important;
+
+        flex: 0 0 44px !important;
+
+    }
+
+}

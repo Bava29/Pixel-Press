@@ -13035,3 +13035,273 @@ FINAL STRONG RESPONSIVE OVERRIDES
     }
 
 }
+
+/*==================================================
+FIXED HEADER - RESPONSIVE ONLY
+==================================================*/
+
+@media (max-width:1199px) {
+
+    .ppd-dashboard-header {
+
+        position: fixed !important;
+
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+
+        margin: 0 !important;
+
+        border-radius: 0 !important;
+
+        z-index: 9999 !important;
+
+        background: rgba(255, 255, 255, .98) !important;
+
+        backdrop-filter: blur(18px);
+
+        -webkit-backdrop-filter: blur(18px);
+
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+
+        box-shadow: 0 8px 25px rgba(0, 0, 0, .08) !important;
+
+    }
+
+    .ppd-dashboard-main {
+
+        padding-top: 110px !important;
+
+    }
+
+}
+
+
+/*==============================
+768px
+==============================*/
+
+@media (max-width:768px) {
+
+    .ppd-dashboard-header {
+
+        min-height: 80px !important;
+
+        padding: 16px 18px !important;
+
+    }
+
+    .ppd-dashboard-main {
+
+        padding-top: 100px !important;
+
+    }
+
+}
+
+
+/*==============================
+576px
+==============================*/
+
+@media (max-width:576px) {
+
+    .ppd-dashboard-header {
+
+        min-height: 74px !important;
+
+        padding: 14px 16px !important;
+
+    }
+
+    .ppd-dashboard-main {
+
+        padding-top: 94px !important;
+
+    }
+
+}
+
+
+/*==============================
+425px
+==============================*/
+
+@media (max-width:425px) {
+
+    .ppd-dashboard-header {
+
+        min-height: 70px !important;
+
+        padding: 12px 14px !important;
+
+    }
+
+    .ppd-dashboard-main {
+
+        padding-top: 88px !important;
+
+    }
+
+}
+
+
+/*==============================
+375px
+==============================*/
+
+@media (max-width:375px) {
+
+    .ppd-dashboard-main {
+
+        padding-top: 60px !important;
+
+    }
+
+}
+
+
+/*==============================
+320px
+==============================*/
+
+@media (max-width:320px) {
+
+    .ppd-dashboard-header {
+
+        min-height: 66px !important;
+
+        padding: 10px 12px !important;
+
+    }
+
+    .ppd-dashboard-main {
+
+        padding-top: 80px !important;
+
+    }
+
+}
+
+@media (max-width:1199px) {
+
+    .ppd-dashboard-sidebar--mobile {
+
+        inset: 0 !important;
+        top: 0 !important;
+        margin: 0 !important;
+        padding-top: 80px !important;
+        height: 100vh !important;
+
+    }
+
+}
+
+/*=========================================
+FIXED HEADER CONTENT SPACING
+=========================================*/
+
+@media (max-width:1199px) {
+
+    .ppd-dashboard-main {
+
+        padding-top: 100px !important;
+
+    }
+
+}
+
+/*=========================================
+TRACK ORDERS - iPad Mini Timeline Fix
+=========================================*/
+
+@media (min-width:768px) and (max-width:834px) {
+
+    .ppd-to-timeline-card {
+        overflow: hidden;
+    }
+
+    .ppd-to-timeline-track {
+
+        display: flex !important;
+        flex-wrap: nowrap !important;
+
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+
+        gap: 32px !important;
+
+        padding: 20px 10px 24px !important;
+
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+
+    }
+
+    .ppd-to-timeline-track::-webkit-scrollbar {
+
+        height: 8px;
+
+    }
+
+    .ppd-to-timeline-track::-webkit-scrollbar-thumb {
+
+        background: #cfd8d6;
+        border-radius: 20px;
+
+    }
+
+    .ppd-to-stage {
+
+        flex: 0 0 140px !important;
+        min-width: 140px !important;
+        max-width: 140px !important;
+
+        text-align: center;
+
+    }
+
+    .ppd-to-stage strong {
+
+        font-size: 15px !important;
+
+    }
+
+    .ppd-to-stage p {
+
+        font-size: 13px !important;
+        line-height: 1.5;
+
+    }
+
+}
+
+@media (min-width:1024px) and (max-width:1194px) {
+
+    .ppd-to-timeline-track {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 8px;
+    }
+
+    .ppd-to-stage {
+        min-width: 0;
+    }
+
+    .ppd-to-stage strong {
+        font-size: 13px;
+    }
+
+    .ppd-to-stage p {
+        font-size: 11px;
+    }
+
+    .ppd-to-stage-dot {
+        width: 44px;
+        height: 44px;
+    }
+}
