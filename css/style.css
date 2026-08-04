@@ -2994,6 +2994,186 @@ Hero Stats
 }
 
 /*=========================================
+Company Intro
+=========================================*/
+
+.company-intro {
+
+    padding: 120px 0;
+
+}
+
+.company-intro-wrapper {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 80px;
+
+}
+
+.company-intro-image {
+
+    overflow: hidden;
+
+    border-radius: 28px;
+
+}
+
+.company-intro-image img {
+
+    width: 100%;
+
+    display: block;
+
+    border-radius: 28px;
+
+    transition: 0.5s;
+
+}
+
+.company-intro-image:hover img {
+
+    transform: scale(1.05);
+
+}
+
+.company-intro-content h2 {
+
+    margin: 20px 0;
+
+    max-width: 650px;
+
+}
+
+.company-intro-content p {
+
+    margin-bottom: 18px;
+
+}
+
+.company-intro-list {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+
+    margin: 35px 0 45px;
+
+}
+
+.company-intro-list li {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-weight: 600;
+
+}
+
+.company-intro-list i {
+
+    color: var(--brand-primary-color);
+
+    font-size: 18px;
+
+}
+
+.company-intro-content .brand-solid-button {
+
+    width: max-content;
+
+}
+
+.company-intro-content span {
+
+    display: inline-block;
+
+    color: var(--brand-primary-color);
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+
+}
+
+/*=========================================
+Responsive
+=========================================*/
+
+@media(max-width:991px) {
+
+    .company-intro {
+
+        padding: 90px 0;
+
+    }
+
+    .company-intro-wrapper {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .company-intro {
+
+        padding: 70px 0;
+
+    }
+
+    .company-intro-wrapper {
+
+        gap: 40px;
+
+    }
+
+    .company-intro-content {
+
+        text-align: center;
+
+    }
+
+    .company-intro-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .company-intro-list li {
+
+        justify-content: center;
+
+    }
+
+    .company-intro-content .brand-solid-button {
+
+        margin: auto;
+
+    }
+
+}
+
+/*=========================================
 Print Categories
 =========================================*/
 
@@ -4510,6 +4690,194 @@ Core Values
     line-height: 1.9;
 
     max-width: 520px;
+
+}
+
+/*=========================================
+Meet Our Team
+=========================================*/
+
+.our-team {
+
+    background: var(--section-background-color);
+
+}
+
+.team-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 30px;
+
+}
+
+.team-card {
+
+    background: var(--surface-white);
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    transition: var(--default-transition);
+
+    box-shadow: var(--shadow-soft);
+
+    border: 1px solid var(--border-line-color);
+
+}
+
+.team-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: var(--shadow-premium);
+
+}
+
+.team-image {
+
+    overflow: hidden;
+
+    height: 320px;
+
+}
+
+.team-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .5s;
+
+}
+
+.team-card:hover .team-image img {
+
+    transform: scale(1.08);
+
+}
+
+.team-content {
+
+    padding: 30px;
+
+    text-align: center;
+
+}
+
+.team-content h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 8px;
+
+}
+
+.team-content>span {
+
+    display: inline-block;
+
+    color: var(--brand-primary-color);
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+.team-content p {
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+
+}
+
+.team-social {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+}
+
+.team-social a {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--section-background-color);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: var(--heading-text-color);
+
+    transition: .35s;
+
+}
+
+.team-social a:hover {
+
+    background: var(--brand-primary-color);
+
+    color: #fff;
+
+    transform: translateY(-5px);
+
+}
+
+/*=========================================
+Responsive
+=========================================*/
+
+@media(max-width:1199px) {
+
+    .team-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .team-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+    }
+
+    .team-image {
+
+        height: 300px;
+
+    }
+
+    .team-content {
+
+        padding: 25px;
+
+    }
 
 }
 
@@ -12765,6 +13133,71 @@ Reduced Motion
         transition: none !important;
         animation: none !important;
         will-change: auto;
+    }
+
+}
+
+/*=========================================
+Home 2 Hero - iPad Mini
+=========================================*/
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .hero-two-wrapper {
+
+        grid-template-columns: 1fr;
+        gap: 50px;
+        justify-items: center;
+        text-align: center;
+
+    }
+
+    .hero-two-image {
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+        /* Image first */
+    }
+
+    .hero-two-image img {
+
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+
+    }
+
+    .hero-two-content {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .hero-two-content p {
+
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+    .hero-stats {
+
+        justify-content: center;
+        flex-wrap: wrap;
+
     }
 
 }

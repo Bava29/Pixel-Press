@@ -5393,13 +5393,17 @@ button {
     }
 
     .ppd-dashboard-header {
-        align-items: center;
         gap: 16px;
         padding: 16px 18px;
     }
 
-    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-copy,
-    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-tools {
+    .ppd-dashboard-header:has(.ppd-header-mobile) {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-copy {
         display: none;
     }
 
@@ -5431,12 +5435,39 @@ button {
         max-width: 100%;
     }
 
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-mobile {
+        grid-column: 1;
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-title {
+        min-width: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-tools {
+        grid-column: 3;
+        display: flex;
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-end;
+        margin-inline-start: 0;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-profile-card {
+        flex: 0 0 auto;
+    }
+
     .ppd-dashboard-sidebar--mobile .ppd-header-tools.ppd-mobile-sidebar-tools {
         display: grid;
     }
 
     .ppd-header-mobile {
-        width: 100%;
+        width: auto;
         display: flex;
         align-items: center;
         gap: 14px;
@@ -5479,15 +5510,6 @@ button {
         margin-top: 4px;
     }
 
-    html.rtl-mode .ppd-dashboard-sidebar--mobile {
-        left: auto;
-        right: 0;
-        transform: translateX(105%);
-    }
-
-    html.rtl-mode .ppd-dashboard-sidebar--mobile.is-open {
-        transform: translateX(0);
-    }
 }
 
 @media (max-width: 767px) {
@@ -5497,6 +5519,19 @@ button {
 
     .ppd-dashboard-header {
         padding: 14px 16px;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) {
+        gap: 12px;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-tools {
+        gap: 8px;
+    }
+
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-tools>.ppd-header-icon-btn:nth-child(-n+2),
+    .ppd-dashboard-header:has(.ppd-header-mobile) .ppd-header-tools>.ppd-profile-card {
+        display: none;
     }
 
     .ppd-header-mobile {
@@ -5511,9 +5546,17 @@ button {
         width: min(90vw, 340px);
     }
 
+    .ppd-dashboard-sidebar--mobile .ppd-mobile-sidebar-tools>.ppd-header-mode-btn {
+        display: none;
+    }
+
     .ppd-mobile-sidebar-tools {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 10px;
+    }
+
+    .ppd-dashboard-sidebar--mobile .ppd-mobile-sidebar-profile {
+        display: flex;
     }
 
     .ppd-dashboard-header:not(:has(.ppd-header-mobile)) .ppd-header-tools {
@@ -5523,6 +5566,12 @@ button {
 
     .ppd-dashboard-header:not(:has(.ppd-header-mobile)) .ppd-profile-card {
         width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .ppd-dashboard-sidebar--mobile .ppd-mobile-sidebar-tools {
+        display: none;
     }
 }
 
@@ -6980,39 +7029,6 @@ html.dark-mode .ppd-sidebar-link--active {
 
     color: #fff;
 
-}
-
-/*=========================================
-RTL Dashboard Layout
-=========================================*/
-
-html.rtl-mode .ppd-dashboard-sidebar {
-    inset-inline-start: auto;
-    inset-inline-end: 0;
-    box-shadow: -10px 0 36px rgba(13, 37, 43, 0.05);
-}
-
-html.rtl-mode .ppd-dashboard-main {
-    margin-inline-start: 0;
-    margin-inline-end: var(--ppd-sidebar-width);
-}
-
-html.rtl-mode .ppd-sidebar-link:hover {
-    transform: translateX(-2px);
-}
-
-html.rtl-mode .ppd-dashboard-sidebar--mobile {
-    left: auto;
-    right: 0;
-    transform: translateX(105%);
-}
-
-html.rtl-mode .ppd-dashboard-sidebar--mobile.is-open {
-    transform: translateX(0);
-}
-
-html.rtl-mode .ppd-dashboard-sidebar--mobile .ppd-sidebar-link:hover {
-    transform: translateX(-2px);
 }
 
 /* Text */
@@ -13399,4 +13415,510 @@ TRACK ORDERS - iPad Mini Timeline Fix
         width: 44px;
         height: 44px;
     }
+}
+
+/*=========================================
+Dashboard Dark Mode - Header Fix
+=========================================*/
+
+body.dark-mode .ppd-dashboard-header {
+    background: #111827;
+    border-color: #273449;
+}
+
+body.dark-mode .ppd-header-title,
+body.dark-mode .ppd-header-kicker {
+    color: #ffffff;
+}
+
+body.dark-mode .ppd-header-icon-btn,
+body.dark-mode .ppd-header-mode-btn {
+    background: #1b2433;
+    border-color: #334155;
+    color: #ffffff;
+}
+
+body.dark-mode .ppd-profile-card {
+    background: #1b2433;
+    border-color: #334155;
+}
+
+body.dark-mode .ppd-profile-copy strong {
+    color: #ffffff;
+}
+
+body.dark-mode .ppd-profile-copy span {
+    color: #cbd5e1;
+}
+
+/*=========================================
+Mobile Header - Full Dark Mode
+=========================================*/
+
+@media (max-width:1199px) {
+
+    body.dark-mode {
+
+        background: #0f172a;
+
+    }
+
+    body.dark-mode .ppd-dashboard-main {
+
+        background: #0f172a;
+
+    }
+
+    body.dark-mode .ppd-dashboard-header {
+
+        background: #111827 !important;
+        border: none !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+
+    }
+
+    body.dark-mode .ppd-header-mobile {
+
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background: #111827 !important;
+
+    }
+
+    body.dark-mode .ppd-header-title {
+
+        color: #ffffff !important;
+
+    }
+
+    body.dark-mode .ppd-dashboard-menu-toggle {
+
+        background: #1e293b !important;
+        color: #ffffff !important;
+        border-color: #334155 !important;
+
+    }
+
+}
+
+/*=========================================
+Dashboard - iPad Mini Button Fix
+=========================================*/
+
+@media (min-width:768px) and (max-width:991px) {
+
+    .ppd-order-actions {
+
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 12px !important;
+
+    }
+
+    .ppd-order-actions .ppd-mini-action {
+
+        flex: 0 0 auto !important;
+        width: auto !important;
+        min-width: 150px !important;
+        min-height: 46px !important;
+        padding: 0 20px !important;
+
+    }
+
+    .ppd-order-actions .ppd-mini-action--ghost {
+
+        min-width: 150px !important;
+
+    }
+
+}
+
+/*=========================================
+iPad Pro - Center Last Card
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-files-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ppd-files-grid .ppd-file-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 420px;
+        width: 100%;
+        justify-self: center;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-orders-grid .ppd-order-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 420px;
+        width: 100%;
+        justify-self: center;
+    }
+
+}
+
+/*=========================================
+Upload Files - iPad Pro Center Last Card
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-upload-files-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ppd-upload-files-grid .ppd-upload-file-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 420px;
+        width: 100%;
+        justify-self: center;
+    }
+
+}
+
+/*=========================================
+Upload Workspace - iPad Pro Center Summary
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-upload-workspace {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+
+    }
+
+    .ppd-upload-summary-card {
+
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+
+    }
+
+}
+
+/*=========================================
+Print Orders - iPad Pro Center Last Payment Card
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-po-payment-grid {
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+
+    }
+
+    .ppd-po-payment-grid .ppd-po-payment-card:last-child {
+
+        grid-column: 1 / -1;
+        max-width: 420px;
+        width: 100%;
+        justify-self: center;
+
+    }
+
+}
+
+/*=========================================
+Order History - Center Last Card (iPad Pro)
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-oh-orders-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-oh-orders-grid .ppd-oh-order-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 430px;
+        width: 100%;
+        justify-self: center;
+    }
+
+}
+
+/*=========================================
+Reorder Prints - Center Last Card (iPad Pro)
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    /* Recently Ordered Prints */
+    .ppd-rp-orders-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-rp-orders-grid .ppd-rp-order-card:last-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 430px;
+        justify-self: center;
+    }
+
+    /* Saved Print Templates */
+    .ppd-rp-template-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-rp-template-grid .ppd-rp-template-card:last-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 430px;
+        justify-self: center;
+    }
+
+}
+
+/*=========================================
+Payments - iPad Pro Center Cards
+=========================================*/
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    /* Payment Methods */
+    .ppd-pm-method-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-pm-method-grid .ppd-pm-method-item:nth-last-child(2) {
+        grid-column: 1;
+    }
+
+    .ppd-pm-method-grid .ppd-pm-method-item:last-child {
+        grid-column: 2;
+    }
+
+    /* Payment History */
+    .ppd-pm-history-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-pm-history-grid .ppd-pm-history-item:last-child {
+        grid-column: 1 / -1;
+        width: 100%;
+        max-width: 430px;
+        justify-self: center;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-pm-method-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .ppd-pm-method-item {
+        flex: 0 0 calc((100% - 48px) / 3);
+        max-width: calc((100% - 48px) / 3);
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+
+    .ppd-sf-files-grid,
+    .ppd-sf-recent-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+
+    .ppd-sf-files-grid> :last-child,
+    .ppd-sf-recent-grid> :last-child {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 12px);
+        max-width: 380px;
+    }
+
+}
+
+/* =========================================================
+   TABLET ONLY - Hide Sidebar Icons & Profile (Strong Override)
+   ========================================================= */
+
+@media only screen and (min-width:768px) and (max-width:1199px) {
+
+    /* Hide notification/settings/dark/rtl section */
+    .ppd-dashboard-sidebar--mobile .ppd-mobile-sidebar-tools,
+    .ppd-mobile-sidebar-tools {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Hide profile */
+    .ppd-dashboard-sidebar--mobile .ppd-mobile-sidebar-profile,
+    .ppd-mobile-sidebar-profile {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Remove extra gap */
+    .ppd-mobile-sidebar-inner {
+        gap: 12px !important;
+    }
+
+    .ppd-sidebar-footer {
+        margin-top: auto !important;
+    }
+}
+
+
+/*==================================================
+Dashboard RTL Support
+==================================================*/
+
+html.rtl-mode {
+    direction: rtl;
+}
+
+/*=========================================
+Header
+=========================================*/
+
+html.rtl-mode .ppd-dashboard-header,
+html.rtl-mode .ppd-header-mobile {
+    flex-direction: row-reverse;
+}
+
+html.rtl-mode .ppd-header-tools {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+html.rtl-mode .ppd-header-title,
+html.rtl-mode .ppd-header-copy,
+html.rtl-mode .ppd-section-head,
+html.rtl-mode .ppd-section-title {
+    text-align: right;
+}
+
+/*=========================================
+Sidebar
+=========================================*/
+
+html.rtl-mode .ppd-dashboard-sidebar {
+    right: 0;
+    left: auto;
+}
+
+html.rtl-mode .ppd-dashboard-sidebar--mobile {
+    right: 0;
+    left: auto;
+    transform: translateX(105%);
+}
+
+html.rtl-mode .ppd-dashboard-sidebar--mobile.is-open {
+    transform: translateX(0);
+}
+
+html.rtl-mode .ppd-sidebar-link {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+html.rtl-mode .ppd-sidebar-link i {
+    margin: 0;
+}
+
+/*=========================================
+Profile
+=========================================*/
+
+html.rtl-mode .ppd-profile-card {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+/*=========================================
+Forms
+=========================================*/
+
+html.rtl-mode input,
+html.rtl-mode textarea,
+html.rtl-mode select {
+    text-align: right;
+}
+
+html.rtl-mode label {
+    text-align: right;
+}
+
+/*=========================================
+Buttons
+=========================================*/
+
+html.rtl-mode .brand-solid-button,
+html.rtl-mode .brand-outline-button {
+    flex-direction: row-reverse;
+}
+
+/*=========================================
+Cards
+=========================================*/
+
+html.rtl-mode .ppd-order-meta,
+html.rtl-mode .ppd-order-details,
+html.rtl-mode .ppd-history-meta {
+    direction: rtl;
+}
+
+html.rtl-mode .ppd-order-actions,
+html.rtl-mode .ppd-current-actions,
+html.rtl-mode .ppd-history-actions,
+html.rtl-mode .ppd-confirm-actions {
+    justify-content: flex-start;
+}
+
+/*=========================================
+Timeline
+=========================================*/
+
+html.rtl-mode .ppd-timeline-step {
+    text-align: right;
 }
