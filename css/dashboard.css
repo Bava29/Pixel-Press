@@ -33,6 +33,57 @@
     --ppd-display-font: 'Sora', sans-serif;
 }
 
+/*=========================================
+Reveal Animations
+=========================================*/
+
+.pp-reveal {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition:
+        opacity 0.78s cubic-bezier(0.22, 1, 0.36, 1) var(--pp-reveal-delay, 0ms),
+        transform 0.78s cubic-bezier(0.22, 1, 0.36, 1) var(--pp-reveal-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+.pp-reveal--up {
+    transform: translate3d(0, 28px, 0);
+}
+
+.pp-reveal--left {
+    transform: translate3d(-28px, 0, 0);
+}
+
+.pp-reveal--right {
+    transform: translate3d(28px, 0, 0);
+}
+
+.pp-reveal--scale {
+    transform: scale(0.96);
+}
+
+.pp-reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    .pp-reveal,
+    .pp-reveal.is-visible {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+        will-change: auto;
+    }
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
