@@ -33,6 +33,35 @@
     --ppd-display-font: 'Sora', sans-serif;
 }
 
+html {
+    font-size: 15.5px;
+}
+
+body.ppd-dashboard-body h1,
+body.ppd-dashboard-body h2,
+body.ppd-dashboard-body h3,
+body.ppd-dashboard-body h4,
+body.ppd-dashboard-body h5,
+body.ppd-dashboard-body h6,
+body.ppd-dashboard-body strong {
+    font-weight: 600;
+}
+
+body.ppd-dashboard-body [class*="badge"],
+body.ppd-dashboard-body [class*="label"],
+body.ppd-dashboard-body [class*="pill"],
+body.ppd-dashboard-body [class*="tag"],
+body.ppd-dashboard-body [class*="status"],
+body.ppd-dashboard-body [class*="title"],
+body.ppd-dashboard-body [class*="heading"],
+body.ppd-dashboard-body [class*="value"],
+body.ppd-dashboard-body [class*="number"],
+body.ppd-dashboard-body [class*="count"],
+body.ppd-dashboard-body [class*="metric"],
+body.ppd-dashboard-body [class*="stat"] {
+    font-weight: 600 !important;
+}
+
 /*=========================================
 Reveal Animations
 =========================================*/
@@ -175,8 +204,8 @@ button {
     padding: 12px 16px;
     border-radius: 16px;
     color: #60758f;
-    font-size: 0.98rem;
-    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 600;
     letter-spacing: -0.01em;
     transition: var(--ppd-transition);
 }
@@ -221,8 +250,8 @@ button {
     border-radius: 18px;
     background: var(--ppd-danger-soft);
     color: var(--ppd-danger);
-    font-size: 0.98rem;
-    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 600;
     transition: var(--ppd-transition);
 }
 
@@ -295,7 +324,7 @@ button {
 .ppd-logout-modal__title {
     margin-bottom: 10px;
     font-family: var(--ppd-display-font);
-    font-size: 1.85rem;
+    font-size: 1.7rem;
     letter-spacing: -0.04em;
     color: var(--ppd-heading);
 }
@@ -303,7 +332,7 @@ button {
 .ppd-logout-modal__description {
     margin-bottom: 24px;
     color: var(--ppd-muted);
-    font-size: 1.02rem;
+    font-size: 0.98rem;
     line-height: 1.65;
 }
 
@@ -317,8 +346,8 @@ button {
     min-height: 50px;
     border: none;
     border-radius: 16px;
-    font-size: 0.98rem;
-    font-weight: 700;
+    font-size: 0.95rem;
+    font-weight: 600;
     cursor: pointer;
     transition: var(--ppd-transition);
 }
@@ -374,15 +403,15 @@ button {
     display: inline-flex;
     margin-bottom: 8px;
     color: var(--ppd-brand);
-    font-size: 0.76rem;
-    font-weight: 800;
+    font-size: 0.72rem;
+    font-weight: 600;
     letter-spacing: 0.18em;
     text-transform: uppercase;
 }
 
 .ppd-header-title {
     font-family: var(--ppd-display-font);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 1.06;
     letter-spacing: -0.04em;
     color: var(--ppd-heading);
@@ -434,7 +463,7 @@ button {
     background: var(--ppd-danger);
     color: #ffffff;
     font-size: 0.68rem;
-    font-weight: 800;
+    font-weight: 600;
 }
 
 .ppd-header-mode-btn {
@@ -510,14 +539,14 @@ button {
 
 .ppd-profile-copy strong {
     color: var(--ppd-heading);
-    font-size: 0.92rem;
-    font-weight: 800;
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 
 .ppd-profile-copy span {
     color: var(--ppd-muted);
-    font-size: 0.77rem;
-    font-weight: 700;
+    font-size: 0.75rem;
+    font-weight: 500;
 }
 
 .ppd-dashboard-sidebar-overlay {
@@ -623,8 +652,8 @@ button {
     border-radius: 999px;
     background: var(--ppd-brand-soft);
     color: var(--ppd-brand);
-    font-size: 0.74rem;
-    font-weight: 800;
+    font-size: 0.72rem;
+    font-weight: 600;
     letter-spacing: 0.15em;
     text-transform: uppercase;
 }
@@ -633,7 +662,7 @@ button {
     margin-top: 16px;
     max-width: 720px;
     font-family: var(--ppd-display-font);
-    font-size: 2.45rem;
+    font-size: 2.28rem;
     line-height: 1.1;
     letter-spacing: -0.05em;
     color: var(--ppd-heading);
@@ -643,7 +672,7 @@ button {
     max-width: 620px;
     margin-top: 16px;
     color: var(--ppd-muted);
-    font-size: 1.02rem;
+    font-size: 0.98rem;
     line-height: 1.8;
 }
 
@@ -663,7 +692,8 @@ button {
     justify-content: center;
     gap: 10px;
     border-radius: 18px;
-    font-weight: 800;
+    font-size: 0.92rem;
+    font-weight: 600;
     letter-spacing: -0.01em;
     transition: var(--ppd-transition);
 }
@@ -750,8 +780,8 @@ button {
 
 .ppd-hero-stat span {
     color: var(--ppd-muted);
-    font-size: 0.74rem;
-    font-weight: 800;
+    font-size: 0.72rem;
+    font-weight: 600;
     letter-spacing: 0.14em;
     text-transform: uppercase;
 }
@@ -759,7 +789,7 @@ button {
 .ppd-hero-stat strong {
     color: var(--ppd-heading);
     font-family: var(--ppd-display-font);
-    font-size: 1.42rem;
+    font-size: 1.32rem;
     letter-spacing: -0.04em;
 }
 
@@ -839,8 +869,8 @@ button {
     border-radius: 999px;
     background: var(--ppd-surface-alt);
     color: var(--ppd-muted);
-    font-size: 0.74rem;
-    font-weight: 800;
+    font-size: 0.72rem;
+    font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
@@ -850,22 +880,22 @@ button {
     margin-bottom: 8px;
     color: var(--ppd-heading);
     font-family: var(--ppd-display-font);
-    font-size: 2.2rem;
+    font-size: 2.05rem;
     line-height: 1;
     letter-spacing: -0.05em;
 }
 
 .ppd-metric-title {
     color: var(--ppd-heading);
-    font-size: 1.05rem;
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 600;
     letter-spacing: -0.03em;
 }
 
 .ppd-metric-text {
     margin-top: 6px;
     color: var(--ppd-muted);
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     line-height: 1.7;
 }
 
@@ -885,7 +915,7 @@ button {
 .ppd-section-title {
     margin-top: 12px;
     font-family: var(--ppd-display-font);
-    font-size: 1.65rem;
+    font-size: 1.52rem;
     line-height: 1.15;
     letter-spacing: -0.04em;
     color: var(--ppd-heading);
@@ -925,7 +955,7 @@ button {
 .ppd-order-meta span {
     color: var(--ppd-muted);
     font-size: 0.76rem;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: 0.16em;
     text-transform: uppercase;
 }
@@ -988,7 +1018,7 @@ button {
     margin-bottom: 8px;
     color: var(--ppd-heading);
     font-size: 1rem;
-    font-weight: 800;
+    font-weight: 600;
     letter-spacing: -0.02em;
 }
 
